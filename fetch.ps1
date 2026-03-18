@@ -27,34 +27,46 @@ function Add-Item {
 }
 
 # -----------------------------
-# FIXED RSS PARSER
+# FIXED RSS + ATOM PARSER
 # -----------------------------
 function Parse-Rss {
     param($xml, $category, $source)
 
+    # RSS <item> OR Atom <entry>
     $nodes = $xml.SelectNodes("//item")
-    if ($nodes) {
-        foreach ($n in $nodes) {
+    if (-not $nodes -or $nodes.Count -eq 0) {
+        $nodes = $xml.SelectNodes("//*[local-name()='entry']")
+    }
 
-            # Title
-            $title = $n.title
-            if (-not $title) { $title = $n.SelectSingleNode("title")?.InnerText }
+    foreach ($n in $nodes) {
 
-            # Link
-            $link = $n.link
-            if (-not $link) { $link = $n.SelectSingleNode("link")?.InnerText }
+        # -----------------------------
+        # TITLE
+        # -----------------------------
+        $title = $n.SelectSingleNode("title")?.InnerText
 
-            # Date (multiple formats)
-            $date = $n.pubDate
-            if (-not $date) { $date = $n.SelectSingleNode("pubDate")?.InnerText }
-            if (-not $date) { $date = $n.SelectSingleNode("dc:date")?.InnerText }
-            if (-not $date) { $date = $n.SelectSingleNode("updated")?.InnerText }
+        # -----------------------------
+        # LINK (RSS <link> OR Atom <link href="...">)
+        # -----------------------------
+        $link = $n.SelectSingleNode("link")?.InnerText
 
-            # Normalize date
-            try { $date = (Get-Date $date).ToString("R") } catch {}
-
-            Add-Item $title $link $date $source $category
+        if (-not $link) {
+            $linkNode = $n.SelectSingleNode("*[local-name()='link'][@href]")
+            if ($linkNode) {
+                $link = $linkNode.GetAttribute("href")
+            }
         }
+
+        # -----------------------------
+        # DATE (RSS pubDate OR Atom updated/published)
+        # -----------------------------
+        $date = $n.SelectSingleNode("pubDate")?.InnerText
+        if (-not $date) { $date = $n.SelectSingleNode("*[local-name()='updated']")?.InnerText }
+        if (-not $date) { $date = $n.SelectSingleNode("*[local-name()='published']")?.InnerText }
+
+        try { $date = (Get-Date $date).ToString("R") } catch {}
+
+        Add-Item $title $link $date $source $category
     }
 }
 
