@@ -41,7 +41,9 @@ function Parse-Rss {
     param($xml, $category, $source)
 
     # RSS <item> OR Atom <entry>
-    $nodes = $xml.SelectNodes("//*[local-name()='entry']")
+    $nodes = $xml.SelectNodes("//item")
+    if (-not $nodes -or $nodes.Count -eq 0) {
+        $nodes = $xml.SelectNodes("//*[local-name()='entry']")
     }
 
     foreach ($n in $nodes) {
