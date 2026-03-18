@@ -9,7 +9,6 @@ $feeds = @(
     @{ url="https://www.reddit.com/r/Veeam/.rss"; category="community" }
 )
 
-# Always an array
 $items = @()
 
 function Add-Rss {
@@ -78,13 +77,19 @@ foreach ($feed in $feeds) {
     }
     catch {
         Write-Host "ERROR fetching $($feed.url)"
+        Write-Host "Message: $($_.Exception.Message)"
+        if ($_.Exception.InnerException) {
+            Write-Host "Inner: $($_.Exception.InnerException.Message)"
+        }
+        if ($_.Exception.Response) {
+            Write-Host "StatusCode: $($_.Exception.Response.StatusCode.value__)"
+            Write-Host "StatusDescription: $($_.Exception.Response.StatusDescription)"
+        }
     }
 }
 
-# Timestamp
 $timestamp = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
 
-# Severity for advisories
 foreach ($i in $items) {
     if ($i.category -eq "advisory") {
         if ($i.title -match "Critical") { $i.severity = "critical" }
@@ -94,7 +99,6 @@ foreach ($i in $items) {
     }
 }
 
-# Final JSON (never null)
 $final = [PSCustomObject]@{
     lastUpdated = $timestamp
     items       = @($items)
