@@ -50,6 +50,16 @@
 <script>
 let data = null;
 
+function escapeHtml(str) {
+  if (!str) return "";
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 fetch("news.json")
   .then(r => r.json())
   .then(json => {
@@ -74,9 +84,9 @@ function render(category) {
     }
 
     card.innerHTML = `
-      <div class="title"><a href="${item.link}" target="_blank">${item.title}</a></div>
+      <div class="title"><a href="${item.link}" target="_blank">${escapeHtml(item.title)}</a></div>
       <div class="date">${item.date}</div>
-      <div>${item.source}</div>
+      <div>${escapeHtml(item.source)}</div>
       ${badge}
     `;
 
@@ -89,6 +99,7 @@ document.querySelectorAll(".tab").forEach(tab => {
     document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
     tab.classList.add("active");
     render(tab.dataset.cat);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 });
 
