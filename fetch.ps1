@@ -27,7 +27,7 @@ function Add-Item {
 }
 
 # -----------------------------
-# FIXED RSS + ATOM PARSER
+# RSS + ATOM PARSER (FINAL)
 # -----------------------------
 function Parse-Rss {
     param($xml, $category, $source)
@@ -41,9 +41,9 @@ function Parse-Rss {
     foreach ($n in $nodes) {
 
         # -----------------------------
-        # TITLE
+        # TITLE (RSS + Atom)
         # -----------------------------
-        $title = $n.SelectSingleNode("title")?.InnerText
+        $title = $n.SelectSingleNode("*[local-name()='title']")?.InnerText
 
         # -----------------------------
         # LINK (RSS <link> OR Atom <link href="...">)
