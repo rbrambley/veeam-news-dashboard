@@ -40,16 +40,21 @@ function Add-Item {
 function Parse-Rss {
     param($xml, $category, $source)
 
+    # Register Atom namespace if present
+    $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
+    $ns.AddNamespace("atom", "http://www.w3.org/2005/Atom")
+
     # RSS <item> OR Atom <entry>
     $nodes = $xml.SelectNodes("//item")
     if (-not $nodes -or $nodes.Count -eq 0) {
-        $nodes = $xml.SelectNodes("//*[local-name()='entry']")
+        $nodes = $xml.SelectNodes("//atom:entry", $ns)
     }
 
     foreach ($n in $nodes) {
 
         # TITLE
-        $title = $n.SelectSingleNode("*[local-name()='title']")?.InnerText
+        $titleNode = $n.SelectSingleNode("*[local-name()='title']")
+        $title = $titleNode?.InnerText
 
         # LINK (RSS or ATOM)
         $link = $n.SelectSingleNode("link")?.InnerText
