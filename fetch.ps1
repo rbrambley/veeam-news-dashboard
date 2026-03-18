@@ -51,7 +51,7 @@ function Parse-Rss {
             if (-not $date) { $date = $n.SelectSingleNode("updated")?.InnerText }
 
             # Normalize date
-            try { $date = (Get-Date $date).ToString("R") } catch {}
+            try { $date = (Get-Date $date).ToString("yyyy-MM-ddTHH:mm:ssZ") } catch {}
 
             Add-Item $title $link $date $source $category
         }
@@ -97,6 +97,30 @@ foreach ($i in $global:items) {
         elseif ($i.title -match "High") { $i.severity = "high" }
         elseif ($i.title -match "Medium") { $i.severity = "medium" }
         else { $i.severity = "low" }
+    }
+}
+
+# -----------------------------
+# RELEASES MAPPING
+# -----------------------------
+$releaseKeywords = "Patch","Update","Hotfix","Cumulative","Rollup","GA","RTM"
+
+foreach ($i in $global:items) {
+    if ($i.category -eq "kb") {
+        foreach ($k in $releaseKeywords) {
+            if ($i.title -match $k) {
+                # Duplicate item as a "release"
+                $global:items += [PSCustomObject]@{
+                    title    = $i.title
+                    link     = $i.link
+                    date     = $i.date
+                    source   = $i.source
+                    category = "release"
+                    severity = ""
+                }
+                break
+            }
+        }
     }
 }
 
