@@ -67,10 +67,8 @@ foreach ($feed in $feeds) {
 
 Write-Host "Total items collected: $($items.Count)"
 
-# Add timestamp
 $timestamp = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
 
-# Add severity for advisories
 foreach ($item in $items) {
     if ($item.category -eq "advisory") {
         if ($item.title -match "Critical") { $item.severity = "critical" }
@@ -80,7 +78,6 @@ foreach ($item in $items) {
     }
 }
 
-# Build final JSON
 $final = [PSCustomObject]@{
     lastUpdated = $timestamp
     items       = $items | Sort-Object date -Descending
