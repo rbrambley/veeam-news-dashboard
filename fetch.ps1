@@ -1,6 +1,7 @@
 Write-Host "Starting Veeam feed fetch..."
 
 $global:items = @()
+$global:seenLinks = @{}
 
 # -----------------------------
 # VERIFIED VEEAM FEEDS
@@ -12,10 +13,17 @@ $feeds = @(
 )
 
 # -----------------------------
-# ADD ITEM HELPER
+# ADD ITEM (DEDUPED)
 # -----------------------------
 function Add-Item {
     param($title, $link, $date, $source, $category, $severity="")
+
+    if ($global:seenLinks.ContainsKey($link)) {
+        return
+    }
+
+    $global:seenLinks[$link] = $true
+
     $global:items += [PSCustomObject]@{
         title    = $title
         link     = $link
@@ -27,23 +35,21 @@ function Add-Item {
 }
 
 # -----------------------------
-# RSS + ATOM PARSER (FINAL)
+# RSS + ATOM PARSER
 # -----------------------------
 function Parse-Rss {
     param($xml, $category, $source)
 
     # RSS <item> OR Atom <entry>
-    $nodes = $xml.SelectNodes("//item")
-    if (-not $nodes -or $nodes.Count -eq 0) {
-        $nodes = $xml.SelectNodes("//*[local-name()='entry']")
+    $nodes = $xml.SelectNodes("//*[local-name()='entry']")
     }
 
     foreach ($n in $nodes) {
 
-        # TITLE (RSS + Atom)
+        # TITLE
         $title = $n.SelectSingleNode("*[local-name()='title']")?.InnerText
 
-        # LINK (RSS <link> OR Atom <link href="...">)
+        # LINK
         $link = $n.SelectSingleNode("link")?.InnerText
         if (-not $link) {
             $linkNode = $n.SelectSingleNode("*[local-name()='link'][@href]")
@@ -52,7 +58,7 @@ function Parse-Rss {
             }
         }
 
-        # DATE (RSS pubDate OR Atom updated/published)
+        # DATE
         $date = $n.SelectSingleNode("pubDate")?.InnerText
         if (-not $date) { $date = $n.SelectSingleNode("*[local-name()='updated']")?.InnerText }
         if (-not $date) { $date = $n.SelectSingleNode("*[local-name()='published']")?.InnerText }
@@ -60,13 +66,25 @@ function Parse-Rss {
         try { $date = (Get-Date $date).ToString("R") } catch {}
 
         # -----------------------------
-        # RELEASE DETECTION
+        # STRICT CATEGORY RULES (Option A)
         # -----------------------------
-        $releaseKeywords = @("Patch","Update","Hotfix","Cumulative","Rollup","GA","RTM","Release Information")
+
+        # RELEASE DETECTION (KB ONLY)
+        $releaseKeywords = @(
+            "Release Information",
+            "Patch",
+            "Hotfix",
+            "Cumulative Update",
+            "Rollup",
+            "GA",
+            "RTM"
+        )
 
         $isRelease = $false
-        foreach ($kw in $releaseKeywords) {
-            if ($title -match $kw) { $isRelease = $true; break }
+        if ($category -eq "kb") {
+            foreach ($kw in $releaseKeywords) {
+                if ($title -match $kw) { $isRelease = $true; break }
+            }
         }
 
         if ($isRelease) {
