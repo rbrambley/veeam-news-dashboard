@@ -9,37 +9,46 @@ $feeds = @(
     @{ url="https://www.reddit.com/r/Veeam/.rss"; category="community" }
 )
 
-$items = @()
+# Force items to always be an array
+$items = New-Object System.Collections.ArrayList
 
 function Add-RssItems {
     param($xml, $category)
-    if ($xml.rss.channel.item) {
-        foreach ($i in $xml.rss.channel.item) {
-            $items += [PSCustomObject]@{
+    $nodes = $xml.SelectNodes("//item")
+    if ($nodes) {
+        foreach ($i in $nodes) {
+            $null = $items.Add([PSCustomObject]@{
                 title     = $i.title
                 link      = $i.link
                 date      = $i.pubDate
-                source    = $xml.rss.channel.title
+                source    = ($xml.SelectSingleNode("//channel/title")?.InnerText)
                 category  = $category
                 severity  = ""
-            }
+            })
         }
     }
 }
 
 function Add-AtomItems {
     param($xml, $category)
-    if ($xml.feed.entry) {
-        foreach ($e in $xml.feed.entry) {
-            $link = $e.link | Where-Object { $_.href } | Select-Object -First 1
-            $items += [PSCustomObject]@{
-                title     = $e.title
-                link      = $link.href
-                date      = ($e.updated, $e.published | Where-Object { $_ } | Select-Object -First 1)
-                source    = $xml.feed.title
+    $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
+    $ns.AddNamespace("a", $xml.DocumentElement.NamespaceURI)
+
+    $entries = $xml.SelectNodes("//a:entry", $ns)
+    if ($entries) {
+        foreach ($e in $entries) {
+            $link = $e.SelectSingleNode("a:link", $ns)?.href
+            $date = $e.SelectSingleNode("a:updated", $ns)?.InnerText
+            if (-not $date) { $date = $e.SelectSingleNode("a:published", $ns)?.InnerText }
+
+            $null = $items.Add([PSCustomObject]@{
+                title     = $e.SelectSingleNode("a:title", $ns)?.InnerText
+                link      = $link
+                date      = $date
+                source    = $xml.SelectSingleNode("//a:title", $ns)?.InnerText
                 category  = $category
                 severity  = ""
-            }
+            })
         }
     }
 }
@@ -47,18 +56,18 @@ function Add-AtomItems {
 function Add-VeeamCustom {
     param($xml, $category)
 
-    # Veeam custom feeds still contain <item> nodes, just not RSS-wrapped
-    $customItems = $xml.SelectNodes("//item")
-    if ($customItems) {
-        foreach ($i in $customItems) {
-            $items += [PSCustomObject]@{
+    # Veeam custom feeds still use <item> nodes
+    $nodes = $xml.SelectNodes("//item")
+    if ($nodes) {
+        foreach ($i in $nodes) {
+            $null = $items.Add([PSCustomObject]@{
                 title     = $i.title
                 link      = $i.link
                 date      = $i.pubDate
-                source    = ($xml.SelectSingleNode("//channel/title")?.InnerText) 
+                source    = ($xml.SelectSingleNode("//channel/title")?.InnerText)
                 category  = $category
                 severity  = ""
-            }
+            })
         }
     }
 }
@@ -97,7 +106,7 @@ foreach ($item in $items) {
 
 $final = [PSCustomObject]@{
     lastUpdated = $timestamp
-    items       = $items | Sort-Object date -Descending
+    items       = @($items | Sort-Object date -Descending)
 }
 
 $final | ConvertTo-Json -Depth 10 | Out-File "news.json"
