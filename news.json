@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T16:03:10Z",
+  "lastUpdated": "2026-03-18T16:15:24Z",
   "items": [
     {
       "title": "Connect with Veeam at Nutanix .NEXT 2026",
@@ -40,6 +40,326 @@
       "source": "Veeam Blog",
       "category": "blog",
       "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb2804",
+      "date": "Wed, 18 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4836",
+      "date": "Tue, 17 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4834",
+      "date": "Mon, 16 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4833",
+      "date": "Mon, 16 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4780",
+      "date": "Mon, 16 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4831",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4830",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4747",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4738",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4706",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4696",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4362",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4356",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4355",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4354",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb2681",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4299",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb3109",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb3103",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb2683",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": ""
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb2804",
+      "date": "Wed, 18 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4836",
+      "date": "Tue, 17 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4834",
+      "date": "Mon, 16 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4833",
+      "date": "Mon, 16 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4780",
+      "date": "Mon, 16 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4831",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4830",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4747",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4738",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4706",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4696",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4362",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4356",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4355",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4354",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb2681",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb4299",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb3109",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb3103",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
+    },
+    {
+      "title": null,
+      "link": "https://www.veeam.com/kb2683",
+      "date": "Thu, 12 Mar 2026 00:00:00 GMT",
+      "source": "Veeam Security Advisory",
+      "category": "advisory",
+      "severity": "low"
     }
   ]
 }
