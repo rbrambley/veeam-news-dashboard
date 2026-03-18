@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-03-18T17:09:14Z",
+  "lastUpdated": "2026-03-18T17:18:41Z",
   "items": [
     {
-      "title": "Connect with Veeam at Nutanix .NEXT 2026",
+      "title": null,
       "link": "https://www.veeam.com/blog/veeam-nutanix-next-2026-data-resilience.html",
       "date": "Tue, 17 Mar 2026 07:47:48 GMT",
       "source": "Veeam Blog",
@@ -10,7 +10,7 @@
       "severity": ""
     },
     {
-      "title": "Kubernetes Data Protection Checklist: Reduce Downtime, Risk, and Backup Overhead",
+      "title": null,
       "link": "https://www.veeam.com/blog/kubernetes-data-protection-checklist.html",
       "date": "Mon, 16 Mar 2026 20:49:04 GMT",
       "source": "Veeam Blog",
@@ -18,7 +18,7 @@
       "severity": ""
     },
     {
-      "title": "Enhancing AI Resilience with Lenovo and Veeam Kasten",
+      "title": null,
       "link": "https://www.veeam.com/blog/lenovo-ai-factory-veeam-kasten.html",
       "date": "Mon, 16 Mar 2026 20:35:14 GMT",
       "source": "Veeam Blog",
@@ -26,7 +26,7 @@
       "severity": ""
     },
     {
-      "title": "Adopting the NIST AI Risk Management Framework with Veeam and Securiti AI",
+      "title": null,
       "link": "https://www.veeam.com/blog/nist-ai-risk-management-framework-veeam-securiti-ai.html",
       "date": "Wed, 11 Mar 2026 19:08:13 GMT",
       "source": "Veeam Blog",
@@ -34,7 +34,7 @@
       "severity": ""
     },
     {
-      "title": "Why Agent Commander Changes Everything",
+      "title": null,
       "link": "https://www.veeam.com/blog/agent-commander-ai-trust-data-resilience.html",
       "date": "Wed, 11 Mar 2026 18:12:04 GMT",
       "source": "Veeam Blog",
@@ -42,7 +42,7 @@
       "severity": ""
     },
     {
-      "title": "Veeam Agent for Linux - veeamsnap and blksnap Extended Linux Distribution Support",
+      "title": null,
       "link": "https://www.veeam.com/kb2804",
       "date": "Wed, 18 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -50,7 +50,7 @@
       "severity": ""
     },
     {
-      "title": "Veeam Agent for Linux: Update Blocked by Repository Signing Key Change",
+      "title": null,
       "link": "https://www.veeam.com/kb4836",
       "date": "Tue, 17 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -58,7 +58,7 @@
       "severity": ""
     },
     {
-      "title": "How to Manually Update GPG key on Veeam Appliances",
+      "title": null,
       "link": "https://www.veeam.com/kb4834",
       "date": "Mon, 16 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -66,7 +66,7 @@
       "severity": ""
     },
     {
-      "title": "How to Manually Update GPG key on Veeam Hardened Repository Appliance",
+      "title": null,
       "link": "https://www.veeam.com/kb4833",
       "date": "Mon, 16 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -74,7 +74,7 @@
       "severity": ""
     },
     {
-      "title": "Migration to Unified Veeam Data Cloud FAQ",
+      "title": null,
       "link": "https://www.veeam.com/kb4780",
       "date": "Mon, 16 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -82,7 +82,7 @@
       "severity": ""
     },
     {
-      "title": "Vulnerabilities Resolved in Veeam Backup & Replication 13.0.1.2067",
+      "title": null,
       "link": "https://www.veeam.com/kb4831",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -90,7 +90,7 @@
       "severity": ""
     },
     {
-      "title": "Vulnerabilities Resolved in Veeam Backup & Replication 12.3.2.4465",
+      "title": null,
       "link": "https://www.veeam.com/kb4830",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -98,7 +98,7 @@
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Plug-in for Scale Computing HyperCore",
+      "title": null,
       "link": "https://www.veeam.com/kb4747",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -106,15 +106,15 @@
       "severity": ""
     },
     {
-      "title": "Release Information for Veeam Backup & Replication 13 and Updates",
+      "title": null,
       "link": "https://www.veeam.com/kb4738",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
-      "category": "release",
+      "category": "kb",
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Plug-in for Proxmox VE",
+      "title": null,
       "link": "https://www.veeam.com/kb4706",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -122,15 +122,15 @@
       "severity": ""
     },
     {
-      "title": "Release Information for Veeam Backup & Replication 12.3",
+      "title": null,
       "link": "https://www.veeam.com/kb4696",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
-      "category": "release",
+      "category": "kb",
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Plug-in for oVirt KVM",
+      "title": null,
       "link": "https://www.veeam.com/kb4362",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -138,7 +138,7 @@
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Agent for Oracle Solaris",
+      "title": null,
       "link": "https://www.veeam.com/kb4356",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -146,7 +146,7 @@
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Agent for IBM AIX",
+      "title": null,
       "link": "https://www.veeam.com/kb4355",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -154,7 +154,7 @@
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Agent for Mac",
+      "title": null,
       "link": "https://www.veeam.com/kb4354",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -162,7 +162,7 @@
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Agent for Linux",
+      "title": null,
       "link": "https://www.veeam.com/kb2681",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -170,7 +170,7 @@
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Plug-in for Nutanix AHV",
+      "title": null,
       "link": "https://www.veeam.com/kb4299",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -178,7 +178,7 @@
       "severity": ""
     },
     {
-      "title": "List of Security Fixes and Improvements in Veeam Agent for Linux",
+      "title": null,
       "link": "https://www.veeam.com/kb3109",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -186,7 +186,7 @@
       "severity": ""
     },
     {
-      "title": "List of Security Fixes and Improvements in Veeam Backup & Replication",
+      "title": null,
       "link": "https://www.veeam.com/kb3103",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
@@ -194,7 +194,7 @@
       "severity": ""
     },
     {
-      "title": "Build Numbers and Versions of Veeam Agent for Microsoft Windows",
+      "title": null,
       "link": "https://www.veeam.com/kb2683",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
