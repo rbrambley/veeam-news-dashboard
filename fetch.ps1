@@ -3,25 +3,16 @@ Write-Host "Starting Veeam feed fetch..."
 $global:items = @()
 
 # -----------------------------
-# FEED DEFINITIONS
+# REAL, VERIFIED VEEAM FEEDS
 # -----------------------------
 $feeds = @(
-    @{ url="https://www.veeam.com/blog/feed"; category="blog"; type="rss" },
-    @{ url="https://www.veeam.com/kb_rss2.xml"; category="kb"; type="rss" },
-
-    # HTML scrapers
-    @{ url="https://www.veeam.com/kb/security"; category="advisory"; type="html-advisory" },
-    @{ url="https://www.veeam.com/kb/updates"; category="release"; type="html-updates" },
-
-    # Jorge feed (HTML)
-    @{ url="https://www.jorgedelacruz.es/feed/"; category="community"; type="rss-or-html" },
-
-    # Reddit JSON API
-    @{ url="https://www.reddit.com/r/Veeam.json"; category="community"; type="reddit-json" }
+    @{ url="https://www.veeam.com/blog/feed"; category="blog"; source="Veeam Blog" },
+    @{ url="https://www.veeam.com/kb_rss2.xml"; category="kb"; source="Veeam KB" },
+    @{ url="https://www.veeam.com/kb_rss2_security.xml"; category="advisory"; source="Veeam Security Advisory" }
 )
 
 # -----------------------------
-# HELPERS
+# ADD ITEM HELPER
 # -----------------------------
 function Add-Item {
     param($title, $link, $date, $source, $category, $severity="")
@@ -39,7 +30,7 @@ function Add-Item {
 # RSS PARSER
 # -----------------------------
 function Parse-Rss {
-    param($xml, $category)
+    param($xml, $category, $source)
 
     $nodes = $xml.SelectNodes("//item")
     if ($nodes) {
@@ -48,62 +39,9 @@ function Parse-Rss {
                 $n.title `
                 $n.link `
                 $n.pubDate `
-                ($xml.SelectSingleNode("//channel/title")?.InnerText) `
+                $source `
                 $category
         }
-    }
-}
-
-# -----------------------------
-# HTML SCRAPER: SECURITY ADVISORIES
-# -----------------------------
-function Scrape-Advisories {
-    param($html, $category)
-
-    $matches = Select-String -InputObject $html -Pattern '<a href="([^"]+)"[^>]*>([^<]+)</a>' -AllMatches
-
-    foreach ($m in $matches.Matches) {
-        $link = $m.Groups[1].Value
-        $title = $m.Groups[2].Value
-
-        if ($link -match "/kb/") {
-            Add-Item $title ("https://www.veeam.com" + $link) (Get-Date).ToString("R") "Veeam Security Advisory" $category
-        }
-    }
-}
-
-# -----------------------------
-# HTML SCRAPER: PRODUCT UPDATES
-# -----------------------------
-function Scrape-Updates {
-    param($html, $category)
-
-    $matches = Select-String -InputObject $html -Pattern '<a href="([^"]+)"[^>]*>([^<]+)</a>' -AllMatches
-
-    foreach ($m in $matches.Matches) {
-        $link = $m.Groups[1].Value
-        $title = $m.Groups[2].Value
-
-        if ($link -match "/kb/") {
-            Add-Item $title ("https://www.veeam.com" + $link) (Get-Date).ToString("R") "Veeam Product Update" $category
-        }
-    }
-}
-
-# -----------------------------
-# REDDIT JSON PARSER
-# -----------------------------
-function Parse-RedditJson {
-    param($json, $category)
-
-    foreach ($post in $json.data.children) {
-        $d = $post.data
-        Add-Item `
-            $d.title `
-            ("https://reddit.com" + $d.permalink) `
-            ([DateTimeOffset]::FromUnixTimeSeconds($d.created_utc).UtcDateTime.ToString("R")) `
-            "Reddit /r/Veeam" `
-            $category
     }
 }
 
@@ -116,41 +54,13 @@ foreach ($feed in $feeds) {
     try {
         $headers = @{
             "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-            "Accept"     = "text/xml,application/xml,application/json,text/html"
+            "Accept"     = "text/xml,application/xml"
         }
 
         $response = Invoke-WebRequest -Uri $feed.url -Headers $headers -ErrorAction Stop
+        $xml = [xml]$response.Content
 
-        switch ($feed.type) {
-
-            "rss" {
-                $xml = [xml]$response.Content
-                Parse-Rss -xml $xml -category $feed.category
-            }
-
-            "reddit-json" {
-                $json = $response.Content | ConvertFrom-Json
-                Parse-RedditJson -json $json -category $feed.category
-            }
-
-            "html-advisory" {
-                Scrape-Advisories -html $response.Content -category $feed.category
-            }
-
-            "html-updates" {
-                Scrape-Updates -html $response.Content -category $feed.category
-            }
-
-            "rss-or-html" {
-                if ($response.Content.TrimStart().StartsWith("<html")) {
-                    Scrape-Updates -html $response.Content -category $feed.category
-                }
-                else {
-                    $xml = [xml]$response.Content
-                    Parse-Rss -xml $xml -category $feed.category
-                }
-            }
-        }
+        Parse-Rss -xml $xml -category $feed.category -source $feed.source
     }
     catch {
         Write-Host "ERROR fetching $($feed.url)"
@@ -162,6 +72,18 @@ foreach ($feed in $feeds) {
             Write-Host "StatusCode: $($_.Exception.Response.StatusCode.value__)"
             Write-Host "StatusDescription: $($_.Exception.Response.StatusDescription)"
         }
+    }
+}
+
+# -----------------------------
+# SEVERITY TAGGING FOR ADVISORIES
+# -----------------------------
+foreach ($i in $global:items) {
+    if ($i.category -eq "advisory") {
+        if ($i.title -match "Critical") { $i.severity = "critical" }
+        elseif ($i.title -match "High") { $i.severity = "high" }
+        elseif ($i.title -match "Medium") { $i.severity = "medium" }
+        else { $i.severity = "low" }
     }
 }
 
