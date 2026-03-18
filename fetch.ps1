@@ -51,8 +51,10 @@ function Parse-Rss {
         # TITLE
         $title = $n.SelectSingleNode("*[local-name()='title']")?.InnerText
 
-        # LINK
+        # LINK (RSS or ATOM)
         $link = $n.SelectSingleNode("link")?.InnerText
+
+        # ATOM <link href="...">
         if (-not $link) {
             $linkNode = $n.SelectSingleNode("*[local-name()='link'][@href]")
             if ($linkNode) {
