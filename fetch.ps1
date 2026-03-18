@@ -3,16 +3,22 @@ Write-Host "Starting Veeam feed fetch..."
 $global:items = @()
 
 # -----------------------------
-# REAL, VERIFIED VEEAM FEEDS
+# FEED DEFINITIONS
 # -----------------------------
 $feeds = @(
-    @{ url="https://www.veeam.com/blog/feed"; category="blog"; source="Veeam Blog" },
-    @{ url="https://www.veeam.com/kb_rss2.xml"; category="kb"; source="Veeam KB" },
-    @{ url="https://www.veeam.com/kb_rss2_security.xml"; category="advisory"; source="Veeam Security Advisory" }
+    @{ url="https://www.veeam.com/blog/feed"; category="blog"; type="rss" },
+    @{ url="https://www.veeam.com/kb_rss2.xml"; category="kb"; type="rss" },
+    @{ url="https://www.veeam.com/kb_rss2_security.xml"; category="advisory"; type="rss" },
+
+    # Jorge feed (RSS or HTML fallback)
+    @{ url="https://www.jorgedelacruz.es/feed/"; category="community"; type="rss-or-html" },
+
+    # Reddit JSON API
+    @{ url="https://www.reddit.com/r/Veeam.json"; category="community"; type="reddit-json" }
 )
 
 # -----------------------------
-# ADD ITEM HELPER
+# ADD ITEM
 # -----------------------------
 function Add-Item {
     param($title, $link, $date, $source, $category, $severity="")
@@ -27,34 +33,56 @@ function Add-Item {
 }
 
 # -----------------------------
-# FIXED RSS PARSER
+# RSS PARSER
 # -----------------------------
 function Parse-Rss {
-    param($xml, $category, $source)
+    param($xml, $category)
 
     $nodes = $xml.SelectNodes("//item")
     if ($nodes) {
         foreach ($n in $nodes) {
-
-            # Title
-            $title = $n.title
-            if (-not $title) { $title = $n.SelectSingleNode("title")?.InnerText }
-
-            # Link
-            $link = $n.link
-            if (-not $link) { $link = $n.SelectSingleNode("link")?.InnerText }
-
-            # Date (multiple formats)
-            $date = $n.pubDate
-            if (-not $date) { $date = $n.SelectSingleNode("pubDate")?.InnerText }
-            if (-not $date) { $date = $n.SelectSingleNode("dc:date")?.InnerText }
-            if (-not $date) { $date = $n.SelectSingleNode("updated")?.InnerText }
-
-            # Normalize date
-            try { $date = (Get-Date $date).ToString("yyyy-MM-ddTHH:mm:ssZ") } catch {}
-
-            Add-Item $title $link $date $source $category
+            Add-Item `
+                $n.title `
+                $n.link `
+                $n.pubDate `
+                ($xml.SelectSingleNode("//channel/title")?.InnerText) `
+                $category
         }
+    }
+}
+
+# -----------------------------
+# HTML SCRAPER (Jorge fallback)
+# -----------------------------
+function Scrape-Jorge {
+    param($html, $category)
+
+    $matches = Select-String -InputObject $html -Pattern '<a href="([^"]+)"[^>]*>([^<]+)</a>' -AllMatches
+
+    foreach ($m in $matches.Matches) {
+        $link = $m.Groups[1].Value
+        $title = $m.Groups[2].Value
+
+        if ($link -match "^https://www.jorgedelacruz.es") {
+            Add-Item $title $link (Get-Date).ToString("R") "Jorge de la Cruz" $category
+        }
+    }
+}
+
+# -----------------------------
+# REDDIT JSON PARSER
+# -----------------------------
+function Parse-RedditJson {
+    param($json, $category)
+
+    foreach ($post in $json.data.children) {
+        $d = $post.data
+        Add-Item `
+            $d.title `
+            ("https://reddit.com" + $d.permalink) `
+            ([DateTimeOffset]::FromUnixTimeSeconds($d.created_utc).UtcDateTime.ToString("R")) `
+            "Reddit /r/Veeam" `
+            $category
     }
 }
 
@@ -67,13 +95,33 @@ foreach ($feed in $feeds) {
     try {
         $headers = @{
             "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-            "Accept"     = "text/xml,application/xml"
+            "Accept"     = "text/xml,application/xml,application/json,text/html"
         }
 
         $response = Invoke-WebRequest -Uri $feed.url -Headers $headers -ErrorAction Stop
-        $xml = [xml]$response.Content
 
-        Parse-Rss -xml $xml -category $feed.category -source $feed.source
+        switch ($feed.type) {
+
+            "rss" {
+                $xml = [xml]$response.Content
+                Parse-Rss -xml $xml -category $feed.category
+            }
+
+            "reddit-json" {
+                $json = $response.Content | ConvertFrom-Json
+                Parse-RedditJson -json $json -category $feed.category
+            }
+
+            "rss-or-html" {
+                if ($response.Content.TrimStart().StartsWith("<html")) {
+                    Scrape-Jorge -html $response.Content -category $feed.category
+                }
+                else {
+                    $xml = [xml]$response.Content
+                    Parse-Rss -xml $xml -category $feed.category
+                }
+            }
+        }
     }
     catch {
         Write-Host "ERROR fetching $($feed.url)"
@@ -84,42 +132,6 @@ foreach ($feed in $feeds) {
         if ($_.Exception.Response) {
             Write-Host "StatusCode: $($_.Exception.Response.StatusCode.value__)"
             Write-Host "StatusDescription: $($_.Exception.Response.StatusDescription)"
-        }
-    }
-}
-
-# -----------------------------
-# SEVERITY TAGGING FOR ADVISORIES
-# -----------------------------
-foreach ($i in $global:items) {
-    if ($i.category -eq "advisory") {
-        if ($i.title -match "Critical") { $i.severity = "critical" }
-        elseif ($i.title -match "High") { $i.severity = "high" }
-        elseif ($i.title -match "Medium") { $i.severity = "medium" }
-        else { $i.severity = "low" }
-    }
-}
-
-# -----------------------------
-# RELEASES MAPPING
-# -----------------------------
-$releaseKeywords = "Patch","Update","Hotfix","Cumulative","Rollup","GA","RTM"
-
-foreach ($i in $global:items) {
-    if ($i.category -eq "kb") {
-        foreach ($k in $releaseKeywords) {
-            if ($i.title -match $k) {
-                # Duplicate item as a "release"
-                $global:items += [PSCustomObject]@{
-                    title    = $i.title
-                    link     = $i.link
-                    date     = $i.date
-                    source   = $i.source
-                    category = "release"
-                    severity = ""
-                }
-                break
-            }
         }
     }
 }
