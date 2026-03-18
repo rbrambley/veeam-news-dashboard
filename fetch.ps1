@@ -3,7 +3,7 @@ Write-Host "Starting Veeam feed fetch..."
 $global:items = @()
 
 # -----------------------------
-# REAL, VERIFIED VEEAM FEEDS
+# VERIFIED VEEAM FEEDS
 # -----------------------------
 $feeds = @(
     @{ url="https://www.veeam.com/blog/feed"; category="blog"; source="Veeam Blog" },
@@ -40,16 +40,11 @@ function Parse-Rss {
 
     foreach ($n in $nodes) {
 
-        # -----------------------------
         # TITLE (RSS + Atom)
-        # -----------------------------
         $title = $n.SelectSingleNode("*[local-name()='title']")?.InnerText
 
-        # -----------------------------
         # LINK (RSS <link> OR Atom <link href="...">)
-        # -----------------------------
         $link = $n.SelectSingleNode("link")?.InnerText
-
         if (-not $link) {
             $linkNode = $n.SelectSingleNode("*[local-name()='link'][@href]")
             if ($linkNode) {
@@ -57,16 +52,29 @@ function Parse-Rss {
             }
         }
 
-        # -----------------------------
         # DATE (RSS pubDate OR Atom updated/published)
-        # -----------------------------
         $date = $n.SelectSingleNode("pubDate")?.InnerText
         if (-not $date) { $date = $n.SelectSingleNode("*[local-name()='updated']")?.InnerText }
         if (-not $date) { $date = $n.SelectSingleNode("*[local-name()='published']")?.InnerText }
 
         try { $date = (Get-Date $date).ToString("R") } catch {}
 
-        Add-Item $title $link $date $source $category
+        # -----------------------------
+        # RELEASE DETECTION
+        # -----------------------------
+        $releaseKeywords = @("Patch","Update","Hotfix","Cumulative","Rollup","GA","RTM","Release Information")
+
+        $isRelease = $false
+        foreach ($kw in $releaseKeywords) {
+            if ($title -match $kw) { $isRelease = $true; break }
+        }
+
+        if ($isRelease) {
+            Add-Item $title $link $date $source "release"
+        }
+        else {
+            Add-Item $title $link $date $source $category
+        }
     }
 }
 
