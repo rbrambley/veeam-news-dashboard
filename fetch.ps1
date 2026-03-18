@@ -9,27 +9,27 @@ $feeds = @(
     @{ url="https://www.reddit.com/r/Veeam/.rss"; category="community" }
 )
 
-# Force items to always be an array
-$items = New-Object System.Collections.ArrayList
+# Always an array
+$items = @()
 
-function Add-RssItems {
+function Add-Rss {
     param($xml, $category)
     $nodes = $xml.SelectNodes("//item")
     if ($nodes) {
-        foreach ($i in $nodes) {
-            $null = $items.Add([PSCustomObject]@{
-                title     = $i.title
-                link      = $i.link
-                date      = $i.pubDate
-                source    = ($xml.SelectSingleNode("//channel/title")?.InnerText)
-                category  = $category
-                severity  = ""
-            })
+        foreach ($n in $nodes) {
+            $items += [PSCustomObject]@{
+                title    = $n.title
+                link     = $n.link
+                date     = $n.pubDate
+                source   = $xml.SelectSingleNode("//channel/title")?.InnerText
+                category = $category
+                severity = ""
+            }
         }
     }
 }
 
-function Add-AtomItems {
+function Add-Atom {
     param($xml, $category)
     $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
     $ns.AddNamespace("a", $xml.DocumentElement.NamespaceURI)
@@ -37,37 +37,31 @@ function Add-AtomItems {
     $entries = $xml.SelectNodes("//a:entry", $ns)
     if ($entries) {
         foreach ($e in $entries) {
-            $link = $e.SelectSingleNode("a:link", $ns)?.href
-            $date = $e.SelectSingleNode("a:updated", $ns)?.InnerText
-            if (-not $date) { $date = $e.SelectSingleNode("a:published", $ns)?.InnerText }
-
-            $null = $items.Add([PSCustomObject]@{
-                title     = $e.SelectSingleNode("a:title", $ns)?.InnerText
-                link      = $link
-                date      = $date
-                source    = $xml.SelectSingleNode("//a:title", $ns)?.InnerText
-                category  = $category
-                severity  = ""
-            })
+            $items += [PSCustomObject]@{
+                title    = $e.SelectSingleNode("a:title", $ns)?.InnerText
+                link     = $e.SelectSingleNode("a:link", $ns)?.href
+                date     = $e.SelectSingleNode("a:updated", $ns)?.InnerText
+                source   = $xml.SelectSingleNode("//a:title", $ns)?.InnerText
+                category = $category
+                severity = ""
+            }
         }
     }
 }
 
 function Add-VeeamCustom {
     param($xml, $category)
-
-    # Veeam custom feeds still use <item> nodes
     $nodes = $xml.SelectNodes("//item")
     if ($nodes) {
-        foreach ($i in $nodes) {
-            $null = $items.Add([PSCustomObject]@{
-                title     = $i.title
-                link      = $i.link
-                date      = $i.pubDate
-                source    = ($xml.SelectSingleNode("//channel/title")?.InnerText)
-                category  = $category
-                severity  = ""
-            })
+        foreach ($n in $nodes) {
+            $items += [PSCustomObject]@{
+                title    = $n.title
+                link     = $n.link
+                date     = $n.pubDate
+                source   = $xml.SelectSingleNode("//channel/title")?.InnerText
+                category = $category
+                severity = ""
+            }
         }
     }
 }
@@ -78,35 +72,32 @@ foreach ($feed in $feeds) {
         $response = Invoke-WebRequest -Uri $feed.url -Headers @{ "User-Agent" = "Mozilla/5.0" }
         $xml = [xml]$response.Content
 
-        if ($xml.rss) {
-            Add-RssItems -xml $xml -category $feed.category
-        }
-        elseif ($xml.feed) {
-            Add-AtomItems -xml $xml -category $feed.category
-        }
-        else {
-            Add-VeeamCustom -xml $xml -category $feed.category
-        }
+        if ($xml.rss) { Add-Rss -xml $xml -category $feed.category }
+        elseif ($xml.feed) { Add-Atom -xml $xml -category $feed.category }
+        else { Add-VeeamCustom -xml $xml -category $feed.category }
     }
     catch {
         Write-Host "ERROR fetching $($feed.url)"
     }
 }
 
+# Timestamp
 $timestamp = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
 
-foreach ($item in $items) {
-    if ($item.category -eq "advisory") {
-        if ($item.title -match "Critical") { $item.severity = "critical" }
-        elseif ($item.title -match "High") { $item.severity = "high" }
-        elseif ($item.title -match "Medium") { $item.severity = "medium" }
-        else { $item.severity = "low" }
+# Severity for advisories
+foreach ($i in $items) {
+    if ($i.category -eq "advisory") {
+        if ($i.title -match "Critical") { $i.severity = "critical" }
+        elseif ($i.title -match "High") { $i.severity = "high" }
+        elseif ($i.title -match "Medium") { $i.severity = "medium" }
+        else { $i.severity = "low" }
     }
 }
 
+# Final JSON (never null)
 $final = [PSCustomObject]@{
     lastUpdated = $timestamp
-    items       = @($items | Sort-Object date -Descending)
+    items       = @($items)
 }
 
 $final | ConvertTo-Json -Depth 10 | Out-File "news.json"
