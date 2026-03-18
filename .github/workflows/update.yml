@@ -1,0 +1,24 @@
+name: Update Veeam News
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # runs daily at 6 AM UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run PowerShell
+        shell: pwsh
+        run: ./fetch.ps1
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add news.json
+          git commit -m "Daily update" || echo "No changes"
+          git push
