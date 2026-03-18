@@ -1,7 +1,7 @@
 Write-Host "Starting Veeam feed fetch..."
 
 $global:items = @()
-$global:seenLinks = @{}
+$global:seenKeys = @{}
 
 # -----------------------------
 # VERIFIED VEEAM FEEDS
@@ -13,16 +13,20 @@ $feeds = @(
 )
 
 # -----------------------------
-# ADD ITEM (DEDUPED)
+# ADD ITEM (DEDUPED PER LINK+CATEGORY)
 # -----------------------------
 function Add-Item {
     param($title, $link, $date, $source, $category, $severity="")
 
-    if ($global:seenLinks.ContainsKey($link)) {
+    # Allow same link in different categories (KB + Advisory),
+    # but no duplicates within the same category.
+    $key = "$link|$category"
+
+    if ($global:seenKeys.ContainsKey($key)) {
         return
     }
 
-    $global:seenLinks[$link] = $true
+    $global:seenKeys[$key] = $true
 
     $global:items += [PSCustomObject]@{
         title    = $title
@@ -40,21 +44,16 @@ function Add-Item {
 function Parse-Rss {
     param($xml, $category, $source)
 
-    # Register Atom namespace if present
-    $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
-    $ns.AddNamespace("atom", "http://www.w3.org/2005/Atom")
-
     # RSS <item> OR Atom <entry>
     $nodes = $xml.SelectNodes("//item")
     if (-not $nodes -or $nodes.Count -eq 0) {
-        $nodes = $xml.SelectNodes("//atom:entry", $ns)
+        $nodes = $xml.SelectNodes("//*[local-name()='entry']")
     }
 
     foreach ($n in $nodes) {
 
         # TITLE
-        $titleNode = $n.SelectSingleNode("*[local-name()='title']")
-        $title = $titleNode?.InnerText
+        $title = $n.SelectSingleNode("*[local-name()='title']")?.InnerText
 
         # LINK (RSS or ATOM)
         $link = $n.SelectSingleNode("link")?.InnerText
@@ -75,7 +74,7 @@ function Parse-Rss {
         try { $date = (Get-Date $date).ToString("R") } catch {}
 
         # -----------------------------
-        # STRICT CATEGORY RULES (Option A)
+        # STRICT CATEGORY RULES (R1)
         # -----------------------------
 
         # RELEASE DETECTION (KB ONLY)
