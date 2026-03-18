@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T16:20:49Z",
+  "lastUpdated": "2026-03-18T16:34:03Z",
   "items": [
     {
       "title": "Connect with Veeam at Nutanix .NEXT 2026",
@@ -54,7 +54,7 @@
       "link": "https://www.veeam.com/kb4836",
       "date": "Tue, 17 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
-      "category": "kb",
+      "category": "release",
       "severity": ""
     },
     {
@@ -62,7 +62,7 @@
       "link": "https://www.veeam.com/kb4834",
       "date": "Mon, 16 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
-      "category": "kb",
+      "category": "release",
       "severity": ""
     },
     {
@@ -70,7 +70,7 @@
       "link": "https://www.veeam.com/kb4833",
       "date": "Mon, 16 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
-      "category": "kb",
+      "category": "release",
       "severity": ""
     },
     {
@@ -110,7 +110,7 @@
       "link": "https://www.veeam.com/kb4738",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
-      "category": "kb",
+      "category": "release",
       "severity": ""
     },
     {
@@ -126,7 +126,7 @@
       "link": "https://www.veeam.com/kb4696",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam KB",
-      "category": "kb",
+      "category": "release",
       "severity": ""
     },
     {
@@ -214,24 +214,24 @@
       "link": "https://www.veeam.com/kb4836",
       "date": "Tue, 17 Mar 2026 00:00:00 GMT",
       "source": "Veeam Security Advisory",
-      "category": "advisory",
-      "severity": "low"
+      "category": "release",
+      "severity": ""
     },
     {
       "title": "How to Manually Update GPG key on Veeam Appliances",
       "link": "https://www.veeam.com/kb4834",
       "date": "Mon, 16 Mar 2026 00:00:00 GMT",
       "source": "Veeam Security Advisory",
-      "category": "advisory",
-      "severity": "low"
+      "category": "release",
+      "severity": ""
     },
     {
       "title": "How to Manually Update GPG key on Veeam Hardened Repository Appliance",
       "link": "https://www.veeam.com/kb4833",
       "date": "Mon, 16 Mar 2026 00:00:00 GMT",
       "source": "Veeam Security Advisory",
-      "category": "advisory",
-      "severity": "low"
+      "category": "release",
+      "severity": ""
     },
     {
       "title": "Migration to Unified Veeam Data Cloud FAQ",
@@ -270,8 +270,8 @@
       "link": "https://www.veeam.com/kb4738",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam Security Advisory",
-      "category": "advisory",
-      "severity": "low"
+      "category": "release",
+      "severity": ""
     },
     {
       "title": "Build Numbers and Versions of Veeam Plug-in for Proxmox VE",
@@ -286,8 +286,8 @@
       "link": "https://www.veeam.com/kb4696",
       "date": "Thu, 12 Mar 2026 00:00:00 GMT",
       "source": "Veeam Security Advisory",
-      "category": "advisory",
-      "severity": "low"
+      "category": "release",
+      "severity": ""
     },
     {
       "title": "Build Numbers and Versions of Veeam Plug-in for oVirt KVM",
