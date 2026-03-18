@@ -1,32 +1,45 @@
-[
-  {
-    "title": "Adopting the NIST AI Risk Management Framework with Veeam and Securiti AI",
-    "link": "https://www.veeam.com/blog/nist-ai-risk-management-framework-veeam-securiti-ai.html",
-    "date": "Wed, 11 Mar 2026 19:08:13 +0000",
-    "source": "Veeam Software Official Blog"
-  },
-  {
-    "title": "Why Agent Commander Changes Everything",
-    "link": "https://www.veeam.com/blog/agent-commander-ai-trust-data-resilience.html",
-    "date": "Wed, 11 Mar 2026 18:12:04 +0000",
-    "source": "Veeam Software Official Blog"
-  },
-  {
-    "title": "Connect with Veeam at Nutanix .NEXT 2026",
-    "link": "https://www.veeam.com/blog/veeam-nutanix-next-2026-data-resilience.html",
-    "date": "Tue, 17 Mar 2026 07:47:48 +0000",
-    "source": "Veeam Software Official Blog"
-  },
-  {
-    "title": "Kubernetes Data Protection Checklist: Reduce Downtime, Risk, and Backup Overhead",
-    "link": "https://www.veeam.com/blog/kubernetes-data-protection-checklist.html",
-    "date": "Mon, 16 Mar 2026 20:49:04 +0000",
-    "source": "Veeam Software Official Blog"
-  },
-  {
-    "title": "Enhancing AI Resilience with Lenovo and Veeam Kasten",
-    "link": "https://www.veeam.com/blog/lenovo-ai-factory-veeam-kasten.html",
-    "date": "Mon, 16 Mar 2026 20:35:14 +0000",
-    "source": "Veeam Software Official Blog"
-  }
-]
+{
+  "lastUpdated": "2026-03-18T12:13:36Z",
+  "items": [
+    {
+      "title": "Adopting the NIST AI Risk Management Framework with Veeam and Securiti AI",
+      "link": "https://www.veeam.com/blog/nist-ai-risk-management-framework-veeam-securiti-ai.html",
+      "date": "Wed, 11 Mar 2026 19:08:13 +0000",
+      "source": "Veeam Software Official Blog",
+      "category": "blog",
+      "severity": ""
+    },
+    {
+      "title": "Why Agent Commander Changes Everything",
+      "link": "https://www.veeam.com/blog/agent-commander-ai-trust-data-resilience.html",
+      "date": "Wed, 11 Mar 2026 18:12:04 +0000",
+      "source": "Veeam Software Official Blog",
+      "category": "blog",
+      "severity": ""
+    },
+    {
+      "title": "Connect with Veeam at Nutanix .NEXT 2026",
+      "link": "https://www.veeam.com/blog/veeam-nutanix-next-2026-data-resilience.html",
+      "date": "Tue, 17 Mar 2026 07:47:48 +0000",
+      "source": "Veeam Software Official Blog",
+      "category": "blog",
+      "severity": ""
+    },
+    {
+      "title": "Kubernetes Data Protection Checklist: Reduce Downtime, Risk, and Backup Overhead",
+      "link": "https://www.veeam.com/blog/kubernetes-data-protection-checklist.html",
+      "date": "Mon, 16 Mar 2026 20:49:04 +0000",
+      "source": "Veeam Software Official Blog",
+      "category": "blog",
+      "severity": ""
+    },
+    {
+      "title": "Enhancing AI Resilience with Lenovo and Veeam Kasten",
+      "link": "https://www.veeam.com/blog/lenovo-ai-factory-veeam-kasten.html",
+      "date": "Mon, 16 Mar 2026 20:35:14 +0000",
+      "source": "Veeam Software Official Blog",
+      "category": "blog",
+      "severity": ""
+    }
+  ]
+}
