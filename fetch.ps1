@@ -27,7 +27,7 @@ function Add-Item {
 }
 
 # -----------------------------
-# RSS PARSER
+# FIXED RSS PARSER
 # -----------------------------
 function Parse-Rss {
     param($xml, $category, $source)
@@ -35,12 +35,25 @@ function Parse-Rss {
     $nodes = $xml.SelectNodes("//item")
     if ($nodes) {
         foreach ($n in $nodes) {
-            Add-Item `
-                $n.title `
-                $n.link `
-                $n.pubDate `
-                $source `
-                $category
+
+            # Title
+            $title = $n.title
+            if (-not $title) { $title = $n.SelectSingleNode("title")?.InnerText }
+
+            # Link
+            $link = $n.link
+            if (-not $link) { $link = $n.SelectSingleNode("link")?.InnerText }
+
+            # Date (multiple formats)
+            $date = $n.pubDate
+            if (-not $date) { $date = $n.SelectSingleNode("pubDate")?.InnerText }
+            if (-not $date) { $date = $n.SelectSingleNode("dc:date")?.InnerText }
+            if (-not $date) { $date = $n.SelectSingleNode("updated")?.InnerText }
+
+            # Normalize date
+            try { $date = (Get-Date $date).ToString("R") } catch {}
+
+            Add-Item $title $link $date $source $category
         }
     }
 }
