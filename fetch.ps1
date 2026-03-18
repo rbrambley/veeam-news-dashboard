@@ -1,22 +1,27 @@
 Write-Host "Starting Veeam feed fetch..."
 
+$global:items = @()
+
 $feeds = @(
     @{ url="https://www.veeam.com/blog/feed"; category="blog" },
     @{ url="https://www.veeam.com/kb_rss2.xml"; category="kb" },
-    @{ url="https://www.veeam.com/services/veeam-security-advisories.xml"; category="advisory" },
-    @{ url="https://www.veeam.com/services/veeam-product-updates.xml"; category="release" },
-    @{ url="https://www.jorgedelacruz.es/feed/"; category="community" },
-    @{ url="https://www.reddit.com/r/Veeam/.rss"; category="community" }
-)
 
-$items = @()
+    # Updated Veeam URLs (old ones returned 404)
+    @{ url="https://www.veeam.com/services/support/security-advisories.xml"; category="advisory" },
+    @{ url="https://www.veeam.com/services/support/product-updates.xml"; category="release" },
+
+    @{ url="https://www.jorgedelacruz.es/feed/"; category="community" },
+
+    # Reddit JSON API (RSS is blocked by Cloudflare)
+    @{ url="https://www.reddit.com/r/Veeam.json"; category="community-json" }
+)
 
 function Add-Rss {
     param($xml, $category)
     $nodes = $xml.SelectNodes("//item")
     if ($nodes) {
         foreach ($n in $nodes) {
-            $items += [PSCustomObject]@{
+            $global:items += [PSCustomObject]@{
                 title    = $n.title
                 link     = $n.link
                 date     = $n.pubDate
@@ -36,7 +41,7 @@ function Add-Atom {
     $entries = $xml.SelectNodes("//a:entry", $ns)
     if ($entries) {
         foreach ($e in $entries) {
-            $items += [PSCustomObject]@{
+            $global:items += [PSCustomObject]@{
                 title    = $e.SelectSingleNode("a:title", $ns)?.InnerText
                 link     = $e.SelectSingleNode("a:link", $ns)?.href
                 date     = $e.SelectSingleNode("a:updated", $ns)?.InnerText
@@ -53,7 +58,7 @@ function Add-VeeamCustom {
     $nodes = $xml.SelectNodes("//item")
     if ($nodes) {
         foreach ($n in $nodes) {
-            $items += [PSCustomObject]@{
+            $global:items += [PSCustomObject]@{
                 title    = $n.title
                 link     = $n.link
                 date     = $n.pubDate
@@ -65,15 +70,43 @@ function Add-VeeamCustom {
     }
 }
 
+function Add-RedditJson {
+    param($json, $category)
+    foreach ($post in $json.data.children) {
+        $data = $post.data
+        $global:items += [PSCustomObject]@{
+            title    = $data.title
+            link     = "https://reddit.com" + $data.permalink
+            date     = (Get-Date -Date $data.created_utc -UFormat "%Y-%m-%dT%H:%M:%SZ")
+            source   = "Reddit /r/Veeam"
+            category = $category
+            severity = ""
+        }
+    }
+}
+
 foreach ($feed in $feeds) {
     Write-Host "Fetching $($feed.url)"
-    try {
-        $response = Invoke-WebRequest -Uri $feed.url -Headers @{ "User-Agent" = "Mozilla/5.0" }
-        $xml = [xml]$response.Content
 
-        if ($xml.rss) { Add-Rss -xml $xml -category $feed.category }
-        elseif ($xml.feed) { Add-Atom -xml $xml -category $feed.category }
-        else { Add-VeeamCustom -xml $xml -category $feed.category }
+    try {
+        $headers = @{
+            "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+            "Accept"     = "text/xml,application/xml,application/json"
+        }
+
+        $response = Invoke-WebRequest -Uri $feed.url -Headers $headers -ErrorAction Stop
+
+        if ($feed.category -eq "community-json") {
+            $json = $response.Content | ConvertFrom-Json
+            Add-RedditJson -json $json -category "community"
+        }
+        else {
+            $xml = [xml]$response.Content
+
+            if ($xml.rss) { Add-Rss -xml $xml -category $feed.category }
+            elseif ($xml.feed) { Add-Atom -xml $xml -category $feed.category }
+            else { Add-VeeamCustom -xml $xml -category $feed.category }
+        }
     }
     catch {
         Write-Host "ERROR fetching $($feed.url)"
@@ -90,7 +123,7 @@ foreach ($feed in $feeds) {
 
 $timestamp = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
 
-foreach ($i in $items) {
+foreach ($i in $global:items) {
     if ($i.category -eq "advisory") {
         if ($i.title -match "Critical") { $i.severity = "critical" }
         elseif ($i.title -match "High") { $i.severity = "high" }
@@ -101,7 +134,7 @@ foreach ($i in $items) {
 
 $final = [PSCustomObject]@{
     lastUpdated = $timestamp
-    items       = @($items)
+    items       = @($global:items)
 }
 
 $final | ConvertTo-Json -Depth 10 | Out-File "news.json"
