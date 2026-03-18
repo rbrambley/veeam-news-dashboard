@@ -31,12 +31,31 @@ function Add-AtomItems {
     param($xml, $category)
     if ($xml.feed.entry) {
         foreach ($e in $xml.feed.entry) {
-            $link = $e.link | Where-Object { $_.rel -eq $null -or $_.rel -eq "alternate" } | Select-Object -First 1
+            $link = $e.link | Where-Object { $_.href } | Select-Object -First 1
             $items += [PSCustomObject]@{
                 title     = $e.title
                 link      = $link.href
                 date      = ($e.updated, $e.published | Where-Object { $_ } | Select-Object -First 1)
                 source    = $xml.feed.title
+                category  = $category
+                severity  = ""
+            }
+        }
+    }
+}
+
+function Add-VeeamCustom {
+    param($xml, $category)
+
+    # Veeam custom feeds still contain <item> nodes, just not RSS-wrapped
+    $customItems = $xml.SelectNodes("//item")
+    if ($customItems) {
+        foreach ($i in $customItems) {
+            $items += [PSCustomObject]@{
+                title     = $i.title
+                link      = $i.link
+                date      = $i.pubDate
+                source    = ($xml.SelectSingleNode("//channel/title")?.InnerText) 
                 category  = $category
                 severity  = ""
             }
@@ -51,21 +70,19 @@ foreach ($feed in $feeds) {
         $xml = [xml]$response.Content
 
         if ($xml.rss) {
-            Write-Host "Detected RSS for $($feed.url)"
             Add-RssItems -xml $xml -category $feed.category
-        } elseif ($xml.feed) {
-            Write-Host "Detected Atom for $($feed.url)"
-            Add-AtomItems -xml $xml -category $feed.category
-        } else {
-            Write-Host "Unknown XML format for $($feed.url)"
         }
-    } catch {
+        elseif ($xml.feed) {
+            Add-AtomItems -xml $xml -category $feed.category
+        }
+        else {
+            Add-VeeamCustom -xml $xml -category $feed.category
+        }
+    }
+    catch {
         Write-Host "ERROR fetching $($feed.url)"
-        Write-Host $_
     }
 }
-
-Write-Host "Total items collected: $($items.Count)"
 
 $timestamp = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
 
