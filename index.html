@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Veeam News Dashboard</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    .card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 8px; }
+    .title { font-size: 18px; font-weight: bold; }
+    .date { color: gray; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Veeam News Dashboard</h1>
+  <div id="news"></div>
+
+  <script>
+    fetch("news.json")
+      .then(r => r.json())
+      .then(data => {
+        const container = document.getElementById("news");
+        data.forEach(item => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <div class="title"><a href="${item.link}" target="_blank">${item.title}</a></div>
+            <div class="date">${item.date}</div>
+            <div class="source">${item.source}</div>
+          `;
+          container.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>
