@@ -4,37 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veeam News Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #0D1117;
-            color: white;
+            background-color: #1d1d1d;
+            color: #ffffff;
             font-family: Arial, sans-serif;
         }
-        /* Add styles for primary blue and accent yellow */
-        .navbar {
+        .header {
             background-color: #0a7cba;
+            padding: 20px;
+            text-align: center;
+        }
+        .tabs {
+            margin: 20px 0;
+        }
+        .tab {
+            display: inline-block;
+            margin: 0 15px;
+            cursor: pointer;
             padding: 10px;
+            background-color: #0a7cba;
+            color: white;
+            border-radius: 5px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
         }
         .card {
-            background-color: #1e1e1e;
-            border: 1px solid #FBCB3E;
-            border-radius: 8px;
-            margin: 10px;
+            background-color: white;
+            color: #333;
+            border-radius: 5px;
             padding: 15px;
         }
-        .dark-mode-toggle {
-            background-color: #FBCB3E;
-            color: black;
+        .severity {
+            padding: 5px;
+            border-radius: 5px;
         }
-        /* More styling as needed for grid layout */
+        .low { background-color: #FBCB3E; }
+        .medium { background-color: #FFA500; }
+        .high { background-color: #FF3300; }
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
     </style>
-    <!-- Original scripts and styles from the original index.html -->
 </head>
 <body>
-    <div class="navbar"> <!-- Original navbar code --> </div>
-    <div class="grid-container"> <!-- Original grid layout code --> </div>
+    <div class="header">
+        <h1>Veeam News Dashboard</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+    <div class="tabs">
+        <div class="tab" onclick="filterNews('all')">All</div>
+        <div class="tab" onclick="filterNews('blog')">Blog</div>
+        <div class="tab" onclick="filterNews('kb')">KB</div>
+        <div class="tab" onclick="filterNews('advisories')">Advisories</div>
+        <div class="tab" onclick="filterNews('releases')">Releases</div>
+        <div class="tab" onclick="filterNews('community')">Community</div>
+    </div>
+    <div id="newsContainer" class="grid"></div>
+
     <script>
-        // Original JavaScript functionalities for tabs, fetching news.json, etc.
+        let isDarkMode = false;
+
+        document.getElementById('darkModeToggle').addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('dark-mode', isDarkMode);
+        });
+
+        function fetchNews() {
+            fetch('news.json')
+                .then(response => response.json())
+                .then(data => displayNews(data));
+        }
+
+        function displayNews(newsItems) {
+            const container = document.getElementById('newsContainer');
+            container.innerHTML = '';
+            newsItems.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
+                    <span class="severity ${item.severity.toLowerCase()}">${item.severity}</span>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function filterNews(category) {
+            fetch('news.json')
+                .then(response => response.json())
+                .then(data => {
+                    const filteredNews = category === 'all' ? data : data.filter(item => item.category === category);
+                    displayNews(filteredNews);
+                });
+        }
+
+        fetchNews();
     </script>
 </body>
 </html>
