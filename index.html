@@ -1,50 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Veeam News Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
+            background-color: #0D1117; /* Dark background for dark mode */
+            color: #C9D1D9; /* Light text color */
             font-family: Arial, sans-serif;
-            background-color: #0b1938; /* Dark blue */
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
         }
-        header {
-            background-color: #0073e6; /* Veeam blue */
-            padding: 1rem;
-            text-align: center;
+        h1, h2, h3 {
+            color: #FBCB3E; /* Veeam corporate yellow color */
         }
-        h1 {
-            color: #ffffff;
+        .news-container {
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #FBCB3E; /* Yellow border */
+            border-radius: 8px;
+            background-color: #161B22; /* Slightly lighter dark background */
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 2rem;
+        .filter {
+            margin-bottom: 10px;
         }
-        footer {
-            background-color: #0073e6;
-            text-align: center;
-            padding: 1rem;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+        .dark-toggle {
+            display: inline-block;
+            margin: 10px;
+        }
+        .dark-mode {
+            background-color: #0D1117;
+            color: #C9D1D9;
+        }
+        .light-mode {
+            background-color: #FFFFFF;
+            color: #000;
         }
     </style>
 </head>
-<body>
+<body class="dark-mode">
     <header>
         <h1>Veeam News Dashboard</h1>
+        <button class="dark-toggle">Toggle Dark Mode</button>
     </header>
-    <div class="container">
-        <p>Welcome to the Veeam News Dashboard!</p>
-        <p>Stay updated with the latest news and announcements.</p>
+    <div class="filter">
+        <label for="category">Filter by Category:</label>
+        <select id="category" name="category">
+            <option value="all">All</option>
+            <option value="updates">Updates</option>
+            <option value="events">Events</option>
+            <option value="blogs">Blogs</option>
+        </select>
     </div>
-    <footer>
-        <p>&copy; 2026 Veeam Software. All rights reserved.</p>
-    </footer>
+    <div class="news-container" id="news-container">
+        <!-- News items will be dynamically inserted here -->
+    </div>
+    <script>
+        document.querySelector('.dark-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Functionality for displaying news, filtering by category can be added here
+        function fetchNews() {
+            // Dummy data for illustrating functionality
+            const newsItems = [
+                { title: 'Veeam Software Update', category: 'updates' },
+                { title: 'Upcoming Event', category: 'events' },
+                { title: 'New Blog Post', category: 'blogs' }
+            ];
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+            newsItems.forEach(item => {
+                container.innerHTML += `<div>${item.title} (Category: ${item.category})</div>`;
+            });
+        }
+        fetchNews();
+    </script>
 </body>
 </html>
