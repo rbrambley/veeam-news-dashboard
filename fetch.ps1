@@ -36,7 +36,7 @@ $feeds = @(
     @{ Url="https://petri.com/feed/";
        Category="news";      Source="Petri";            FilterVeeam=$true }
 
-    @{ Url="https://www.techtarget.com/searchdatabackup/rss/StorageEfficiency.xml";
+    @{ Url="https://www.techtarget.com/searchdatabackup/rss/news/";
        Category="news";      Source="TechTarget";       FilterVeeam=$true }
 
     # ─── Community & Aggregated ───────────────────────────────────────────────
