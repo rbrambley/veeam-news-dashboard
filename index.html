@@ -1,7 +1,540 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veeam News Dashboard</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:   #00b336;
+      --blue:    #0a7cba;
+      --bg:      #f0f2f5;
+      --surface: #ffffff;
+      --surface2:#f4f6f9;
+      --border:  #dde1e7;
+      --text:    #111827;
+      --muted:   #6b7280;
+      --shadow:  0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+      --shadow-hover: 0 6px 20px rgba(0,0,0,0.12);
+      --radius:  10px;
+    }
+    body.dark {
+      --bg:      #0e1117;
+      --surface: #161b22;
+      --surface2:#1c2128;
+      --border:  #30363d;
+      --text:    #e6edf3;
+      --muted:   #8b949e;
+      --shadow:  0 1px 3px rgba(0,0,0,0.3);
+      --shadow-hover: 0 6px 20px rgba(0,0,0,0.5);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    /* ── Header ────────────────────────────────────────────────────────────── */
+    .header {
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b3f6b 100%);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.4);
+    }
+    .header-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo-badge {
+      width: 38px; height: 38px;
+      background: var(--green);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 22px; flex-shrink: 0;
+    }
+    .logo-text strong { font-size: 17px; display: block; line-height: 1.2; }
+    .logo-text small  { font-size: 11px; opacity: 0.6; }
+
+    .search-box {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 8px;
+      padding: 7px 12px;
+      flex: 1; max-width: 380px;
+    }
+    .search-box svg { flex-shrink: 0; opacity: 0.5; }
+    .search-box input {
+      background: transparent; border: none; outline: none;
+      color: #fff; font-size: 14px; width: 100%; min-width: 0;
+    }
+    .search-box input::placeholder { color: rgba(255,255,255,0.45); }
+
+    .header-actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+    #updated { font-size: 12px; opacity: 0.6; white-space: nowrap; }
+    .icon-btn {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #fff; border-radius: 7px;
+      padding: 6px 10px; cursor: pointer; font-size: 15px;
+      line-height: 1; transition: background 0.15s;
+    }
+    .icon-btn:hover { background: rgba(255,255,255,0.22); }
+
+    /* ── Controls (tabs + source chips) ────────────────────────────────────── */
+    .controls {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 63px;
+      z-index: 100;
+    }
+    .controls-inner { max-width: 1440px; margin: 0 auto; padding: 0 24px; }
+
+    .tabs {
+      display: flex; gap: 2px;
+      overflow-x: auto; scrollbar-width: none;
+      padding: 10px 0 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .tabs::-webkit-scrollbar { display: none; }
+    .tab {
+      display: flex; align-items: center; gap: 6px;
+      padding: 8px 14px;
+      cursor: pointer; font-size: 13px; font-weight: 500;
+      white-space: nowrap; color: var(--muted);
+      border-radius: 6px 6px 0 0;
+      border: 1px solid transparent; border-bottom: none;
+      margin-bottom: -1px;
+      transition: color 0.15s, background 0.15s;
+      user-select: none;
+    }
+    .tab:hover { color: var(--text); background: var(--surface2); }
+    .tab.active {
+      color: var(--blue); background: var(--surface);
+      border-color: var(--border); border-bottom-color: var(--surface);
+    }
+    .tab-count {
+      background: var(--border); color: var(--muted);
+      font-size: 11px; font-weight: 600;
+      padding: 1px 6px; border-radius: 8px;
+      min-width: 20px; text-align: center;
+    }
+    .tab.active .tab-count { background: rgba(10,124,186,0.12); color: var(--blue); }
+
+    .source-bar {
+      display: flex; align-items: center;
+      flex-wrap: wrap; gap: 6px;
+      padding: 9px 0 10px;
+    }
+    .source-label { font-size: 12px; color: var(--muted); font-weight: 500; margin-right: 2px; }
+    .source-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 10px 3px 7px;
+      border-radius: 14px; font-size: 12px; font-weight: 500;
+      cursor: pointer; border: 1.5px solid;
+      transition: opacity 0.18s, filter 0.18s;
+      user-select: none; white-space: nowrap; color: #fff;
+    }
+    .source-chip.hidden { opacity: 0.3; filter: grayscale(0.7); }
+    .source-chip .chip-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: rgba(255,255,255,0.55); flex-shrink: 0;
+    }
+
+    /* ── Main ───────────────────────────────────────────────────────────────── */
+    .main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 48px; }
+    #resultsInfo { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    /* ── Card ───────────────────────────────────────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      box-shadow: var(--shadow);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+    .card-stripe { height: 4px; flex-shrink: 0; }
+    .card-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+
+    .card-row { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+
+    .badge {
+      display: inline-block; font-size: 11px; font-weight: 600;
+      padding: 2px 8px; border-radius: 4px; line-height: 1.4; white-space: nowrap;
+    }
+    .badge-source { color: #fff; }
+    .badge-new { background: var(--green); color: #fff; text-transform: uppercase; letter-spacing: 0.3px; }
+    .badge-sev { color: #fff; text-transform: uppercase; }
+    .sev-critical { background: #c0392b; }
+    .sev-high     { background: #e67e22; }
+    .sev-medium   { background: #f39c12; }
+    .sev-low      { background: #27ae60; }
+
+    .card-date { margin-left: auto; font-size: 11px; color: var(--muted); white-space: nowrap; }
+
+    .card-title { font-size: 14px; font-weight: 600; line-height: 1.45; }
+    .card-title a { color: var(--text); text-decoration: none; }
+    .card-title a:hover { color: var(--blue); text-decoration: underline; }
+
+    .card-desc {
+      font-size: 12.5px; color: var(--muted); line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ── Empty state ────────────────────────────────────────────────────────── */
+    .empty { grid-column: 1/-1; text-align: center; padding: 64px 20px; color: var(--muted); }
+    .empty-icon { font-size: 40px; margin-bottom: 12px; }
+    .empty h3 { font-size: 17px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+    .empty p  { font-size: 14px; }
+    .empty code {
+      display: inline-block; margin-top: 8px;
+      background: var(--surface2); border: 1px solid var(--border);
+      padding: 2px 8px; border-radius: 4px; font-size: 13px; color: var(--text);
+    }
+
+    /* ── Responsive ─────────────────────────────────────────────────────────── */
+    @media (max-width: 680px) {
+      .header-inner { padding: 10px 14px; }
+      .search-box   { max-width: 100%; order: 3; width: 100%; }
+      .controls-inner, .main { padding-left: 14px; padding-right: 14px; }
+      .grid { grid-template-columns: 1fr; }
+      #updated { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────────────────── -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-badge">V</div>
+      <div class="logo-text">
+        <strong>Veeam News Dashboard</strong>
+        <small>Community Aggregator</small>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input id="search" type="text" placeholder="Search articles, sources…" autocomplete="off">
+    </div>
+
+    <div class="header-actions">
+      <span id="updated"></span>
+      <button class="icon-btn" id="darkToggle" title="Toggle dark mode">🌙</button>
+    </div>
+  </div>
+</header>
+
+<!-- ── Tabs + Source Filters ──────────────────────────────────────────────── -->
+<div class="controls">
+  <div class="controls-inner">
+    <div class="tabs" id="tabs">
+      <div class="tab active" data-cat="all">All <span class="tab-count">0</span></div>
+      <div class="tab" data-cat="blog">Blog <span class="tab-count">0</span></div>
+      <div class="tab" data-cat="kb">KB Articles <span class="tab-count">0</span></div>
+      <div class="tab" data-cat="advisory">Advisories <span class="tab-count">0</span></div>
+      <div class="tab" data-cat="release">Releases <span class="tab-count">0</span></div>
+      <div class="tab" data-cat="news">Tech News <span class="tab-count">0</span></div>
+      <div class="tab" data-cat="community">Community <span class="tab-count">0</span></div>
+    </div>
+    <div class="source-bar" id="sourceBar">
+      <span class="source-label">Sources:</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Article Grid ───────────────────────────────────────────────────────── -->
+<main class="main">
+  <div id="resultsInfo"></div>
+  <div id="grid" class="grid">
+    <div class="empty">
+      <div class="empty-icon">⏳</div>
+      <h3>Loading articles…</h3>
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  // ── State ──────────────────────────────────────────────────────────────────
+  let allData       = null;
+  let activeCategory = 'all';
+  const hiddenSources = new Set();
+  const NOW_MS      = Date.now();
+  const TWO_DAYS_MS = 48 * 3600 * 1000;
+
+  // Source colour map – unknown sources fall back to a neutral slate
+  const SOURCE_COLORS = {
+    'Veeam Blog':      '#00b336',
+    'Veeam KB':        '#0a7cba',
+    'Veeam Security':  '#c0392b',
+    'BleepingComputer':'#e67e22',
+    'The Register':    '#cc0000',
+    'StorageReview':   '#8e44ad',
+    'Petri':           '#0097a7',
+    'TechTarget':      '#1565c0',
+    'Google News':     '#4285f4',
+    'Reddit r/Veeam':  '#ff4500',
+    'Veeam Forums':    '#00838f',
+  };
+  function srcColor(src) { return SOURCE_COLORS[src] || '#607d8b'; }
+
+  // ── Security helpers ───────────────────────────────────────────────────────
+  function esc(str) {
+    return String(str || '')
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function safeHref(url) {
+    try {
+      const u = new URL(url);
+      if (u.protocol === 'https:' || u.protocol === 'http:') return url;
+    } catch (e) { /* fall through */ }
+    return '#';
+  }
+
+  // ── Date display ───────────────────────────────────────────────────────────
+  function relDate(dateStr) {
+    const delta = NOW_MS - new Date(dateStr).getTime();
+    if (isNaN(delta)) return '';
+    const mins = Math.floor(delta / 60000);
+    if (mins < 60) return mins + 'm ago';
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return hrs + 'h ago';
+    const days = Math.floor(hrs / 24);
+    if (days < 30) return days + 'd ago';
+    return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+
+  // ── Source chip management ─────────────────────────────────────────────────
+  function buildSourceChips(items) {
+    const bar = document.getElementById('sourceBar');
+    while (bar.children.length > 1) bar.removeChild(bar.lastChild);
+
+    const sources = [...new Set(items.map(i => i.source))].sort();
+    sources.forEach(function (src) {
+      const col  = srcColor(src);
+      const chip = document.createElement('div');
+      chip.className = 'source-chip';
+      chip.dataset.source = src;
+      chip.style.cssText = 'background:' + col + ';border-color:' + col;
+      chip.innerHTML = '<span class="chip-dot"></span>' + esc(src);
+      chip.addEventListener('click', function () { toggleSource(src); });
+      bar.appendChild(chip);
+    });
+  }
+
+  function toggleSource(src) {
+    const chip = document.querySelector('.source-chip[data-source="' + CSS.escape(src) + '"]');
+    if (hiddenSources.has(src)) {
+      hiddenSources.delete(src);
+      if (chip) chip.classList.remove('hidden');
+    } else {
+      hiddenSources.add(src);
+      if (chip) chip.classList.add('hidden');
+    }
+    applyFilters();
+  }
+
+  // ── Tab counts ─────────────────────────────────────────────────────────────
+  function updateCounts(items) {
+    const cats = { all: 0 };
+    items.forEach(function (i) {
+      cats.all++;
+      cats[i.category] = (cats[i.category] || 0) + 1;
+    });
+    document.querySelectorAll('.tab').forEach(function (t) {
+      t.querySelector('.tab-count').textContent = cats[t.dataset.cat] || 0;
+    });
+  }
+
+  // ── Filter + Render ────────────────────────────────────────────────────────
+  function applyFilters() {
+    if (!allData) return;
+    const q = document.getElementById('search').value.toLowerCase().trim();
+
+    function matchesSearch(it) {
+      if (!q) return true;
+      return (it.title + ' ' + (it.description || '') + ' ' + it.source)
+        .toLowerCase().indexOf(q) !== -1;
+    }
+
+    const visible = allData.items.filter(function (it) {
+      if (activeCategory !== 'all' && it.category !== activeCategory) return false;
+      if (hiddenSources.has(it.source)) return false;
+      return matchesSearch(it);
+    });
+
+    // Counts reflect source-filter + search but not the active category tab
+    const forCounts = allData.items.filter(function (it) {
+      if (hiddenSources.has(it.source)) return false;
+      return matchesSearch(it);
+    });
+    updateCounts(forCounts);
+
+    renderGrid(visible);
+
+    const total = allData.items.length;
+    document.getElementById('resultsInfo').textContent =
+      visible.length === total
+        ? total + ' articles'
+        : visible.length + ' of ' + total + ' articles';
+  }
+
+  function renderGrid(items) {
+    const grid = document.getElementById('grid');
+
+    if (items.length === 0) {
+      grid.innerHTML =
+        '<div class="empty">' +
+        '<div class="empty-icon">🔍</div>' +
+        '<h3>No articles found</h3>' +
+        '<p>Try clearing filters or broadening your search.</p>' +
+        '</div>';
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+    items.forEach(function (it) {
+      const col    = srcColor(it.source);
+      const absDate = new Date(it.date).toLocaleString('en-US',
+        { dateStyle: 'medium', timeStyle: 'short' });
+      const isNew  = (NOW_MS - new Date(it.date).getTime()) < TWO_DAYS_MS;
+
+      let badges = '<span class="badge badge-source" style="background:' + col + '">' + esc(it.source) + '</span>';
+      if (isNew)       badges += ' <span class="badge badge-new">New</span>';
+      if (it.severity) badges += ' <span class="badge badge-sev sev-' + esc(it.severity) + '">' + esc(it.severity) + '</span>';
+
+      const descDiv = it.description
+        ? '<div class="card-desc">' + esc(it.description) + '</div>'
+        : '';
+
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML =
+        '<div class="card-stripe" style="background:' + col + '"></div>' +
+        '<div class="card-body">' +
+          '<div class="card-row">' + badges +
+            '<span class="card-date" title="' + esc(absDate) + '">' + relDate(it.date) + '</span>' +
+          '</div>' +
+          '<div class="card-title">' +
+            '<a href="' + esc(safeHref(it.link)) + '" target="_blank" rel="noopener noreferrer">' +
+              esc(it.title) +
+            '</a>' +
+          '</div>' +
+          descDiv +
+        '</div>';
+
+      frag.appendChild(card);
+    });
+
+    grid.innerHTML = '';
+    grid.appendChild(frag);
+  }
+
+  // ── Tab clicks ─────────────────────────────────────────────────────────────
+  document.querySelectorAll('.tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(function (t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      activeCategory = tab.dataset.cat;
+      applyFilters();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // ── Search with debounce ───────────────────────────────────────────────────
+  var searchTimer;
+  document.getElementById('search').addEventListener('input', function () {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(applyFilters, 150);
+  });
+
+  // ── Dark mode (persisted) ──────────────────────────────────────────────────
+  var dark = localStorage.getItem('veeam-dark') !== null
+    ? localStorage.getItem('veeam-dark') === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  function applyDark() {
+    document.body.classList.toggle('dark', dark);
+    document.getElementById('darkToggle').textContent = dark ? '☀️' : '🌙';
+    localStorage.setItem('veeam-dark', dark);
+  }
+  applyDark();
+
+  document.getElementById('darkToggle').addEventListener('click', function () {
+    dark = !dark;
+    applyDark();
+  });
+
+  // ── Load news.json ─────────────────────────────────────────────────────────
+  fetch('news.json')
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function (json) {
+      allData = json;
+      var d = new Date(json.lastUpdated);
+      document.getElementById('updated').textContent =
+        'Updated ' + (isNaN(d) ? json.lastUpdated
+          : d.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }));
+      buildSourceChips(json.items);
+      applyFilters();
+    })
+    .catch(function () {
+      document.getElementById('grid').innerHTML =
+        '<div class="empty">' +
+        '<div class="empty-icon">⚠️</div>' +
+        '<h3>Could not load articles</h3>' +
+        '<p>Run <code>fetch.ps1</code> to generate the news data, then open this page again.</p>' +
+        '</div>';
+    });
+
+}());
+</script>
+</body>
+</html>
   <style>
     body { font-family: Arial; margin: 0; padding: 0; background: #f4f4f4; }
     header { background: #0a7cba; color: white; padding: 20px; }
