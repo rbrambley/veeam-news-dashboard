@@ -5,6 +5,7 @@
 # Run manually or schedule as a recurring task to keep the dashboard fresh.
 
 $ErrorActionPreference = "Continue"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $outputFile  = Join-Path $PSScriptRoot "news.json"
 $maxPerFeed  = 25        # maximum articles to import per feed
 $maxAgeDays  = 90        # ignore articles older than this
@@ -102,7 +103,7 @@ $seen     = [System.Collections.Generic.HashSet[string]]::new(
                 [System.StringComparer]::OrdinalIgnoreCase)
 $cutoff   = (Get-Date).AddDays(-$maxAgeDays).ToUniversalTime()
 $headers  = @{
-    "User-Agent" = "VeeamNewsDashboard/2.0 (+https://github.com/rbrambley/veeam-news-dashboard)"
+    "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 }
 
 foreach ($feed in $feeds) {
