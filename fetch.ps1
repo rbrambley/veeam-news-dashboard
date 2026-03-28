@@ -23,11 +23,11 @@ $feeds = @(
     # Resolve-Category automatically classifies CVE/vulnerability KB entries as 'advisory'.
 
     # ─── Popular Tech News Outlets ────────────────────────────────────────────
-    @{ Url="https://www.bleepingcomputer.com/tag/veeam/feed/";
-       Category="news";      Source="BleepingComputer"; FilterVeeam=$false }
+    @{ Url="https://www.bleepingcomputer.com/feed/";
+       Category="news";      Source="BleepingComputer"; FilterVeeam=$true }
 
-    @{ Url="https://www.theregister.com/tag/veeam/feed.atom";
-       Category="news";      Source="The Register";     FilterVeeam=$false }
+    @{ Url="https://www.theregister.com/headlines.atom";
+       Category="news";      Source="The Register";     FilterVeeam=$true }
 
     @{ Url="https://www.storagereview.com/feed";
        Category="news";      Source="StorageReview";    FilterVeeam=$true }
@@ -35,7 +35,7 @@ $feeds = @(
     @{ Url="https://petri.com/feed/";
        Category="news";      Source="Petri";            FilterVeeam=$true }
 
-    @{ Url="https://searchdatabackup.techtarget.com/rss/SearchDataBackupRSS.xml";
+    @{ Url="https://www.techtarget.com/searchdatabackup/rss/StorageEfficiency.xml";
        Category="news";      Source="TechTarget";       FilterVeeam=$true }
 
     # ─── Community & Aggregated ───────────────────────────────────────────────
@@ -45,7 +45,7 @@ $feeds = @(
     @{ Url="https://www.reddit.com/r/Veeam/.rss";
        Category="community"; Source="Reddit r/Veeam";  FilterVeeam=$false }
 
-    @{ Url="https://forums.veeam.com/feed.php?t=&f=&mode=topics";
+    @{ Url="https://forums.veeam.com/feed.php";
        Category="community"; Source="Veeam Forums";    FilterVeeam=$false }
 )
 
