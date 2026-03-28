@@ -17,11 +17,10 @@ $feeds = @(
     @{ Url="https://www.veeam.com/blog/feed/";
        Category="blog";      Source="Veeam Blog";      FilterVeeam=$false }
 
-    @{ Url="https://www.veeam.com/services/rss/en_US/kb_articles.xml";
+    @{ Url="https://www.veeam.com/kb_rss.xml";
        Category="kb";        Source="Veeam KB";        FilterVeeam=$false }
-
-    @{ Url="https://www.veeam.com/services/rss/en_US/security_advisories.xml";
-       Category="advisory";  Source="Veeam Security";  FilterVeeam=$false }
+    # Note: Veeam security advisories are published as KB articles.
+    # Resolve-Category automatically classifies CVE/vulnerability KB entries as 'advisory'.
 
     # ─── Popular Tech News Outlets ────────────────────────────────────────────
     @{ Url="https://www.bleepingcomputer.com/tag/veeam/feed/";
@@ -126,22 +125,22 @@ foreach ($feed in $feeds) {
 
             # ── Normalise RSS vs Atom fields ───────────────────────────────────
             if ($xml.rss) {
-                $title   = [string]$ri.title
+                $title   = if ($ri.title -is [string]) { $ri.title } else { $ri.title.InnerText }
                 $link    = if ($ri.link -is [string] -and $ri.link) { $ri.link } `
                            else { [string]$ri.guid }
                 $dateRaw = [string]$ri.pubDate
-                $descRaw = [string]$ri.description
+                $descRaw = if ($ri.description -is [string]) { $ri.description } else { $ri.description.InnerText }
             } else {
                 $title   = if ($ri.title -is [string]) { $ri.title } `
-                           else { [string]$ri.title.'#text' }
+                           else { $ri.title.InnerText }
                 $linkEl  = @($ri.link) | Where-Object { -not $_.rel -or $_.rel -eq 'alternate' } |
                            Select-Object -First 1
                 $link    = if ($linkEl) { [string]$linkEl.href } else { [string]$ri.id }
                 $dateRaw = if ($ri.published) { [string]$ri.published } `
                            else { [string]$ri.updated }
-                $descRaw = if ($ri.summary)          { [string]$ri.summary } `
-                           elseif ($ri.content)      { [string]$ri.content.'#text' } `
-                           else                      { "" }
+                $descRaw = if ($ri.summary)     { if ($ri.summary -is [string]) { $ri.summary } else { $ri.summary.InnerText } } `
+                           elseif ($ri.content) { if ($ri.content -is [string]) { $ri.content } else { $ri.content.InnerText } } `
+                           else                 { "" }
             }
 
             $title = $title.Trim()
