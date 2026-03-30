@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-30T15:56:38Z",
+  "lastUpdated": "2026-03-30T15:57:18Z",
   "items": [
     {
       "title": "Microsoft Azure • Re: Tags during Restore",
@@ -209,15 +209,6 @@
       "description": "Security posture is measured not only by how quickly a threat or sensitive data exposure is detected and contained. It’s also calculated by how confidently an organization can recover and continue operating when something goes wrong. That’s one of..."
     },
     {
-      "title": "Elastio Achieves Veeam Ready Security Incident API Status to Advance Data Integrity Control for Ransomware - Canton Repository",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQNk0xci04QXdUeG5hTlJFZ3BFWXlxZkdTWDNyM3lnekJuTHhoSHlBVGhsTzR4NnlEZEdtbUlYcEdNOXNsZ0FjMnBudmdkNXNiNGJNX3kya0E5NjRHc2xEQ3h0T1VYRjNWeF96cl9pY2FTM1kwRHh2VmJLNmJnanB1SU9RZ1VUajhnQkZzZ3Y5M1ViX3hNZEJwQ3JEalc3WEE1Qlc0LUpRQlNYLXgzZ3hhWmpjMDNTOG5TWGg1WTlJY3U0dUEzWktCMU9rZHdVVEpwQ2phR1EyeHItQVdDUnNFUWRpajBQSGhwVTZjNFRYclFfZw?oc=5",
-      "date": "2026-03-23T12:55:29Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Elastio Achieves Veeam Ready Security Incident API Status to Advance Data Integrity Control for Ransomware Canton Repository"
-    },
-    {
       "title": "Veeam VSPC 9.1 to Zabbix Integration",
       "link": "https://www.reddit.com/r/Veeam/comments/1s1f4z8/veeam_vspc_91_to_zabbix_integration/",
       "date": "2026-03-23T12:12:35Z",
@@ -317,15 +308,6 @@
       "description": "Very small shop, 2 hosts and have been on socket licensing and trying to get an updated cost for moving to VUL but it's not been easy since process and still do not have a quote. Like most everyone else I am needing to migrate from vmware and it a..."
     },
     {
-      "title": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 - Business Wire",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPR29qR2ZFMlRlNDNOYVhnWVFxSXNBX1NkdkpyekVhZkhaSUU5VTV2ZGJ1VnJBV1N0ZjdZSTZkaDhOSDhNVjVIdVA4TEl5T09Nd3lqc0xOTW82ZWZFaFBpNjZSemY5VWU2UFRKcFItdVF6bkhRZnozX0ZBUVAtTjcydTNTd3pCelVwTGlPWHFRdXJJc0E3OF9OU0JYb0hNeDlBWU5HY0RFMzJVUDdZeUVwY3hTNEhwaXROdTlrMXBoTjZhX3hKRUQxOWYyeW1NdjdkM1VJUVZJVDg?oc=5",
-      "date": "2026-03-18T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 Business Wire"
-    },
-    {
       "title": "Veeam Agent for Linux - veeamsnap and blksnap Extended Linux Distribution Support",
       "link": "https://www.veeam.com/kb2804",
       "date": "2026-03-18T00:00:00Z",
@@ -371,15 +353,6 @@
       "description": "Enterprises are increasingly integrating generative AI workloads, AI inferencing, and retrieval-augmented generation (RAG) workloads into their core business operations. And that shift was on full display at the recent Tech World @CES in Las Vegas..."
     },
     {
-      "title": "How to Manually Update GPG key on Veeam Appliances",
-      "link": "https://www.veeam.com/kb4834",
-      "date": "2026-03-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "This article documents how to manually update the GPG key for Veeam Appliances (i.e., Veeam Software Appliance and Veeam Infrastructure Appliance)."
-    },
-    {
       "title": "How to Manually Update GPG key on Veeam Hardened Repository Appliance",
       "link": "https://www.veeam.com/kb4833",
       "date": "2026-03-16T00:00:00Z",
@@ -396,6 +369,15 @@
       "category": "kb",
       "severity": "",
       "description": "Migration to Unified Veeam Data Cloud FAQ"
+    },
+    {
+      "title": "How to Manually Update GPG key on Veeam Appliances",
+      "link": "https://www.veeam.com/kb4834",
+      "date": "2026-03-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "This article documents how to manually update the GPG key for Veeam Appliances (i.e., Veeam Software Appliance and Veeam Infrastructure Appliance)."
     },
     {
       "title": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication - csoonline.com",
@@ -416,13 +398,13 @@
       "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
     },
     {
-      "title": "Veeam says security flaws may be exposing backup servers to attacks - Yahoo Tech",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOay00akwwaDV4T1JERWZzNmlNQ2NXU2hlV0YzNlV3dEkzTU5KaVp4QnI0N0toY0FSU2tQanV4TUFxbEpnMVh2UnU4SE1QTmh6UXQ4WlRjaUdKbHF1eTVRcUNnVUxVZWExdHJ4NzRaQmU1dDIwVEtCMXVpb0wtQS1aLWtR?oc=5",
+      "title": "Veeam patches critical RCE vulnerabilities in backup software - SC Media",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaTN4cDk3cU9hZm1sYndfbUlxVmFxbDc1MmppZl9ETURES2tXczJxREdJQTNlTWNkYmZYNEVvV3d2bUV0MXQ0MzVXZ2dLZ1ZTWGVlSGVkSWVNU2FpeWxFS241cXA4MHR1SHRVR01Tam5RczdkeDlJcXBGYUU2S1dPZXpDNTI2UDByU1c3dDZERnVqZ0hNTFE?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
+      "description": "Veeam patches critical RCE vulnerabilities in backup software SC Media"
     },
     {
       "title": "Veeam says critical security flaws may be exposing backup servers to RCE attacks - TechRadar",
@@ -434,85 +416,31 @@
       "description": "Veeam says critical security flaws may be exposing backup servers to RCE attacks TechRadar"
     },
     {
-      "title": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media - SC Media",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaTN4cDk3cU9hZm1sYndfbUlxVmFxbDc1MmppZl9ETURES2tXczJxREdJQTNlTWNkYmZYNEVvV3d2bUV0MXQ0MzVXZ2dLZ1ZTWGVlSGVkSWVNU2FpeWxFS241cXA4MHR1SHRVR01Tam5RczdkeDlJcXBGYUU2S1dPZXpDNTI2UDByU1c3dDZERnVqZ0hNTFE?oc=5",
+      "title": "Veeam says security flaws may be exposing backup servers to attacks - Yahoo Tech",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOay00akwwaDV4T1JERWZzNmlNQ2NXU2hlV0YzNlV3dEkzTU5KaVp4QnI0N0toY0FSU2tQanV4TUFxbEpnMVh2UnU4SE1QTmh6UXQ4WlRjaUdKbHF1eTVRcUNnVUxVZWExdHJ4NzRaQmU1dDIwVEtCMXVpb0wtQS1aLWtR?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media SC Media"
+      "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
     },
     {
-      "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks - bleepingcomputer.com",
+      "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks - BleepingComputer",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTFZCQk5rRkxES1d6c2ZRc0pQckdTaW5TOFBJanJNaUlIREItbW9SSUFOQnlQcU9kWU15WXhfTllBeGFwUEdOY3pMLS1FOGRRa25fNGVCeXE5NzNGbGpGUmxuSHRJaF9hVzc3d21qZGhIb0lUNTFGQjJfUXBTMm4tX3o5QzlZS3RpVHlCWXFBUFY2U2JCYW12UDJlVlZrd0otWEl3Wi0xaFNOUnJseEZMR3F3Y1YzOGPSAbwBQVVfeXFMTU1tODBJUXJQMzJUVTZSQ2diUlBTX282WVZranl5OER2X1J6Mk8tcXJkME1nYTVqVXUweURQakV3UmJLWFhWTmg1T25BNENfbjFzaXRud3hvVWNqVlNGU09uY0M4MzVvUm5QYkN5bUVVZDdqclJDQzlsZW5WU0ExOVI2dWkyNHpmT3lIZE1zYTFKMFJJaGVvU2MwVmdPbWdjRFZDLVB3VnpTMEF4Nld0ZlF6dVVZbmxDUGVPZWs?oc=5",
       "date": "2026-03-12T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam warns of critical flaws exposing backup servers to RCE attacks bleepingcomputer.com"
+      "description": "Veeam warns of critical flaws exposing backup servers to RCE attacks BleepingComputer"
     },
     {
-      "title": "Vulnerabilities Resolved in Veeam Backup & Replication 13.0.1.2067",
-      "link": "https://www.veeam.com/kb4831",
-      "date": "2026-03-12T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "advisory",
-      "severity": "",
-      "description": "Vulnerabilities Resolved in Veeam Backup & Replication 13.0.1.2067"
-    },
-    {
-      "title": "Vulnerabilities Resolved in Veeam Backup & Replication 12.3.2.4465",
-      "link": "https://www.veeam.com/kb4830",
-      "date": "2026-03-12T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "advisory",
-      "severity": "",
-      "description": "Vulnerabilities Resolved in Veeam Backup & Replication 12.3.2.4465"
-    },
-    {
-      "title": "Build Numbers and Versions of Veeam Plug-in for Scale Computing HyperCore",
-      "link": "https://www.veeam.com/kb4747",
+      "title": "Build Numbers and Versions of Veeam Agent for IBM AIX",
+      "link": "https://www.veeam.com/kb4355",
       "date": "2026-03-12T00:00:00Z",
       "source": "Veeam KB",
       "category": "release",
       "severity": "",
-      "description": "Build Numbers and Versions of Veeam Plug-in for Scale Computing HyperCore"
-    },
-    {
-      "title": "Release Information for Veeam Backup & Replication 13 and Updates",
-      "link": "https://www.veeam.com/kb4738",
-      "date": "2026-03-12T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "Release Information for Veeam Backup & Replication 13 and Updates"
-    },
-    {
-      "title": "Build Numbers and Versions of Veeam Plug-in for Proxmox VE",
-      "link": "https://www.veeam.com/kb4706",
-      "date": "2026-03-12T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "Build Numbers and Versions of Veeam Plug-in for Proxmox VE"
-    },
-    {
-      "title": "Release Information for Veeam Backup & Replication 12.3",
-      "link": "https://www.veeam.com/kb4696",
-      "date": "2026-03-12T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "Release Information for Veeam Backup & Replication 12.3"
-    },
-    {
-      "title": "Build Numbers and Versions of Veeam Plug-in for oVirt KVM",
-      "link": "https://www.veeam.com/kb4362",
-      "date": "2026-03-12T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "Build Numbers and Versions of Veeam Plug-in for oVirt KVM"
+      "description": "This KB article lists all versions of Veeam Agent for IBM AIX and their respective build numbers."
     },
     {
       "title": "Build Numbers and Versions of Veeam Agent for Oracle Solaris",
@@ -524,13 +452,67 @@
       "description": "This KB article lists all versions of Veeam Agent for Oracle Solaris and their respective build numbers."
     },
     {
-      "title": "Build Numbers and Versions of Veeam Agent for IBM AIX",
-      "link": "https://www.veeam.com/kb4355",
+      "title": "Build Numbers and Versions of Veeam Plug-in for oVirt KVM",
+      "link": "https://www.veeam.com/kb4362",
       "date": "2026-03-12T00:00:00Z",
       "source": "Veeam KB",
       "category": "release",
       "severity": "",
-      "description": "This KB article lists all versions of Veeam Agent for IBM AIX and their respective build numbers."
+      "description": "Build Numbers and Versions of Veeam Plug-in for oVirt KVM"
+    },
+    {
+      "title": "Release Information for Veeam Backup & Replication 12.3",
+      "link": "https://www.veeam.com/kb4696",
+      "date": "2026-03-12T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Release Information for Veeam Backup & Replication 12.3"
+    },
+    {
+      "title": "Release Information for Veeam Backup & Replication 13 and Updates",
+      "link": "https://www.veeam.com/kb4738",
+      "date": "2026-03-12T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Release Information for Veeam Backup & Replication 13 and Updates"
+    },
+    {
+      "title": "Build Numbers and Versions of Veeam Plug-in for Scale Computing HyperCore",
+      "link": "https://www.veeam.com/kb4747",
+      "date": "2026-03-12T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Build Numbers and Versions of Veeam Plug-in for Scale Computing HyperCore"
+    },
+    {
+      "title": "Vulnerabilities Resolved in Veeam Backup & Replication 12.3.2.4465",
+      "link": "https://www.veeam.com/kb4830",
+      "date": "2026-03-12T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "advisory",
+      "severity": "",
+      "description": "Vulnerabilities Resolved in Veeam Backup & Replication 12.3.2.4465"
+    },
+    {
+      "title": "Vulnerabilities Resolved in Veeam Backup & Replication 13.0.1.2067",
+      "link": "https://www.veeam.com/kb4831",
+      "date": "2026-03-12T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "advisory",
+      "severity": "",
+      "description": "Vulnerabilities Resolved in Veeam Backup & Replication 13.0.1.2067"
+    },
+    {
+      "title": "Build Numbers and Versions of Veeam Plug-in for Proxmox VE",
+      "link": "https://www.veeam.com/kb4706",
+      "date": "2026-03-12T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Build Numbers and Versions of Veeam Plug-in for Proxmox VE"
     },
     {
       "title": "Veeam officially launches its HPE Morpheus VM Essentials support - Techzine Global",
@@ -587,22 +569,22 @@
       "description": "Critical RCE Vulnerability (CVE-2025-59470) in Veeam Backup & Replication: Patch Released to Prevent Exploitation Rescana"
     },
     {
-      "title": "Veeam patches Backup & Replication vulnerabilities, urges users to update - itpro.com",
+      "title": "Veeam Acquires Object First: A Software Giant Steps Into Appliances - StorageReview.com",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTXJYRXpKWndXRnJwRFdld0lDOTVsaTU5WHVwWDlWalVjX1pqclBaWXItWDRneW1WUUZSbGFTVXd2SFExczVERmNFQXNGcTBETGJDYThUcFRKaVphN2ZmN1B1Mklia0JDalRHaFQ2TXd1bXRHLUw2NDdyU3IyWTJwY0JlMGxPMU1Xa1QyNnRoY3QwM1A1a0dWUFdpTWZIckZyU2VB0gGoAUFVX3lxTE9CMVF5TWFudXdYLVlqX3ltSy02TjNzRGY2b185dUM5RVZ3NHJCWURBSEJ3UjBGanQzQ08ydXFrTi1aNVZ0SWlBM3R6LTRsSFh4aTFnNC00Z3ZCQU9ta2tnWU4zeC1NNUtGOFNkZllzOWN0TktFNUNjT0FQaV9sVEc5Rk5nR0ZxOUhUaU5yR2JocW9UeUJjdzhxSzdKU1hHN1NIU196UXJZaA?oc=5",
+      "date": "2026-01-10T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Acquires Object First: A Software Giant Steps Into Appliances StorageReview.com"
+    },
+    {
+      "title": "Veeam patches Backup & Replication vulnerabilities, urges users to update - IT Pro",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTzdqUEpaWUt5U1FvOE1oMHdSR0I4M0Y2QnlTbFdwQWZleU0wc1hWQlhtVGNoMm9PWHNMYjdkZHliU1dyeUhGa2RqRFJhMzRDUDlqWHp2YXAwQXpOM0dtX1ZJUzU5MFFCdEdEVWgzNWE2a0JvaENQR2dDb0NWMjJTLQ?oc=5",
       "date": "2026-01-09T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam patches Backup & Replication vulnerabilities, urges users to update itpro.com"
-    },
-    {
-      "title": "Veeam closes serious vulnerability in Backup & Replication, patch required - Techzine Global",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb3ltemhNVmpKY1J2TmxHWU9fX1YwYlJ6eDRGQTFhblRWMzdyUjE0dUJmbHZ1TTdIM1duOWc5OXd5cEZFdkFrcFRKdGdPN0JzZlB5UHhtNzVrMFBRNW5CRjJ2ZkZnR2xMb005dmxIQ2VuVkZEMHFlMDVtcHFuelZGVTI4NDViN3NpRmZtWGZDb1NKUFpfcTRlM2RQdGgzal9vMkhGWnc2dl9DNl9FTkdiMjRzNDJ6dGdT?oc=5",
-      "date": "2026-01-08T08:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam closes serious vulnerability in Backup & Replication, patch required Techzine Global"
+      "description": "Veeam patches Backup & Replication vulnerabilities, urges users to update IT Pro"
     },
     {
       "title": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection - StorageReview.com",
@@ -612,6 +594,15 @@
       "category": "news",
       "severity": "",
       "description": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection StorageReview.com"
+    },
+    {
+      "title": "Veeam closes serious vulnerability in Backup & Replication, patch required - Techzine Global",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb3ltemhNVmpKY1J2TmxHWU9fX1YwYlJ6eDRGQTFhblRWMzdyUjE0dUJmbHZ1TTdIM1duOWc5OXd5cEZFdkFrcFRKdGdPN0JzZlB5UHhtNzVrMFBRNW5CRjJ2ZkZnR2xMb005dmxIQ2VuVkZEMHFlMDVtcHFuelZGVTI4NDViN3NpRmZtWGZDb1NKUFpfcTRlM2RQdGgzal9vMkhGWnc2dl9DNl9FTkdiMjRzNDJ6dGdT?oc=5",
+      "date": "2026-01-08T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam closes serious vulnerability in Backup & Replication, patch required Techzine Global"
     },
     {
       "title": "Veeam issues patch to close critical remote code execution flaw - CyberScoop",
@@ -641,13 +632,13 @@
       "description": "Veeam resolves CVSS 9.0 RCE flaw and other security issues Security Affairs"
     },
     {
-      "title": "New Veeam vulnerabilities expose backup servers to RCE attacks - bleepingcomputer.com",
+      "title": "New Veeam vulnerabilities expose backup servers to RCE attacks - BleepingComputer",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQc1ZoTldKTXZLSm1MVkJ4N1hsZWdvSFNkWXY2SjdCeFczblcwbEZNYTFVU2N1dHdmTm1MaVFQRDNIOWV6RndKd093M1E3ZnZfQTRmam5SWVpqbWV5bGVkREczbFZJSFd5a1c4ck50emVKbWJ6NmNrbUh6NjRaX2lKdkx1QTdkN3VBMU9xVHJKYzlHdDBNTWVaTUVMRWhDMnZQWnBocWNEOFJtSFFlUHk40gG0AUFVX3lxTE5hM0pPTXo2bjVYakx4VDVKcFZxM1JYOXYwbUJxenZZQVhPMVpneF9MYjdFeDlfX0VqRldCbzBKb0tDM3d6U0dSNmcxX2pCNV9lMDBEcHl4VXRYVGk1SzV1MGxvMG45elNxb19ocFVtd1dMTlE1bWd5X1hvVTZZZzFhS3pidXE4YXZyOWhTbmhJTGdHdW1pbHdfWVVtbnZkd0pZQWhSZGhVeEhwbnBjUVM5OXZORg?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "New Veeam vulnerabilities expose backup servers to RCE attacks bleepingcomputer.com"
+      "description": "New Veeam vulnerabilities expose backup servers to RCE attacks BleepingComputer"
     },
     {
       "title": "Holes in Veeam Backup suite allow remote code execution, creation of malicious backup config files - csoonline.com",
@@ -657,6 +648,15 @@
       "category": "news",
       "severity": "",
       "description": "Holes in Veeam Backup suite allow remote code execution, creation of malicious backup config files csoonline.com"
+    },
+    {
+      "title": "Veeam Backup Vulnerabilities Enable Remote Code Execution as Root - Cyber Press",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaVRNTS1yYjJpd1NIOXRrbUZKUE1zOXNJU2dOamt5MHF6alJWNHZDUm9Rdlk2WGhvV3BSaHhZRDhqTWF1cVhJYjBvc080bncxTHlST1Rqci1hdGZOcl9zM3RZTnRsejA5UFltOC0tSV82eFEwSFdkMjk0T2F5enpYOVZtQ1BzWTlIaFZoMXNIZ3Zsdzg?oc=5",
+      "date": "2026-01-07T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Backup Vulnerabilities Enable Remote Code Execution as Root Cyber Press"
     },
     {
       "title": "Veeam Backup Vulnerabilities Enables Remote Code Execution as Root - CyberSecurityNews",
@@ -677,13 +677,13 @@
       "description": "Veeam Patches Critical RCE Vulnerability with CVSS 9.0 in Backup & Replication thehackernews.com"
     },
     {
-      "title": "Veeam Backup Vulnerabilities Enable Remote Code Execution as Root - Cyber Press",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaVRNTS1yYjJpd1NIOXRrbUZKUE1zOXNJU2dOamt5MHF6alJWNHZDUm9Rdlk2WGhvV3BSaHhZRDhqTWF1cVhJYjBvc080bncxTHlST1Rqci1hdGZOcl9zM3RZTnRsejA5UFltOC0tSV82eFEwSFdkMjk0T2F5enpYOVZtQ1BzWTlIaFZoMXNIZ3Zsdzg?oc=5",
-      "date": "2026-01-07T08:00:00Z",
+      "title": "Veeam CTO Niraj Tolia steps back into advisory role - blocksandfiles.com",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcnZNQWdRb0d4N0ZZejFQV3U3dTlqdFhFLVZjdDJmTWpBNjRRZDNlY3cwUGNmSWdSdjhaWExSemhPdFZyby1rc3hSZWVnR1JvbUs1ekhDblhCRlVLZmRoaVEwSWFlQ3VHRkp1aVhVOV81c201MGJjRm1jTnN1ZkxSOEtzMi13a05BUmJNSzRXV29qWWxwVnI2US1NbWx5VzZYb2IwNGJ4c0lKRnM?oc=5",
+      "date": "2026-01-05T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Backup Vulnerabilities Enable Remote Code Execution as Root Cyber Press"
+      "description": "Veeam CTO Niraj Tolia steps back into advisory role blocksandfiles.com"
     }
   ]
 }
