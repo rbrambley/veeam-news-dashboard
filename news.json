@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-02T09:42:56Z",
+  "lastUpdated": "2026-04-02T15:38:26Z",
   "items": [
     {
-      "title": "Veeam Backup for Microsoft 365 • Re: Feature Request: Configuration Backup for Veeam Backup for Microsoft 365",
-      "link": "https://forums.veeam.com/viewtopic.php?p=567144#p567144",
-      "date": "2026-04-02T09:39:16Z",
+      "title": "PowerShell • Re: Powershell how to calculate job duration",
+      "link": "https://forums.veeam.com/viewtopic.php?p=567174#p567174",
+      "date": "2026-04-02T14:46:50Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hi Doron, We’re aware of the request. Unfortunately, we can’t share an ETA yet. I’ll add your vote to our feature request tracker. Best regards, Fabian Statistics: Posted by Mildur — Apr 02, 2026 9:39 am"
+      "description": "Hi Eric, welcome to the forums. Can you clarify a bit more what you mean with \"excluding the preparation time\"? Getting the duration is as simple as use normal DateTime math in PowerShell: Code: PS /root> ($sess.Progress.StopTimeUtc - $sess.Progre..."
     },
     {
       "title": "Choosing the right Veeam solution",
@@ -38,13 +38,13 @@
       "description": "I have a new Veeam installation of the latest version 13. I stood up the virtual appliance for the VBR server and a separate Windows 2025 Proxy/Repository server. Best practices state to not add Veeam servers to the Domain, which I agree with and ..."
     },
     {
-      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Business Wire",
+      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - businesswire.com",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWFhTYm04MzZBQm56dDdldWxTaUc3cHZPd1JISUlEN0pDaUV3WHptNjAweU9OLWk1MHBBY0VqemtISzdhWE1ycXFOWFJzY0o0akVzV0R0MHFndmwzc2NEZW5vR0NtVC1tcVk4N3c3S0pwZ2tJLVMzSFlpOEVnOEhrWXZaQWVzTEo0Z1gxUEFMRWFsSUg5MFVJcmg0elZMM3cwMVlSTHhQeExGNWltSTNTUHlCbzdiX1I4a2RqNlJ6bEgxNVIxVERJelRrMk84NGExWjI3YWhHWUlEd0pxdXpTMktzU0UzX2dCdnRxY0lUaXUzWEpQaUE?oc=5",
       "date": "2026-04-01T13:05:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms Business Wire"
+      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms businesswire.com"
     },
     {
       "title": "veeam license",
@@ -137,13 +137,13 @@
       "description": "Hi everyone, I’m looking for a way to get a more granular breakdown of storage consumption within a local Veeam Backup for Microsoft 365 (VB365) repository. Specifically, I’d like to know if anyone has a PowerShell script or an API query that can ..."
     },
     {
-      "title": "World Backup Day: New Research Warns of Growing Trust Crisis in Data and AI - cxotoday.com",
+      "title": "World Backup Day: New Research Warns of Growing Trust Crisis in Data and AI - CXOToday.com",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVnp6Tkw0RXVJWTYwS25aZEJ6NkYxN3o1WE14dmUwd28tbTJ1ZDE1YW45WVZiMldZZEY3R2xTRDV5MFhqeVFSZjlCUHhiYlZJRE93ekV5dFRjN3c2UjJIa1RQc2FtcVJFM3IzeEVteUpWS3E4UFN5SkNfSWN4VlV2NndlaDlUX3pobXBncUQzTy01cWpOdlZyZF84dHRERklTMjZz?oc=5",
       "date": "2026-03-31T14:56:05Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "World Backup Day: New Research Warns of Growing Trust Crisis in Data and AI cxotoday.com"
+      "description": "World Backup Day: New Research Warns of Growing Trust Crisis in Data and AI CXOToday.com"
     },
     {
       "title": "Restoring from Veeam Cloud Vault (Azure) to Azure VM – Requirements?",
@@ -443,13 +443,13 @@
       "description": "List of Security Fixes and Improvements in Veeam Kasten for Kubernetes"
     },
     {
-      "title": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 - Business Wire",
+      "title": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 - businesswire.com",
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPR29qR2ZFMlRlNDNOYVhnWVFxSXNBX1NkdkpyekVhZkhaSUU5VTV2ZGJ1VnJBV1N0ZjdZSTZkaDhOSDhNVjVIdVA4TEl5T09Nd3lqc0xOTW82ZWZFaFBpNjZSemY5VWU2UFRKcFItdVF6bkhRZnozX0ZBUVAtTjcydTNTd3pCelVwTGlPWHFRdXJJc0E3OF9OU0JYb0hNeDlBWU5HY0RFMzJVUDdZeUVwY3hTNEhwaXROdTlrMXBoTjZhX3hKRUQxOWYyeW1NdjdkM1VJUVZJVDg?oc=5",
       "date": "2026-03-18T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 Business Wire"
+      "description": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 businesswire.com"
     },
     {
       "title": "Veeam Agent for Linux - veeamsnap and blksnap Extended Linux Distribution Support",
@@ -605,13 +605,13 @@
       "description": "Critical RCE Vulnerability (CVE-2025-59470) in Veeam Backup & Replication: Patch Released to Prevent Exploitation Rescana"
     },
     {
-      "title": "Veeam patches Backup & Replication vulnerabilities, urges users to update - IT Pro",
+      "title": "Veeam patches Backup & Replication vulnerabilities, urges users to update - itpro.com",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTzdqUEpaWUt5U1FvOE1oMHdSR0I4M0Y2QnlTbFdwQWZleU0wc1hWQlhtVGNoMm9PWHNMYjdkZHliU1dyeUhGa2RqRFJhMzRDUDlqWHp2YXAwQXpOM0dtX1ZJUzU5MFFCdEdEVWgzNWE2a0JvaENQR2dDb0NWMjJTLQ?oc=5",
       "date": "2026-01-09T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam patches Backup & Replication vulnerabilities, urges users to update IT Pro"
+      "description": "Veeam patches Backup & Replication vulnerabilities, urges users to update itpro.com"
     },
     {
       "title": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection - StorageReview.com",
@@ -641,13 +641,13 @@
       "description": "Veeam Patches Critical RCE Vulnerability with CVSS 9.0 in Backup & Replication The Hacker News"
     },
     {
-      "title": "Veeam Backup Vulnerabilities Enable Remote Code Execution as Root - cyberpress.org",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaVRNTS1yYjJpd1NIOXRrbUZKUE1zOXNJU2dOamt5MHF6alJWNHZDUm9Rdlk2WGhvV3BSaHhZRDhqTWF1cVhJYjBvc080bncxTHlST1Rqci1hdGZOcl9zM3RZTnRsejA5UFltOC0tSV82eFEwSFdkMjk0T2F5enpYOVZtQ1BzWTlIaFZoMXNIZ3ZsdzjSAZMBQVVfeXFMT2lUTU0tcmIyaXdTSDl0a21GSlBNczlzSVNnTmpreTBxempSVjR2Q1JvUXZZNlhob1dwUmh4WUQ4ak1hdXFYSWIwb3NPNG53MUx5Uk9UanItYXRmTnJfczN0WU50bHowOVBZbTgtLUlfNnhRMEhXZDI5NE9heXp6WDlWbUNQc1k5SGhWaDFzSGd2bHc4?oc=5",
+      "title": "Veeam Backup Vulnerabilities Enables Remote Code Execution as Root - CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2TVN6NkNUc0NBNFZwOTYtcGxwbnllM3JRd2xVbkswVXdhOHhENVc5cm5mVjdiNXJ4OHBmVlJGcnBiZVo5alJEcTBraWZ2Rkl0VDhTVWZuT3gxaWNQZzBxb0p1cTB3SzNwNnhn?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Backup Vulnerabilities Enable Remote Code Execution as Root cyberpress.org"
+      "description": "Veeam Backup Vulnerabilities Enables Remote Code Execution as Root CyberSecurityNews"
     },
     {
       "title": "Several Code Execution Flaws Patched in Veeam Backup & Replication - SecurityWeek",
