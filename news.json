@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-03T14:28:38Z",
+  "lastUpdated": "2026-04-03T14:30:15Z",
   "items": [
+    {
+      "title": "Veeam Backup &amp; Replication • Re: Feature request - Veeam Managed Servers - Option to skip update check",
+      "link": "https://forums.veeam.com/viewtopic.php?p=567219#p567219",
+      "date": "2026-04-03T14:30:07Z",
+      "source": "Veeam Forums",
+      "category": "community",
+      "severity": "",
+      "description": "Hello PTide, Of course, updates are either downloaded online (though the internet connection may not yet be available because proxy settings aren’t rolled out via your policies until after they’re added, or a firewall rule is still missing) or via..."
+    },
     {
       "title": "How to open a root shell on the Veeam Software or Infrastructure Appliance",
       "link": "https://www.reddit.com/r/Veeam/comments/1sbf0ct/how_to_open_a_root_shell_on_the_veeam_software_or/",
@@ -9,15 +18,6 @@
       "category": "community",
       "severity": "",
       "description": "submitted by /u/NISMO1968 [link] [comments]"
-    },
-    {
-      "title": "Veeam Backup &amp; Replication • Re: Upgrade 13.0.1.1252 to 13.0.1.2067",
-      "link": "https://forums.veeam.com/viewtopic.php?p=567216#p567216",
-      "date": "2026-04-03T14:11:26Z",
-      "source": "Veeam Forums",
-      "category": "community",
-      "severity": "",
-      "description": "So you should be able to update to this latest release as long as support okays it. Statistics: Posted by chris.childerhose — Apr 03, 2026 2:11 pm"
     },
     {
       "title": "Looking for help on Veeam licensing",
@@ -533,13 +533,13 @@
       "description": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication csoonline.com"
     },
     {
-      "title": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media - scworld.com",
+      "title": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media - SC Media",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaTN4cDk3cU9hZm1sYndfbUlxVmFxbDc1MmppZl9ETURES2tXczJxREdJQTNlTWNkYmZYNEVvV3d2bUV0MXQ0MzVXZ2dLZ1ZTWGVlSGVkSWVNU2FpeWxFS241cXA4MHR1SHRVR01Tam5RczdkeDlJcXBGYUU2S1dPZXpDNTI2UDByU1c3dDZERnVqZ0hNTFE?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media scworld.com"
+      "description": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media SC Media"
     },
     {
       "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
