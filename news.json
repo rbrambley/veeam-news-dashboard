@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-04T14:03:49Z",
+  "lastUpdated": "2026-04-04T14:04:51Z",
   "items": [
     {
       "title": "Veeam Recovery Orchestrator • Re: Is it Nutanix AHV supported",
@@ -236,13 +236,13 @@
       "description": "IT teams are challenged to deliver data resilience, protection, and rapid recovery across a sprawling ecosystem of platforms and tools. The operational edge, where incidents are detected, triaged, and resolved, is no longer confined to a single ve..."
     },
     {
-      "title": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI - Intelligent CIO",
+      "title": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI - intelligentcio.com",
       "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNOTRfREtfRWU2Sl9xNE5kWm8yZm1QQkhBZVZzb0NSeURKa0JZWVpsWUJERDBKMlVseXFlZFRLZzNtTzBXazJMcFBqemNFbm5tTjRxZXBxU1BkbUYybjhxSWxheWdGNDNzdmZzc3dRMVR3WlNHRXp4VHlxRjVvZkV0bmVDR2FXUEJmNFJRYURqVWVyazR0YktaOWF1UlR2c0ZUR28zYkpzdk43YXZzZFcxaTNfeTBhQTdBeU52eWFudmVYQUR4TFczX3JhRC1IRnpOb2UxZEhFZ0N0SjU0T1NrYVRDWFc3MzNf?oc=5",
       "date": "2026-03-31T11:04:51Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI Intelligent CIO"
+      "description": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI intelligentcio.com"
     },
     {
       "title": "Storage-level Corruption Guard on VDC Vault",
@@ -650,13 +650,13 @@
       "description": "Veeam resolves CVSS 9.0 RCE flaw and other security issues Security Affairs"
     },
     {
-      "title": "Several Code Execution Flaws Patched in Veeam Backup & Replication - securityweek.com",
+      "title": "Several Code Execution Flaws Patched in Veeam Backup & Replication - SecurityWeek",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONng4Mld3VXEtS0ppcmdiUFJoRFNuRVJXTTRfckVUSnpFa0RkQ3QyUlNxM2FPSUdPMUpRTzBidFdSRlZ5QkNRZ2tBX2sxOC1Lbmp5SFhtOGlKRk5fY0Eya0Q3RWdqaXBaNEhrVll6dEZRS2xkaHQ4RnBqNm9iMnhwWDFTSjgyYnpVY20xUXRxNnhCcTlEX191cVF30gGfAUFVX3lxTE82Ym9HTXdEaG03Q2djMW9LSEtoblRnLUpVak5CR3dFdEFTYm1HSHcya0c4OGlPaFhxUVB2LW9WZHZGaFQxSkVWYjFxTER1VUtrRVhVOWJ1NllYWXVwQUpMU3NNdDJPa21aM2FtcDVkdE00bElqWjZnbGtMYTNFOGlmcE9pRDRQdHQ5cGstOFVpcG1qeDRGRm1DWG9RekV2bw?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Several Code Execution Flaws Patched in Veeam Backup & Replication securityweek.com"
+      "description": "Several Code Execution Flaws Patched in Veeam Backup & Replication SecurityWeek"
     },
     {
       "title": "Veeam Patches Critical RCE Vulnerability with CVSS 9.0 in Backup & Replication - The Hacker News",
