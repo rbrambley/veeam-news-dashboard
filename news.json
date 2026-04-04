@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-04T05:15:39Z",
+  "lastUpdated": "2026-04-04T08:00:42Z",
   "items": [
+    {
+      "title": "Microsoft Entra ID • Re: Feature Request: BitLocker Key Protection",
+      "link": "https://forums.veeam.com/viewtopic.php?p=567235#p567235",
+      "date": "2026-04-04T06:07:02Z",
+      "source": "Veeam Forums",
+      "category": "community",
+      "severity": "",
+      "description": "@Mildur is correct that it is now available. To enable the extra object type for backup, enable the permissions as per here: https://helpcenter.veeam.com/docs/vdc/u ... tings.html This is also true for additional workloads that've become available..."
+    },
     {
       "title": "Best practices",
       "link": "https://www.reddit.com/r/Veeam/comments/1sbtjoc/best_practices/",
@@ -36,15 +45,6 @@
       "category": "blog",
       "severity": "",
       "description": "When you’re choosing a backup and data protection platform, you’re not just buying software. You’re choosing peace of mind knowing your company’s data is protected, and you’re setting the standard for what happens next: How confidently your team r..."
-    },
-    {
-      "title": "Veeam Backup &amp; Replication • Re: Upgrade 13.0.1.1252 to 13.0.1.2067",
-      "link": "https://forums.veeam.com/viewtopic.php?p=567229#p567229",
-      "date": "2026-04-03T17:48:52Z",
-      "source": "Veeam Forums",
-      "category": "community",
-      "severity": "",
-      "description": "That update file did upgrade it to 2067 without any issues. Thanks for pointing me to the right direction. Interestingly, support told me that I'd have to wait until the next release since I was running on an unsupported build for the update. Stat..."
     },
     {
       "title": "Veeam I/O filter install issues",
@@ -533,13 +533,13 @@
       "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
     },
     {
-      "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks - BleepingComputer",
+      "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks - bleepingcomputer.com",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTFZCQk5rRkxES1d6c2ZRc0pQckdTaW5TOFBJanJNaUlIREItbW9SSUFOQnlQcU9kWU15WXhfTllBeGFwUEdOY3pMLS1FOGRRa25fNGVCeXE5NzNGbGpGUmxuSHRJaF9hVzc3d21qZGhIb0lUNTFGQjJfUXBTMm4tX3o5QzlZS3RpVHlCWXFBUFY2U2JCYW12UDJlVlZrd0otWEl3Wi0xaFNOUnJseEZMR3F3Y1YzOGPSAbwBQVVfeXFMTU1tODBJUXJQMzJUVTZSQ2diUlBTX282WVZranl5OER2X1J6Mk8tcXJkME1nYTVqVXUweURQakV3UmJLWFhWTmg1T25BNENfbjFzaXRud3hvVWNqVlNGU09uY0M4MzVvUm5QYkN5bUVVZDdqclJDQzlsZW5WU0ExOVI2dWkyNHpmT3lIZE1zYTFKMFJJaGVvU2MwVmdPbWdjRFZDLVB3VnpTMEF4Nld0ZlF6dVVZbmxDUGVPZWs?oc=5",
       "date": "2026-03-12T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam warns of critical flaws exposing backup servers to RCE attacks BleepingComputer"
+      "description": "Veeam warns of critical flaws exposing backup servers to RCE attacks bleepingcomputer.com"
     },
     {
       "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
@@ -632,13 +632,13 @@
       "description": "S3 for Veeam Backup Repository Amazon Web Services"
     },
     {
-      "title": "New Veeam vulnerabilities expose backup servers to RCE attacks - BleepingComputer",
+      "title": "New Veeam vulnerabilities expose backup servers to RCE attacks - bleepingcomputer.com",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQc1ZoTldKTXZLSm1MVkJ4N1hsZWdvSFNkWXY2SjdCeFczblcwbEZNYTFVU2N1dHdmTm1MaVFQRDNIOWV6RndKd093M1E3ZnZfQTRmam5SWVpqbWV5bGVkREczbFZJSFd5a1c4ck50emVKbWJ6NmNrbUh6NjRaX2lKdkx1QTdkN3VBMU9xVHJKYzlHdDBNTWVaTUVMRWhDMnZQWnBocWNEOFJtSFFlUHk40gG0AUFVX3lxTE5hM0pPTXo2bjVYakx4VDVKcFZxM1JYOXYwbUJxenZZQVhPMVpneF9MYjdFeDlfX0VqRldCbzBKb0tDM3d6U0dSNmcxX2pCNV9lMDBEcHl4VXRYVGk1SzV1MGxvMG45elNxb19ocFVtd1dMTlE1bWd5X1hvVTZZZzFhS3pidXE4YXZyOWhTbmhJTGdHdW1pbHdfWVVtbnZkd0pZQWhSZGhVeEhwbnBjUVM5OXZORg?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "New Veeam vulnerabilities expose backup servers to RCE attacks BleepingComputer"
+      "description": "New Veeam vulnerabilities expose backup servers to RCE attacks bleepingcomputer.com"
     },
     {
       "title": "Holes in Veeam Backup suite allow remote code execution, creation of malicious backup config files - csoonline.com",
