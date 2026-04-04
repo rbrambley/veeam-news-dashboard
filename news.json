@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-04T05:14:41Z",
+  "lastUpdated": "2026-04-04T05:15:39Z",
   "items": [
     {
       "title": "Best practices",
@@ -497,13 +497,13 @@
       "description": "This article documents how to manually update the GPG key for Veeam Appliances (i.e., Veeam Software Appliance and Veeam Infrastructure Appliance)."
     },
     {
-      "title": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media - scworld.com",
+      "title": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media - SC Media",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaTN4cDk3cU9hZm1sYndfbUlxVmFxbDc1MmppZl9ETURES2tXczJxREdJQTNlTWNkYmZYNEVvV3d2bUV0MXQ0MzVXZ2dLZ1ZTWGVlSGVkSWVNU2FpeWxFS241cXA4MHR1SHRVR01Tam5RczdkeDlJcXBGYUU2S1dPZXpDNTI2UDByU1c3dDZERnVqZ0hNTFE?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media scworld.com"
+      "description": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media SC Media"
     },
     {
       "title": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication - csoonline.com",
@@ -686,13 +686,13 @@
       "description": "Veeam issues patch to close critical remote code execution flaw CyberScoop"
     },
     {
-      "title": "Veeam patches three RCE flaws in backup systems, one critical | news | SC Media - scworld.com",
+      "title": "Veeam patches three RCE flaws in backup systems, one critical | news | SC Media - SC Media",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNkhqSXc2dGdqTlJpS1Q3Rmk3UnBacl8wSWVDdnI4MXNWSzRqelEtcFNxYk5rRk52Q2FRbFhWdmM0NTkxaWNZNGxFci11VHRHOV85N2RCTVF4Tk16c0ljOXBYcEpsQVZ6anA4UklvUUN0T0N1LURDMmt6dGtlXzVzZWdBN0h2eTNUMzJOaDlLdXpqM3c?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam patches three RCE flaws in backup systems, one critical | news | SC Media scworld.com"
+      "description": "Veeam patches three RCE flaws in backup systems, one critical | news | SC Media SC Media"
     }
   ]
 }
