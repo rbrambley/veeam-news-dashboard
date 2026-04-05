@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-05T08:04:17Z",
+  "lastUpdated": "2026-04-05T14:05:36Z",
   "items": [
+    {
+      "title": "Microsoft Hyper-V • how to randomize rep jobs beyond an hour?",
+      "link": "https://forums.veeam.com/viewtopic.php?p=567243#p567243",
+      "date": "2026-04-05T13:43:56Z",
+      "source": "Veeam Forums",
+      "category": "community",
+      "severity": "",
+      "description": "Hi, we have a number of file server replication jobs. We want these to replicate every 4 hours. The problem is the randomizing option in the scheduler only allows you to randomize it within one hour... i.e. we have 4 jobs and they are all set to r..."
+    },
     {
       "title": "Suggestions for Possible Migration from standalone Veeam Agent to B&R (CE)",
       "link": "https://www.reddit.com/r/Veeam/comments/1sckbai/suggestions_for_possible_migration_from/",
@@ -9,15 +18,6 @@
       "category": "community",
       "severity": "",
       "description": "Hi folks! Extremely green question here, and have only dipped my toes into the Veeam landscape lightly, so apologies in advance if I'm not familiar with the ins and outs. At home I currently have: *My home PC (Win11), which has a few low importanc..."
-    },
-    {
-      "title": "Object Storage as Backup Target • Re: Immutable flag/duration somewhere visible in Veeam?",
-      "link": "https://forums.veeam.com/viewtopic.php?p=567239#p567239",
-      "date": "2026-04-04T18:15:14Z",
-      "source": "Veeam Forums",
-      "category": "community",
-      "severity": "",
-      "description": "Ugh, so it's another one of those things. Capacity Tier code didn't get updated. This one is not as big of a deal as the other; Not applying the new immutable retention formula found in user guide, but still really wish these exceptions were docum..."
     },
     {
       "title": "Best practices",
@@ -119,13 +119,13 @@
       "description": "I have a new Veeam installation of the latest version 13. I stood up the virtual appliance for the VBR server and a separate Windows 2025 Proxy/Repository server. Best practices state to not add Veeam servers to the Domain, which I agree with and ..."
     },
     {
-      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Business Wire",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWFhTYm04MzZBQm56dDdldWxTaUc3cHZPd1JISUlEN0pDaUV3WHptNjAweU9OLWk1MHBBY0VqemtISzdhWE1ycXFOWFJzY0o0akVzV0R0MHFndmwzc2NEZW5vR0NtVC1tcVk4N3c3S0pwZ2tJLVMzSFlpOEVnOEhrWXZaQWVzTEo0Z1gxUEFMRWFsSUg5MFVJcmg0elZMM3cwMVlSTHhQeExGNWltSTNTUHlCbzdiX1I4a2RqNlJ6bEgxNVIxVERJelRrMk84NGExWjI3YWhHWUlEd0pxdXpTMktzU0UzX2dCdnRxY0lUaXUzWEpQaUE?oc=5",
+      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSnR3Nk9BUXc5dnJBaEwxTGxDY3pkV1BFZmQ2TFFaVC1lZGdSYXhIRFdldFk2dzZ3U1NHeWZXTlZVbW50UWRSY0ZuYVVpTld0VWhhQzl1YldqMHZKODk5bDRBRFJLdjlseHRrbWNYMldaOU1NRzd1Q1RobWNCd1BaTzB1VVJVWkdpWXo1bzU5cFphRENZdVVKeDh1bWhBcHZnN1Bub0p3?oc=5",
       "date": "2026-04-01T13:05:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms Business Wire"
+      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms Yahoo Finance"
     },
     {
       "title": "veeam license",
@@ -254,15 +254,6 @@
       "description": "Hi Everyone, Is it necessary to enable Storage-level Corruption Guard on backup jobs or backup copy jobs to VDC Vault? Is there any best practices or strategies on this? Or is it better to just enable it for backup jobs pointing to local repositor..."
     },
     {
-      "title": "Potential Issue With Backing up Sharepoint, Onedrive, Teams Files, and List Attachments",
-      "link": "https://www.veeam.com/kb4835",
-      "date": "2026-03-31T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "Backup of SharePoint, OneDrive, and Teams data completes successfully, and subsequent restores of this protected data are successful. However, when opening some of the restored files or list attachments, users may find that these items do not open..."
-    },
-    {
       "title": "Malware and Ransomware Detection in M365",
       "link": "https://www.veeam.com/kb4838",
       "date": "2026-03-31T00:00:00Z",
@@ -279,6 +270,15 @@
       "category": "kb",
       "severity": "",
       "description": "When running backup or replication jobs for Windows virtual machines hosted on Nutanix AHV, Proxmox VE, or Scale Computing HyperCore with Veeam Backup & Replication 13.0.1 Patch 2, guest processing fails due to an in-guest processing component tha..."
+    },
+    {
+      "title": "Potential Issue With Backing up Sharepoint, Onedrive, Teams Files, and List Attachments",
+      "link": "https://www.veeam.com/kb4835",
+      "date": "2026-03-31T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "Backup of SharePoint, OneDrive, and Teams data completes successfully, and subsequent restores of this protected data are successful. However, when opening some of the restored files or list attachments, users may find that these items do not open..."
     },
     {
       "title": "VDC MS365",
@@ -524,15 +524,6 @@
       "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
     },
     {
-      "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnYVB1YUZtSEo3YTZxdXFwSnRYRkxpbEhEbXNOLU9OWHVLWnRjUkYxUXZaYkZFa0N3bXVObl9GRENtZVJURWtYX3E4NmkyUGZHb21oc3NiV2ltNkpsUDhlazFNdWxvSlJxcGFSWUxDX01LT1E?oc=5",
-      "date": "2026-03-12T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
-    },
-    {
       "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks - BleepingComputer",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTFZCQk5rRkxES1d6c2ZRc0pQckdTaW5TOFBJanJNaUlIREItbW9SSUFOQnlQcU9kWU15WXhfTllBeGFwUEdOY3pMLS1FOGRRa25fNGVCeXE5NzNGbGpGUmxuSHRJaF9hVzc3d21qZGhIb0lUNTFGQjJfUXBTMm4tX3o5QzlZS3RpVHlCWXFBUFY2U2JCYW12UDJlVlZrd0otWEl3Wi0xaFNOUnJseEZMR3F3Y1YzOGPSAbwBQVVfeXFMTU1tODBJUXJQMzJUVTZSQ2diUlBTX282WVZranl5OER2X1J6Mk8tcXJkME1nYTVqVXUweURQakV3UmJLWFhWTmg1T25BNENfbjFzaXRud3hvVWNqVlNGU09uY0M4MzVvUm5QYkN5bUVVZDdqclJDQzlsZW5WU0ExOVI2dWkyNHpmT3lIZE1zYTFKMFJJaGVvU2MwVmdPbWdjRFZDLVB3VnpTMEF4Nld0ZlF6dVVZbmxDUGVPZWs?oc=5",
       "date": "2026-03-12T07:00:00Z",
@@ -540,6 +531,15 @@
       "category": "news",
       "severity": "",
       "description": "Veeam warns of critical flaws exposing backup servers to RCE attacks BleepingComputer"
+    },
+    {
+      "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnYVB1YUZtSEo3YTZxdXFwSnRYRkxpbEhEbXNOLU9OWHVLWnRjUkYxUXZaYkZFa0N3bXVObl9GRENtZVJURWtYX3E4NmkyUGZHb21oc3NiV2ltNkpsUDhlazFNdWxvSlJxcGFSWUxDX01LT1E?oc=5",
+      "date": "2026-03-12T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
     },
     {
       "title": "Vulnerabilities Resolved in Veeam Backup & Replication 12.3.2.4465",
@@ -578,13 +578,13 @@
       "description": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage Amazon Web Services"
     },
     {
-      "title": "Veeam acquires backup appliance provider Object First as CPO departs - sdxcentral.com",
+      "title": "Veeam acquires backup appliance provider Object First as CPO departs - SDxCentral",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNHNpVHo5cWIzMzRXRG9Jay1GZlRIcWE5aFlZa183VzFPSEhBa0tSdFk4RTU3U0I4T0ZVQWgzSG8xUTRWRXRONkJuSkU5RzFLYU5VUXl4bW9pM2kwc3VFTXRXTUMybWNERjd5U2RLd2pWdFVLQmNMdUF4Y2tFTE15SmNfckxiaEM5VXZxNlNQMUtVLTVsUHFxczhmWjFrS29GRFlV?oc=5",
       "date": "2026-01-15T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam acquires backup appliance provider Object First as CPO departs sdxcentral.com"
+      "description": "Veeam acquires backup appliance provider Object First as CPO departs SDxCentral"
     },
     {
       "title": "Critical RCE Vulnerability (CVE-2025-59470) in Veeam Backup & Replication: Patch Released to Prevent Exploitation - Rescana",
@@ -623,22 +623,22 @@
       "description": "Veeam closes serious vulnerability in Backup & Replication, patch required Techzine Global"
     },
     {
-      "title": "S3 for Veeam Backup Repository - Amazon Web Services",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxZmR6RFFDN19JVFJsbkJPSzZQMGVyRzJNUElwSzJ1WERjaGk5YzBBXzk2YjllUnJVZE5nQVphTHdfTURNX2FPMG9zdFFsXzhQTXhKb0x3SVRDN2s?oc=5",
-      "date": "2026-01-07T19:00:10Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "S3 for Veeam Backup Repository Amazon Web Services"
-    },
-    {
-      "title": "New Veeam vulnerabilities expose backup servers to RCE attacks - BleepingComputer",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQc1ZoTldKTXZLSm1MVkJ4N1hsZWdvSFNkWXY2SjdCeFczblcwbEZNYTFVU2N1dHdmTm1MaVFQRDNIOWV6RndKd093M1E3ZnZfQTRmam5SWVpqbWV5bGVkREczbFZJSFd5a1c4ck50emVKbWJ6NmNrbUh6NjRaX2lKdkx1QTdkN3VBMU9xVHJKYzlHdDBNTWVaTUVMRWhDMnZQWnBocWNEOFJtSFFlUHk40gG0AUFVX3lxTE5hM0pPTXo2bjVYakx4VDVKcFZxM1JYOXYwbUJxenZZQVhPMVpneF9MYjdFeDlfX0VqRldCbzBKb0tDM3d6U0dSNmcxX2pCNV9lMDBEcHl4VXRYVGk1SzV1MGxvMG45elNxb19ocFVtd1dMTlE1bWd5X1hvVTZZZzFhS3pidXE4YXZyOWhTbmhJTGdHdW1pbHdfWVVtbnZkd0pZQWhSZGhVeEhwbnBjUVM5OXZORg?oc=5",
+      "title": "Veeam Backup Vulnerabilities Enables Remote Code Execution as Root - CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2TVN6NkNUc0NBNFZwOTYtcGxwbnllM3JRd2xVbkswVXdhOHhENVc5cm5mVjdiNXJ4OHBmVlJGcnBiZVo5alJEcTBraWZ2Rkl0VDhTVWZuT3gxaWNQZzBxb0p1cTB3SzNwNnhn?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "New Veeam vulnerabilities expose backup servers to RCE attacks BleepingComputer"
+      "description": "Veeam Backup Vulnerabilities Enables Remote Code Execution as Root CyberSecurityNews"
+    },
+    {
+      "title": "Holes in Veeam Backup suite allow remote code execution, creation of malicious backup config files - csoonline.com",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQeG9iYkpIR1lpSjl1S2V3bXdyT0dqWGtNam1WQzB4Qnk1Slpmc1JmQmVkYzhLMkN6SkVEejlKM3J1ZlNpNHlwVTZ2aTZlQzRxWTBQbHBIejdTU3FLSmhXc19lNTJyNWYzc2g1Q19IMFR0OEs0eFZyQlVsV3BFTkNYQmhjamdDOUwyY1IwYTFEeno1ZzFTUzlTOFg2SmxxUmpTVVRLZEMyeGJ2ZFc2MFdacjZMUmxyN0pMcjV4MEZHdF8tSUNPYVVsdGcyMXYydUhVejN0eEhQNEJDN1dhM1o4?oc=5",
+      "date": "2026-01-07T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Holes in Veeam Backup suite allow remote code execution, creation of malicious backup config files csoonline.com"
     },
     {
       "title": "Veeam resolves CVSS 9.0 RCE flaw and other security issues - Security Affairs",
@@ -677,22 +677,22 @@
       "description": "Veeam issues patch to close critical remote code execution flaw CyberScoop"
     },
     {
-      "title": "Veeam Backup Vulnerabilities Enables Remote Code Execution as Root - CyberSecurityNews",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2TVN6NkNUc0NBNFZwOTYtcGxwbnllM3JRd2xVbkswVXdhOHhENVc5cm5mVjdiNXJ4OHBmVlJGcnBiZVo5alJEcTBraWZ2Rkl0VDhTVWZuT3gxaWNQZzBxb0p1cTB3SzNwNnhn?oc=5",
+      "title": "Veeam Backup Vulnerability Exposes Systems to Root-Level Remote Code Execution - gbhackers.com",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Dd0N2OE1UWFBTcmFpVnpkQUtBX1pJWDlyRzEwUmdmbFZpRG9WeU9GRVdFRFhsbmFwSzIydzNSNVJOV2J1Mkl4UW5vUDVGVFlOaWN2T1AwcTVxUVRDSWpCN1dZcXJXRGgyQlBGSThiWTJoRm8?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Backup Vulnerabilities Enables Remote Code Execution as Root CyberSecurityNews"
+      "description": "Veeam Backup Vulnerability Exposes Systems to Root-Level Remote Code Execution gbhackers.com"
     },
     {
-      "title": "Holes in Veeam Backup suite allow remote code execution, creation of malicious backup config files - csoonline.com",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQeG9iYkpIR1lpSjl1S2V3bXdyT0dqWGtNam1WQzB4Qnk1Slpmc1JmQmVkYzhLMkN6SkVEejlKM3J1ZlNpNHlwVTZ2aTZlQzRxWTBQbHBIejdTU3FLSmhXc19lNTJyNWYzc2g1Q19IMFR0OEs0eFZyQlVsV3BFTkNYQmhjamdDOUwyY1IwYTFEeno1ZzFTUzlTOFg2SmxxUmpTVVRLZEMyeGJ2ZFc2MFdacjZMUmxyN0pMcjV4MEZHdF8tSUNPYVVsdGcyMXYydUhVejN0eEhQNEJDN1dhM1o4?oc=5",
+      "title": "New Veeam vulnerabilities expose backup servers to RCE attacks - BleepingComputer",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQc1ZoTldKTXZLSm1MVkJ4N1hsZWdvSFNkWXY2SjdCeFczblcwbEZNYTFVU2N1dHdmTm1MaVFQRDNIOWV6RndKd093M1E3ZnZfQTRmam5SWVpqbWV5bGVkREczbFZJSFd5a1c4ck50emVKbWJ6NmNrbUh6NjRaX2lKdkx1QTdkN3VBMU9xVHJKYzlHdDBNTWVaTUVMRWhDMnZQWnBocWNEOFJtSFFlUHk40gG0AUFVX3lxTE5hM0pPTXo2bjVYakx4VDVKcFZxM1JYOXYwbUJxenZZQVhPMVpneF9MYjdFeDlfX0VqRldCbzBKb0tDM3d6U0dSNmcxX2pCNV9lMDBEcHl4VXRYVGk1SzV1MGxvMG45elNxb19ocFVtd1dMTlE1bWd5X1hvVTZZZzFhS3pidXE4YXZyOWhTbmhJTGdHdW1pbHdfWVVtbnZkd0pZQWhSZGhVeEhwbnBjUVM5OXZORg?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Holes in Veeam Backup suite allow remote code execution, creation of malicious backup config files csoonline.com"
+      "description": "New Veeam vulnerabilities expose backup servers to RCE attacks BleepingComputer"
     }
   ]
 }
