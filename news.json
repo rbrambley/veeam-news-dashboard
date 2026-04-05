@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-05T05:55:57Z",
+  "lastUpdated": "2026-04-05T08:04:17Z",
   "items": [
     {
       "title": "Suggestions for Possible Migration from standalone Veeam Agent to B&R (CE)",
@@ -119,13 +119,13 @@
       "description": "I have a new Veeam installation of the latest version 13. I stood up the virtual appliance for the VBR server and a separate Windows 2025 Proxy/Repository server. Best practices state to not add Veeam servers to the Domain, which I agree with and ..."
     },
     {
-      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - businesswire.com",
+      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Business Wire",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWFhTYm04MzZBQm56dDdldWxTaUc3cHZPd1JISUlEN0pDaUV3WHptNjAweU9OLWk1MHBBY0VqemtISzdhWE1ycXFOWFJzY0o0akVzV0R0MHFndmwzc2NEZW5vR0NtVC1tcVk4N3c3S0pwZ2tJLVMzSFlpOEVnOEhrWXZaQWVzTEo0Z1gxUEFMRWFsSUg5MFVJcmg0elZMM3cwMVlSTHhQeExGNWltSTNTUHlCbzdiX1I4a2RqNlJ6bEgxNVIxVERJelRrMk84NGExWjI3YWhHWUlEd0pxdXpTMktzU0UzX2dCdnRxY0lUaXUzWEpQaUE?oc=5",
       "date": "2026-04-01T13:05:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms businesswire.com"
+      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms Business Wire"
     },
     {
       "title": "veeam license",
@@ -191,13 +191,13 @@
       "description": "You can’t turn on the news without hearing about a new cybersecurity, malware, or ransomware attack. These attacks are growing more frequent and smarter, leaving a devastating amount of damage to companies' profits and reputations. We no longer ju..."
     },
     {
-      "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence - storagereview.com",
+      "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence - StorageReview.com",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaTBuanNKR3czZG4yUUpQbF9yQjFFeWxKdFlhM21OWkNZVGZUVkhkQWZkMFNtRmZwdFBtdVIyekQ2WEM2cWxuRXdUNWhmR0NKYURrZHRoSnNRSDJNSFdzbG1WTUJDSDZXa0l3TllrUGlLR29jdE91Tk95UVFBVVgwQzUxVEtGODhtSVBhcWQySFFmSkpZZUptSThzVUg4NnZCUE5UVjNmcHFaOHNDLWfSAbMBQVVfeXFMUDFnY1k4STdvUXlUMDFsWmplRmp2MEY0UDJDb1liNkVEZlZOZGd2ek94QXE1dmJQcGZKUEVidVVibm9HU2VtM282UlZZTWVMTk90R0ZTRTMxaEMyRGliRm95RHNlSGl3U0oyb0dMSUxMUllveW9Yczl4dm95Q0stb0RwQlRwUWlSRkpoME95ZkhTejRQeGVSd2c2WDhZbU5XYW1YTWozVUxzUUYxVFAyVE5ZQmM?oc=5",
       "date": "2026-03-31T17:06:13Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence storagereview.com"
+      "description": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence StorageReview.com"
     },
     {
       "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence",
@@ -236,13 +236,13 @@
       "description": "IT teams are challenged to deliver data resilience, protection, and rapid recovery across a sprawling ecosystem of platforms and tools. The operational edge, where incidents are detected, triaged, and resolved, is no longer confined to a single ve..."
     },
     {
-      "title": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI - intelligentcio.com",
+      "title": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI - Intelligent CIO",
       "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNOTRfREtfRWU2Sl9xNE5kWm8yZm1QQkhBZVZzb0NSeURKa0JZWVpsWUJERDBKMlVseXFlZFRLZzNtTzBXazJMcFBqemNFbm5tTjRxZXBxU1BkbUYybjhxSWxheWdGNDNzdmZzc3dRMVR3WlNHRXp4VHlxRjVvZkV0bmVDR2FXUEJmNFJRYURqVWVyazR0YktaOWF1UlR2c0ZUR28zYkpzdk43YXZzZFcxaTNfeTBhQTdBeU52eWFudmVYQUR4TFczX3JhRC1IRnpOb2UxZEhFZ0N0SjU0T1NrYVRDWFc3MzNf?oc=5",
       "date": "2026-03-31T11:04:51Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI intelligentcio.com"
+      "description": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI Intelligent CIO"
     },
     {
       "title": "Storage-level Corruption Guard on VDC Vault",
@@ -434,13 +434,13 @@
       "description": "List of Security Fixes and Improvements in Veeam Kasten for Kubernetes"
     },
     {
-      "title": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 - businesswire.com",
+      "title": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 - Business Wire",
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPR29qR2ZFMlRlNDNOYVhnWVFxSXNBX1NkdkpyekVhZkhaSUU5VTV2ZGJ1VnJBV1N0ZjdZSTZkaDhOSDhNVjVIdVA4TEl5T09Nd3lqc0xOTW82ZWZFaFBpNjZSemY5VWU2UFRKcFItdVF6bkhRZnozX0ZBUVAtTjcydTNTd3pCelVwTGlPWHFRdXJJc0E3OF9OU0JYb0hNeDlBWU5HY0RFMzJVUDdZeUVwY3hTNEhwaXROdTlrMXBoTjZhX3hKRUQxOWYyeW1NdjdkM1VJUVZJVDg?oc=5",
       "date": "2026-03-18T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 businesswire.com"
+      "description": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 Business Wire"
     },
     {
       "title": "Veeam Agent for Linux - veeamsnap and blksnap Extended Linux Distribution Support",
@@ -569,22 +569,22 @@
       "description": "MinIO Partners with Veeam, Launches New Support for Veeam Backup and Replication v12 HPCwire"
     },
     {
-      "title": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage - aws.amazon.com",
+      "title": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage - Amazon Web Services",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1aclN6MHlaRkRjRXNyMWR6Z3Y4eEpKM19lellBSlk5dVJVS3ZjTzNkN2JxOFRZNFl1U2tZbnBLaG9ETThRbVhJeXg2TERqbmdhVEk4MHlnbkdxRXNqclVz?oc=5",
       "date": "2026-01-21T03:55:08Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage aws.amazon.com"
+      "description": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage Amazon Web Services"
     },
     {
-      "title": "Veeam acquires backup appliance provider Object First as CPO departs - SDxCentral",
+      "title": "Veeam acquires backup appliance provider Object First as CPO departs - sdxcentral.com",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNHNpVHo5cWIzMzRXRG9Jay1GZlRIcWE5aFlZa183VzFPSEhBa0tSdFk4RTU3U0I4T0ZVQWgzSG8xUTRWRXRONkJuSkU5RzFLYU5VUXl4bW9pM2kwc3VFTXRXTUMybWNERjd5U2RLd2pWdFVLQmNMdUF4Y2tFTE15SmNfckxiaEM5VXZxNlNQMUtVLTVsUHFxczhmWjFrS29GRFlV?oc=5",
       "date": "2026-01-15T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam acquires backup appliance provider Object First as CPO departs SDxCentral"
+      "description": "Veeam acquires backup appliance provider Object First as CPO departs sdxcentral.com"
     },
     {
       "title": "Critical RCE Vulnerability (CVE-2025-59470) in Veeam Backup & Replication: Patch Released to Prevent Exploitation - Rescana",
@@ -605,13 +605,13 @@
       "description": "Veeam patches Backup & Replication vulnerabilities, urges users to update IT Pro"
     },
     {
-      "title": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection - storagereview.com",
+      "title": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection - StorageReview.com",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ2ZicXo4dUozSFN4akhyZDR5OHV4YjVnRlU4alVkTjBkQ3FQWjBBWW5MaEFVcExhaVVPXzNIeVdQOE5rNWVjV2pGS193ZkwtY3FrMnpxSHJ5RlhZdF9zeS11UjNsbFNkNnV4TmF1QUV4WWVvOGc5UW5kbWVyb1BhZ1pOMNIBiAFBVV95cUxPcjhwcFZObkFJb0JFY3h0akV1aEc3QnhEaFdET0hDbHI2MUdmV0RtT1VvbkdDRnhPSVE4R3JvcExNTmJqUTRBeDFiU1YybXlMX1lEdWYwME5jR2dGVjJyN291Y2gtaGNpU2lWZHpXbUt3a1lsWk1jaGVwejAtOWUyVXIxNl83V3I1?oc=5",
       "date": "2026-01-08T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection storagereview.com"
+      "description": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection StorageReview.com"
     },
     {
       "title": "Veeam closes serious vulnerability in Backup & Replication, patch required - Techzine Global",
@@ -623,13 +623,13 @@
       "description": "Veeam closes serious vulnerability in Backup & Replication, patch required Techzine Global"
     },
     {
-      "title": "S3 for Veeam Backup Repository - aws.amazon.com",
+      "title": "S3 for Veeam Backup Repository - Amazon Web Services",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxZmR6RFFDN19JVFJsbkJPSzZQMGVyRzJNUElwSzJ1WERjaGk5YzBBXzk2YjllUnJVZE5nQVphTHdfTURNX2FPMG9zdFFsXzhQTXhKb0x3SVRDN2s?oc=5",
       "date": "2026-01-07T19:00:10Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "S3 for Veeam Backup Repository aws.amazon.com"
+      "description": "S3 for Veeam Backup Repository Amazon Web Services"
     },
     {
       "title": "New Veeam vulnerabilities expose backup servers to RCE attacks - BleepingComputer",
@@ -668,13 +668,13 @@
       "description": "Veeam Patches Critical RCE Vulnerability with CVSS 9.0 in Backup & Replication The Hacker News"
     },
     {
-      "title": "Veeam issues patch to close critical remote code execution flaw - cyberscoop.com",
+      "title": "Veeam issues patch to close critical remote code execution flaw - CyberScoop",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRWtET2g4SUF2LUtVRjJDcHM5amRKUHRPcTdadi15X2hNbGZvdDZHTjJoYjZKQzMwSmViVHRQLTV3WVJSQ2Qyd0thQm9XYzRSR3ZHa2tOTm9pMTExa0JGNEdRUE5QOV92VWZORG5mdVRIQ0UzWmtGSHJlenRqQjRTajdLenlDcGhkejh2QTVKaWRGZw?oc=5",
       "date": "2026-01-07T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam issues patch to close critical remote code execution flaw cyberscoop.com"
+      "description": "Veeam issues patch to close critical remote code execution flaw CyberScoop"
     },
     {
       "title": "Veeam Backup Vulnerabilities Enables Remote Code Execution as Root - CyberSecurityNews",
