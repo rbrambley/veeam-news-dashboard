@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-04-06T06:19:07Z",
+  "lastUpdated": "2026-04-06T14:38:39Z",
   "items": [
+    {
+      "title": "7 Reasons to Move to Veeam Data Cloud for Microsoft 365",
+      "link": "https://www.veeam.com/blog/move-to-veeam-data-cloud-microsoft-365.html",
+      "date": "2026-04-06T13:24:33Z",
+      "source": "Veeam Blog",
+      "category": "blog",
+      "severity": "",
+      "description": "If you’re running Veeam Backup for Microsoft 365 today, you’ve already made the most important decision in SaaS protection: you built independent backups because you know “cloud” doesn’t automatically mean “recoverable” . What’s changed is the pre..."
+    },
+    {
+      "title": "Veeam Backup &amp; Replication • [FEATURE REQUEST] - Manual Health Check",
+      "link": "https://forums.veeam.com/viewtopic.php?p=567255#p567255",
+      "date": "2026-04-06T12:31:32Z",
+      "source": "Veeam Forums",
+      "category": "community",
+      "severity": "",
+      "description": "Hello, Would be nice to have an option to run manual Health Check to the job. Like a right click in the policy or a new option in the menu when you select the job. Thanks Statistics: Posted by CarlosEsteves — Apr 06, 2026 12:31 pm"
+    },
     {
       "title": "Setting up new Veeam Instance",
       "link": "https://www.reddit.com/r/Veeam/comments/1sdnd3w/setting_up_new_veeam_instance/",
@@ -9,15 +27,6 @@
       "category": "community",
       "severity": "",
       "description": "So I recently tried to upgrade our version of Veeam only to find out that I wasn't able to upgrade it to the lates version. (Too Old) So I decided to take the chance to do a fresh install. Now I am having issues getting it to connect to my Hyper V..."
-    },
-    {
-      "title": "Veeam Backup for Microsoft 365 • Re: Feature Request: Configuration Backup for Veeam Backup for Microsoft 365",
-      "link": "https://forums.veeam.com/viewtopic.php?p=567245#p567245",
-      "date": "2026-04-05T17:04:43Z",
-      "source": "Veeam Forums",
-      "category": "community",
-      "severity": "",
-      "description": "all hope is gone for VB365 Statistics: Posted by karsten123 — Apr 05, 2026 5:04 pm"
     },
     {
       "title": "Suggestions for Possible Migration from standalone Veeam Agent to B&R (CE)",
@@ -101,13 +110,13 @@
       "description": "I'm looking for backup/recovery on a Hyper-V 4 node cluster hosting around 12 VMs, and am confused on what version would be appropriate. We currently use an older version of Veeam to backup our VMs to a local Synology, off-site Synology and Backbl..."
     },
     {
-      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - IT Voice Media Pvt. Ltd.",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUWlWSXp6aGdqc05PY3dackRXcWkxU3J2WVRLTEx3U0kyaVJ5c2dJNlpHU2dfUTVhN1FudkFYOUZndnk3TFI4MGltU3NPNEVQZ0JYLUlmY0pCX1NON24zTTV2b0dHc3VvZDVMRnh4YnU5RHZSVnNXUFVkZ0stUlM4d21JZzBRY3VDamVqVVcza1JMeXFXNVRPaFAzYjhsTWF4aHZ1N2ZNLVU4ZVhieWVvSEI4UXdpUGZlc2pQLURZdWZ1bUNLMTNEcQ?oc=5",
-      "date": "2026-04-02T09:47:05Z",
+      "title": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 - businesswire.com",
+      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNYWU0d2lpMVJXTDFNR25HNURBSnA5dnRaM1Yxbk0ybWtXNlI1QW5UN01aLU1ldko0eWlCbGk1SS1RNWJ1YUd6dFhJNXVRMC15ZmNNczZxOHRLdEdINHIzUWFibjdSQm50T1FBVlhIWTZJdE5POVBUaGdTakNRR0pQMkxIejhKS1Z6cjREcENGWkx3R20zSXRBaWV2QlVjaFctSEVDclRRTi1VNUtzXzVyeEphSG50VXM0NWNyeHFUeTdsc200UHdEa1prQmpNdkc4aGVRcVVXMnc5TWx5NUphVjF6M1BUbDI2dGxMXzlRTjFTOVJkV2wzMnZ1OUhfaGtRVno1TmpJdWlFdzJPLUI3WHVGek5HX3JpOXdMZ2xxUkZkOW1z?oc=5",
+      "date": "2026-04-02T13:06:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms IT Voice Media Pvt. Ltd."
+      "description": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 businesswire.com"
     },
     {
       "title": "Choosing the right Veeam solution",
@@ -135,6 +144,15 @@
       "category": "community",
       "severity": "",
       "description": "I have a new Veeam installation of the latest version 13. I stood up the virtual appliance for the VBR server and a separate Windows 2025 Proxy/Repository server. Best practices state to not add Veeam servers to the Domain, which I agree with and ..."
+    },
+    {
+      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSnR3Nk9BUXc5dnJBaEwxTGxDY3pkV1BFZmQ2TFFaVC1lZGdSYXhIRFdldFk2dzZ3U1NHeWZXTlZVbW50UWRSY0ZuYVVpTld0VWhhQzl1YldqMHZKODk5bDRBRFJLdjlseHRrbWNYMldaOU1NRzd1Q1RobWNCd1BaTzB1VVJVWkdpWXo1bzU5cFphRENZdVVKeDh1bWhBcHZnN1Bub0p3?oc=5",
+      "date": "2026-04-01T13:05:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms Yahoo Finance"
     },
     {
       "title": "veeam license",
@@ -200,13 +218,13 @@
       "description": "You can’t turn on the news without hearing about a new cybersecurity, malware, or ransomware attack. These attacks are growing more frequent and smarter, leaving a devastating amount of damage to companies' profits and reputations. We no longer ju..."
     },
     {
-      "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence - storagereview.com",
+      "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence - StorageReview.com",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaTBuanNKR3czZG4yUUpQbF9yQjFFeWxKdFlhM21OWkNZVGZUVkhkQWZkMFNtRmZwdFBtdVIyekQ2WEM2cWxuRXdUNWhmR0NKYURrZHRoSnNRSDJNSFdzbG1WTUJDSDZXa0l3TllrUGlLR29jdE91Tk95UVFBVVgwQzUxVEtGODhtSVBhcWQySFFmSkpZZUptSThzVUg4NnZCUE5UVjNmcHFaOHNDLWfSAbMBQVVfeXFMUDFnY1k4STdvUXlUMDFsWmplRmp2MEY0UDJDb1liNkVEZlZOZGd2ek94QXE1dmJQcGZKUEVidVVibm9HU2VtM282UlZZTWVMTk90R0ZTRTMxaEMyRGliRm95RHNlSGl3U0oyb0dMSUxMUllveW9Yczl4dm95Q0stb0RwQlRwUWlSRkpoME95ZkhTejRQeGVSd2c2WDhZbU5XYW1YTWozVUxzUUYxVFAyVE5ZQmM?oc=5",
       "date": "2026-03-31T17:06:13Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence storagereview.com"
+      "description": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence StorageReview.com"
     },
     {
       "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence",
@@ -254,15 +272,6 @@
       "description": "Hi Everyone, Is it necessary to enable Storage-level Corruption Guard on backup jobs or backup copy jobs to VDC Vault? Is there any best practices or strategies on this? Or is it better to just enable it for backup jobs pointing to local repositor..."
     },
     {
-      "title": "Malware and Ransomware Detection in M365",
-      "link": "https://www.veeam.com/kb4838",
-      "date": "2026-03-31T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "This article describes how to locate, review, and interpret Malware and Ransomware threat detections surfaced by Veeam Data Cloud (VDC) Advanced Threat Detection for Microsoft 365 workloads."
-    },
-    {
       "title": "Guest processing fails for Nutanix AHV, Proxmox VE, Scale Computing HyperCore",
       "link": "https://www.veeam.com/kb4842",
       "date": "2026-03-31T00:00:00Z",
@@ -270,6 +279,15 @@
       "category": "kb",
       "severity": "",
       "description": "When running backup or replication jobs for Windows virtual machines hosted on Nutanix AHV, Proxmox VE, or Scale Computing HyperCore with Veeam Backup & Replication 13.0.1 Patch 2, guest processing fails due to an in-guest processing component tha..."
+    },
+    {
+      "title": "Malware and Ransomware Detection in M365",
+      "link": "https://www.veeam.com/kb4838",
+      "date": "2026-03-31T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "This article describes how to locate, review, and interpret Malware and Ransomware threat detections surfaced by Veeam Data Cloud (VDC) Advanced Threat Detection for Microsoft 365 workloads."
     },
     {
       "title": "Potential Issue With Backing up Sharepoint, Onedrive, Teams Files, and List Attachments",
@@ -362,15 +380,6 @@
       "description": "Hello All! Struggling with some issues backing up a couple Hyper-V VMs from Backup and Replication Community. We have a TrueNAS for backups with NFS shares running as a backup target and Veeam BR on a Windows 11 VM. One Hyper-V VM has no issues wh..."
     },
     {
-      "title": "Rehydrate Your ESXi Backups Directly to Nutanix AHV with New “Easy Button” Solution",
-      "link": "https://www.veeam.com/blog/rehydrate-esxi-backups-to-nutanix-ahv-veeam.html",
-      "date": "2026-03-26T17:29:35Z",
-      "source": "Veeam Blog",
-      "category": "blog",
-      "severity": "",
-      "description": "Sometimes it doesn’t make sense to reformat your entire data estate just to migrate from, say, VMware ESXi to Nutanix AHV. For example, you may have years of data backed up by Veeam while your applications run on VMware ESXi infrastructure in supp..."
-    },
-    {
       "title": "Search Best Practices in Veeam Data Cloud for Microsoft 365",
       "link": "https://www.veeam.com/kb4730",
       "date": "2026-03-25T00:00:00Z",
@@ -425,13 +434,13 @@
       "description": "List of Security Fixes and Improvements in Veeam Kasten for Kubernetes"
     },
     {
-      "title": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 - Business Wire",
+      "title": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 - businesswire.com",
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPR29qR2ZFMlRlNDNOYVhnWVFxSXNBX1NkdkpyekVhZkhaSUU5VTV2ZGJ1VnJBV1N0ZjdZSTZkaDhOSDhNVjVIdVA4TEl5T09Nd3lqc0xOTW82ZWZFaFBpNjZSemY5VWU2UFRKcFItdVF6bkhRZnozX0ZBUVAtTjcydTNTd3pCelVwTGlPWHFRdXJJc0E3OF9OU0JYb0hNeDlBWU5HY0RFMzJVUDdZeUVwY3hTNEhwaXROdTlrMXBoTjZhX3hKRUQxOWYyeW1NdjdkM1VJUVZJVDg?oc=5",
       "date": "2026-03-18T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 Business Wire"
+      "description": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 businesswire.com"
     },
     {
       "title": "Veeam Agent for Linux - veeamsnap and blksnap Extended Linux Distribution Support",
@@ -452,15 +461,6 @@
       "description": "This occurs because the repository signing key used for the Linux agent repository was rotated."
     },
     {
-      "title": "How to Manually Update GPG key on Veeam Hardened Repository Appliance",
-      "link": "https://www.veeam.com/kb4833",
-      "date": "2026-03-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "This article documents how to update the GPG key for Veeam Hardened Repository ISO v2 appliances manually."
-    },
-    {
       "title": "How to Manually Update GPG key on Veeam Appliances",
       "link": "https://www.veeam.com/kb4834",
       "date": "2026-03-16T00:00:00Z",
@@ -468,6 +468,15 @@
       "category": "kb",
       "severity": "",
       "description": "This article documents how to manually update the GPG key for Veeam Appliances (i.e., Veeam Software Appliance and Veeam Infrastructure Appliance)."
+    },
+    {
+      "title": "How to Manually Update GPG key on Veeam Hardened Repository Appliance",
+      "link": "https://www.veeam.com/kb4833",
+      "date": "2026-03-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "This article documents how to update the GPG key for Veeam Hardened Repository ISO v2 appliances manually."
     },
     {
       "title": "Migration to Unified Veeam Data Cloud FAQ",
@@ -479,13 +488,13 @@
       "description": "Migration to Unified Veeam Data Cloud FAQ"
     },
     {
-      "title": "Veeam says security flaws may be exposing backup servers to attacks - Yahoo Tech",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOay00akwwaDV4T1JERWZzNmlNQ2NXU2hlV0YzNlV3dEkzTU5KaVp4QnI0N0toY0FSU2tQanV4TUFxbEpnMVh2UnU4SE1QTmh6UXQ4WlRjaUdKbHF1eTVRcUNnVUxVZWExdHJ4NzRaQmU1dDIwVEtCMXVpb0wtQS1aLWtR?oc=5",
-      "date": "2026-03-13T07:00:00Z",
+      "title": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! - Centre for Cybersecurity Belgium",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPR2JmQVI4QnJFVmMyU1QwdU5mX1EzN2dLNmpwWnF4NXY5YjFYelJzMF9TRlB0dlVnajVKLWpDVWxQdThkaE13NUxfNi1zaTJsSmxOVXpsSWFOUWV5SkJHeDJ5M1djcm9haUpMZmlZUUdhMzNPVHJKT1laSHB2NHRUTUdKbGUtbXFRaXpkaElkVEZMWThQLWtLVm1sbWFJcmF4QWRzRjJfR2lKSXZHN0JwT2NneHcxdnNidnc?oc=5",
+      "date": "2026-03-13T18:32:43Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
+      "description": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! Centre for Cybersecurity Belgium"
     },
     {
       "title": "Veeam says critical security flaws may be exposing backup servers to RCE attacks - TechRadar",
@@ -495,6 +504,15 @@
       "category": "news",
       "severity": "",
       "description": "Veeam says critical security flaws may be exposing backup servers to RCE attacks TechRadar"
+    },
+    {
+      "title": "Veeam says security flaws may be exposing backup servers to attacks - Yahoo Tech",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOay00akwwaDV4T1JERWZzNmlNQ2NXU2hlV0YzNlV3dEkzTU5KaVp4QnI0N0toY0FSU2tQanV4TUFxbEpnMVh2UnU4SE1QTmh6UXQ4WlRjaUdKbHF1eTVRcUNnVUxVZWExdHJ4NzRaQmU1dDIwVEtCMXVpb0wtQS1aLWtR?oc=5",
+      "date": "2026-03-13T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
     },
     {
       "title": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication - csoonline.com",
@@ -542,31 +560,13 @@
       "description": "Vulnerabilities Resolved in Veeam Backup & Replication 12.3.2.4465"
     },
     {
-      "title": "MinIO Partners with Veeam, Launches New Support for Veeam Backup and Replication v12 - hpcwire.com",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONjBWaVZDYy1MTjB0eENwR2ZLbFZQcDRsMC1fSzJOWDItY1F3YW12VDNGbUIwdnlsVFNfZlFneEo0X1RqTlRVWHg2T2x4UmtqeUVYa1JHRF9fZER4WXVsU1lTVlM2Zko1bmdsVGxiNk9SV1ZZbWg4NnM1VlVjVW5ic00td0F4NGZMYnFvc3AxeTRfQWxlSWcxcFc3eHpnOWhPdFNHRnRlS20yam42TGhjcW5qLTY4Y0lHVHh6Rk10M1VCVEN0Z0FxcFpwZ3ZsUQ?oc=5",
-      "date": "2026-02-10T08:00:00Z",
+      "title": "The best backup software of 2026: Expert tested and reviewed - ZDNET",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBXclZqVUFMTzcxbGVDUktYSkJzdlJsUHVrNWVTUWJtR0E2V3VCRTVXR19lWlhtTXJ6Q3RId01rNFIyVzFYSWRwQkZQd2ZTNk5QeGh4U2xMLXg1SVB4Q19YTWx2cVlKQQ?oc=5",
+      "date": "2026-02-06T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "MinIO Partners with Veeam, Launches New Support for Veeam Backup and Replication v12 hpcwire.com"
-    },
-    {
-      "title": "Object First Achieves 183% Year-Over-Year Bookings Growth in 2025 - Business Wire",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbTlrdHFMWWg3SXlqTEFkTVFWYm1USVVQTWNaQnpkNzYyZXB1cXhJYWpKSkt0MFhPWmZrSmtQaGxSbEs4X3RCcDdKd0Q2R0UySUcxamt3cXppVGwtak9CSDZwTEVoNGJnOHF2NmtHN1lSRTZ6bWdVcURIQkFZSFQ1aUVqUmtBMEFqVERXN1BpRHNlR2VVMEpiTWhvUkNKSWVqS0xTYXhiQXRYLTFwUDd6OXlnTTRHb3FvZG1Ga0l3?oc=5",
-      "date": "2026-02-10T08:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Object First Achieves 183% Year-Over-Year Bookings Growth in 2025 Business Wire"
-    },
-    {
-      "title": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage - Amazon Web Services",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1aclN6MHlaRkRjRXNyMWR6Z3Y4eEpKM19lellBSlk5dVJVS3ZjTzNkN2JxOFRZNFl1U2tZbnBLaG9ETThRbVhJeXg2TERqbmdhVEk4MHlnbkdxRXNqclVz?oc=5",
-      "date": "2026-01-21T03:55:08Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage Amazon Web Services"
+      "description": "The best backup software of 2026: Expert tested and reviewed ZDNET"
     },
     {
       "title": "Veeam acquires backup appliance provider Object First as CPO departs - SDxCentral",
@@ -596,22 +596,22 @@
       "description": "Veeam patches Backup & Replication vulnerabilities, urges users to update IT Pro"
     },
     {
-      "title": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection - storagereview.com",
+      "title": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection - StorageReview.com",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ2ZicXo4dUozSFN4akhyZDR5OHV4YjVnRlU4alVkTjBkQ3FQWjBBWW5MaEFVcExhaVVPXzNIeVdQOE5rNWVjV2pGS193ZkwtY3FrMnpxSHJ5RlhZdF9zeS11UjNsbFNkNnV4TmF1QUV4WWVvOGc5UW5kbWVyb1BhZ1pOMNIBiAFBVV95cUxPcjhwcFZObkFJb0JFY3h0akV1aEc3QnhEaFdET0hDbHI2MUdmV0RtT1VvbkdDRnhPSVE4R3JvcExNTmJqUTRBeDFiU1YybXlMX1lEdWYwME5jR2dGVjJyN291Y2gtaGNpU2lWZHpXbUt3a1lsWk1jaGVwejAtOWUyVXIxNl83V3I1?oc=5",
       "date": "2026-01-08T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection storagereview.com"
+      "description": "Scality ARTESCA+ Veeam: Unified Architecture, Faster Time to Protection StorageReview.com"
     },
     {
-      "title": "Veeam closes serious vulnerability in Backup & Replication, patch required - techzine.eu",
+      "title": "Veeam closes serious vulnerability in Backup & Replication, patch required - Techzine Global",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb3ltemhNVmpKY1J2TmxHWU9fX1YwYlJ6eDRGQTFhblRWMzdyUjE0dUJmbHZ1TTdIM1duOWc5OXd5cEZFdkFrcFRKdGdPN0JzZlB5UHhtNzVrMFBRNW5CRjJ2ZkZnR2xMb005dmxIQ2VuVkZEMHFlMDVtcHFuelZGVTI4NDViN3NpRmZtWGZDb1NKUFpfcTRlM2RQdGgzal9vMkhGWnc2dl9DNl9FTkdiMjRzNDJ6dGdT?oc=5",
       "date": "2026-01-08T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam closes serious vulnerability in Backup & Replication, patch required techzine.eu"
+      "description": "Veeam closes serious vulnerability in Backup & Replication, patch required Techzine Global"
     },
     {
       "title": "Veeam Backup Vulnerabilities Enable Remote Code Execution as Root - cyberpress.org",
