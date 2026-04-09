@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-09T16:48:41Z",
+  "lastUpdated": "2026-04-09T16:49:32Z",
   "items": [
     {
-      "title": "Veeam Backup for Microsoft 365 • Re: VB for M365 and VSA",
-      "link": "https://forums.veeam.com/viewtopic.php?p=567526#p567526",
-      "date": "2026-04-09T16:40:29Z",
+      "title": "Veeam Backup for Microsoft 365 • Re: Feature Request: Configuration Backup for Veeam Backup for Microsoft 365",
+      "link": "https://forums.veeam.com/viewtopic.php?p=567527#p567527",
+      "date": "2026-04-09T16:49:06Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hi Brendan, The honest answer is: we don't know ) We haven't tested VB365 and VSA compatibility and currently it's not planned. Statistics: Posted by Polina — Apr 09, 2026 4:40 pm"
+      "description": "Reports of its death are greatly exaggerated. Config backup is still not on the short-term roadmap, but not forgotten either. We won't be aiming to deliver feature parity with VBR, but instead - a simple yet reliable on-demand export/import of ins..."
     },
     {
       "title": "Veeam data cloud for ms365",
