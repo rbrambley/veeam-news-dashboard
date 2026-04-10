@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-10T14:42:46Z",
+  "lastUpdated": "2026-04-10T15:07:12Z",
   "items": [
     {
-      "title": "Servers &amp; Workstations • Re: How to configure for Internet agent backups",
-      "link": "https://forums.veeam.com/viewtopic.php?p=567592#p567592",
-      "date": "2026-04-10T14:27:12Z",
+      "title": "Salesforce • Re: restrict access to AWS KMS key for VDC",
+      "link": "https://forums.veeam.com/viewtopic.php?p=567593#p567593",
+      "date": "2026-04-10T14:56:44Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hi Bob, The agent will establish a direct connection to the local IP address of the backup server. With NAT, this is not possible; a VPN is be required. See: Veeam Help Center – Agent network requirements Everything works but the backups over the ..."
+      "description": "Hello, @sandsturm Could you please submit a support case and provide company name. We'll give you IP address where your installation(s) is deployed. regards Statistics: Posted by anastasia.belyaeva — Apr 10, 2026 2:56 pm"
     },
     {
       "title": "Windows mount server",
