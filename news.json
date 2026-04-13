@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13T07:26:22Z",
+  "lastUpdated": "2026-04-13T07:28:02Z",
   "items": [
     {
       "title": "Veeam Backup &amp; Replication • Re: Feature / Bug requests",
@@ -8,7 +8,7 @@
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Sorry to post my capture before update. My environement is Veeam in VM on Windows Server / Vcenter on Repositories on Synology (shared not iscsi). I dont use VSA. I have lastest build. I have same issue with scroolbars (before and after update). T..."
+      "description": "Sorry to post my capture before update. My environement is Veeam in VM on Windows Server / Vcenter on Repositories on Synology (shared not iscsi). I dont use VSA. I have lastest build. If \"Install/Update\" process is only for Linux, why not for Win..."
     },
     {
       "title": "[Veeam Windows Agent] Backup job created two extra full backups and causing loss of disk space",
