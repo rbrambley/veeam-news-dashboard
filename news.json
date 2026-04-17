@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-17T07:23:52Z",
+  "lastUpdated": "2026-04-17T07:57:25Z",
   "items": [
     {
-      "title": "Veeam Backup &amp; Replication • Re: VBR v13 GUI Performance",
-      "link": "https://forums.veeam.com/viewtopic.php?p=567983#p567983",
-      "date": "2026-04-17T06:38:54Z",
+      "title": "RHV, OLVM, SC//HyperCore, XCP-ng, HPE VME • Re: HPE VME - restore of vm creates two CDROM devices",
+      "link": "https://forums.veeam.com/viewtopic.php?p=567985#p567985",
+      "date": "2026-04-17T07:49:42Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hi, My question previously in this thread was \"How would I know what is expected or what is not expected from a new software build?\" And the answer was \"“Expected” means that our customers are satisfied with the performance.\" That is why I am disa..."
+      "description": "i checked. no virtio drivers were attached during backup. no ISO attached at all. i'll see if i can find some time to create a case. Curious to know if QA saw something similar. Statistics: Posted by JaySt — Apr 17, 2026 7:49 am"
     },
     {
       "title": "veeam upgrade in shared server VBO and VBR",
@@ -362,24 +362,6 @@
       "description": "If you’re running Veeam Backup for Microsoft 365 today, you’ve already made the most important decision in SaaS protection: you built independent backups because you know “cloud” doesn’t automatically mean “recoverable” . What’s changed is the pre..."
     },
     {
-      "title": "Protecting Your Data with Veeam - Security Boulevard",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5QYWhtbGlWb0ZteTZZRk50dlIzYjN4OUtPaGVvM0NiNnNtZ29Wb3E4ZWlwOVlhR3hpbVpMa2pYLUFIMHRCMC1kMjg2NEQ3RXctSGsybmFaVWNHdDdaaFhIeFFNU3VlWVM0SzdvSFYwREtiZTB5c1hxdU5n?oc=5",
-      "date": "2026-04-06T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Protecting Your Data with Veeam Security Boulevard"
-    },
-    {
-      "title": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 - Business Wire",
-      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNYWU0d2lpMVJXTDFNR25HNURBSnA5dnRaM1Yxbk0ybWtXNlI1QW5UN01aLU1ldko0eWlCbGk1SS1RNWJ1YUd6dFhJNXVRMC15ZmNNczZxOHRLdEdINHIzUWFibjdSQm50T1FBVlhIWTZJdE5POVBUaGdTakNRR0pQMkxIejhKS1Z6cjREcENGWkx3R20zSXRBaWV2QlVjaFctSEVDclRRTi1VNUtzXzVyeEphSG50VXM0NWNyeHFUeTdsc200UHdEa1prQmpNdkc4aGVRcVVXMnc5TWx5NUphVjF6M1BUbDI2dGxMXzlRTjFTOVJkV2wzMnZ1OUhfaGtRVno1TmpJdWlFdzJPLUI3WHVGek5HX3JpOXdMZ2xxUkZkOW1z?oc=5",
-      "date": "2026-04-02T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 Business Wire"
-    },
-    {
       "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSnR3Nk9BUXc5dnJBaEwxTGxDY3pkV1BFZmQ2TFFaVC1lZGdSYXhIRFdldFk2dzZ3U1NHeWZXTlZVbW50UWRSY0ZuYVVpTld0VWhhQzl1YldqMHZKODk5bDRBRFJLdjlseHRrbWNYMldaOU1NRzd1Q1RobWNCd1BaTzB1VVJVWkdpWXo1bzU5cFphRENZdVVKeDh1bWhBcHZnN1Bub0p3?oc=5",
       "date": "2026-04-01T07:00:00Z",
@@ -387,6 +369,15 @@
       "category": "news",
       "severity": "",
       "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms Yahoo Finance"
+    },
+    {
+      "title": "How to Configure krb5.conf for Cross-Domain Hyper-V Cluster Management",
+      "link": "https://www.veeam.com/kb4841",
+      "date": "2026-04-01T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "This article documents how to configure the /etc/krb5.conf file on the Veeam Software Appliance (VSA) to enable Kerberos authentication when managing a Microsoft Hyper-V cluster whose nodes belong to a different Active Directory domain than the ba..."
     },
     {
       "title": "The HTTP request was forbidden with client authentication scheme",
@@ -405,15 +396,6 @@
       "category": "release",
       "severity": "",
       "description": "Release Information for Fsas ETERNUS Plug-In for Veeam Backup & Replication"
-    },
-    {
-      "title": "How to Configure krb5.conf for Cross-Domain Hyper-V Cluster Management",
-      "link": "https://www.veeam.com/kb4841",
-      "date": "2026-04-01T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "This article documents how to configure the /etc/krb5.conf file on the Veeam Software Appliance (VSA) to enable Kerberos authentication when managing a Microsoft Hyper-V cluster whose nodes belong to a different Active Directory domain than the ba..."
     },
     {
       "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence - StorageReview.com",
@@ -479,15 +461,6 @@
       "description": "Salesforce has mandated a transition from legacy Connected Apps to External Client Apps (ECAs) for third-party integrations, prompting Veeam Data Cloud to release a managed package that creates an ECA to enable secure backups of Salesforce organiz..."
     },
     {
-      "title": "Search Best Practices in Veeam Data Cloud for Microsoft 365",
-      "link": "https://www.veeam.com/kb4730",
-      "date": "2026-03-25T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "Veeam Support Knowledge Base answer to: Veeam Data Cloud for Microsoft 365 Search Performance Consideration and Limitations"
-    },
-    {
       "title": "Support Statement — Exchange Web Services (EWS) Deprecation",
       "link": "https://www.veeam.com/kb4820",
       "date": "2026-03-25T00:00:00Z",
@@ -504,6 +477,15 @@
       "category": "kb",
       "severity": "",
       "description": "Veeam Support Knowledge Base answer to: Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce"
+    },
+    {
+      "title": "Search Best Practices in Veeam Data Cloud for Microsoft 365",
+      "link": "https://www.veeam.com/kb4730",
+      "date": "2026-03-25T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "Veeam Support Knowledge Base answer to: Veeam Data Cloud for Microsoft 365 Search Performance Consideration and Limitations"
     },
     {
       "title": "New Search Experience for Veeam Data Cloud for Microsoft 365",
@@ -551,13 +533,13 @@
       "description": "Multiple Authenticated High and Critical Vulnerabilities in Veeam Backup & Replication Arctic Wolf"
     },
     {
-      "title": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server - CyberSecurityNews",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zdjVZbTI4ck5EUUN6N1pFRVIzSkZ2dk5WZ1l0OHZMM0czSGl0djktcXNoYUoyN29ZZlNnaW01WV9ybEhRNHQ2MWpKOTgyTi0xZ3ItbVJFM0t5U2gwdzhhNjFsWDhBY3cxR1FlTENOaHhQMEM2?oc=5",
+      "title": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication - csoonline.com",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMTduZnpaRE9QSW52RDFHdEwyRnJnZFlQOHA2cmI0M3VNOEFiYUZXX3BSN2dMbW40TTdmaTJRTEFwWk5Gb1ZfR0JmSk1GdXdVMkh5bFo3V0pKWHAyOHQ4X181bEk1UWsybHJNWHNxLVBKUlVucmhUdWlaeU1lZFg0bGE3YVgzR1NDNFBzZGtRYUdMY2pjSXg0U1ZMcEstZHRwNG5uUk9LbV9hVmhIbEZIVy1ubjBDLWgzaUg0ZVlfcTA?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server CyberSecurityNews"
+      "description": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication csoonline.com"
     },
     {
       "title": "Veeam patches critical RCE vulnerabilities in backup software - SC Media",
@@ -605,13 +587,13 @@
       "description": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! Centre for Cybersecurity Belgium"
     },
     {
-      "title": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication - csoonline.com",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMTduZnpaRE9QSW52RDFHdEwyRnJnZFlQOHA2cmI0M3VNOEFiYUZXX3BSN2dMbW40TTdmaTJRTEFwWk5Gb1ZfR0JmSk1GdXdVMkh5bFo3V0pKWHAyOHQ4X181bEk1UWsybHJNWHNxLVBKUlVucmhUdWlaeU1lZFg0bGE3YVgzR1NDNFBzZGtRYUdMY2pjSXg0U1ZMcEstZHRwNG5uUk9LbV9hVmhIbEZIVy1ubjBDLWgzaUg0ZVlfcTA?oc=5",
+      "title": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server - CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zdjVZbTI4ck5EUUN6N1pFRVIzSkZ2dk5WZ1l0OHZMM0czSGl0djktcXNoYUoyN29ZZlNnaW01WV9ybEhRNHQ2MWpKOTgyTi0xZ3ItbVJFM0t5U2gwdzhhNjFsWDhBY3cxR1FlTENOaHhQMEM2?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication csoonline.com"
+      "description": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server CyberSecurityNews"
     },
     {
       "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks - BleepingComputer",
@@ -666,6 +648,15 @@
       "category": "news",
       "severity": "",
       "description": "The best backup software of 2026: Expert tested and reviewed ZDNET"
+    },
+    {
+      "title": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage - Amazon Web Services",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoejJVNndGV3VDdk0ybTFUUmNWLVBpQVk5MG9pSEFTZkhyZlZkUWo0NkFTNGQtWGx5ZVF4aDUtY2lfRXlhNW5BM21qNUVwR3lqbG5mbF92Wmppc1djcmxV?oc=5",
+      "date": "2026-01-20T13:21:54Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Leveraging Amazon S3 for Veeam VBR Scale-Out Backup Repository: Enhancing Data Protection with Cloud Storage Amazon Web Services"
     }
   ]
 }
