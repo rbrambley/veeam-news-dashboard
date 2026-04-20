@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-20T07:56:41Z",
+  "lastUpdated": "2026-04-20T08:18:28Z",
   "items": [
     {
-      "title": "Veeam Backup &amp; Replication • Re: Has anyone else upgraded Veeam Backup &amp; Replication from v12.3 to v13 and experienced the VBR console opening to a b",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568086#p568086",
-      "date": "2026-04-20T07:56:15Z",
+      "title": "Veeam Backup &amp; Replication • Re: Question about the Veeam Backup Appliance and an External HDD",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568089#p568089",
+      "date": "2026-04-20T08:07:00Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hi Suresh, This specific behavior does not match any known issues at first blush, so please continue with Support. Please share your case number as a reference. Statistics: Posted by david.domask — Apr 20, 2026 7:56 am"
+      "description": "Hi Stephen, No external or rotated storage is supported when connected to the Veeam Software Appliance. We are working on support for external iSCSI and FC storage, but not for RDX. Best, Fabian Statistics: Posted by Mildur — Apr 20, 2026 8:07 am"
     },
     {
       "title": "Hardened Repository reliability issues",
