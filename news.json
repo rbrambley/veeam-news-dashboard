@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-20T03:27:47Z",
+  "lastUpdated": "2026-04-20T07:56:41Z",
   "items": [
     {
-      "title": "Veeam Backup &amp; Replication • VSA 13 importing Linux Hardened Repo from 12.3 windows",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568059#p568059",
-      "date": "2026-04-20T02:44:34Z",
+      "title": "Veeam Backup &amp; Replication • Re: Has anyone else upgraded Veeam Backup &amp; Replication from v12.3 to v13 and experienced the VBR console opening to a b",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568086#p568086",
+      "date": "2026-04-20T07:56:15Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hello. We had a VBR 12.3 server backing up to a Linux hardened repo for a few years. We recently spun up a new Windows 2025 server and figured we would give VSA 13 a try as a VM. We tried to import the backup files from the LHR and pointed it to t..."
+      "description": "Hi Suresh, This specific behavior does not match any known issues at first blush, so please continue with Support. Please share your case number as a reference. Statistics: Posted by david.domask — Apr 20, 2026 7:56 am"
     },
     {
       "title": "Hardened Repository reliability issues",
