@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-20T13:16:28Z",
+  "lastUpdated": "2026-04-20T13:53:54Z",
   "items": [
     {
-      "title": "Microsoft Hyper-V • Surebackups on the VBR12 server itself",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568147#p568147",
-      "date": "2026-04-20T13:15:37Z",
+      "title": "Veeam Backup &amp; Replication • Re: VBR v13 GUI Performance",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568150#p568150",
+      "date": "2026-04-20T13:40:51Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "We have a customer where we're backing up two physical servers. They absolutely need backup testing so since our BDR is capable, I enable the Hyper-V role on it and added it to Veeam as a standalone Hyper-V host. I deployed a virtual lab (single h..."
+      "description": "Hello, the web UI is currently \"in preview\" (there is a popup at first login). That is where we focus on to get all functionality in there. ... Best regards Hannes So, think Windows Control Panel + Settings App? Statistics: Posted by ksimon — Apr ..."
     },
     {
       "title": "Hardened Repository reliability issues",
