@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-20T02:04:24Z",
+  "lastUpdated": "2026-04-20T03:27:47Z",
   "items": [
+    {
+      "title": "Veeam Backup &amp; Replication • VSA 13 importing Linux Hardened Repo from 12.3 windows",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568059#p568059",
+      "date": "2026-04-20T02:44:34Z",
+      "source": "Veeam Forums",
+      "category": "community",
+      "severity": "",
+      "description": "Hello. We had a VBR 12.3 server backing up to a Linux hardened repo for a few years. We recently spun up a new Windows 2025 server and figured we would give VSA 13 a try as a VM. We tried to import the backup files from the LHR and pointed it to t..."
+    },
     {
       "title": "Hardened Repository reliability issues",
       "link": "https://www.reddit.com/r/Veeam/comments/1spw71i/hardened_repository_reliability_issues/",
@@ -9,15 +18,6 @@
       "category": "community",
       "severity": "",
       "description": "I’m starting to get tired of getting emails every other weekend that say “Cannot connect to target backup repository”. Ever since v13 was released my Dell Poweredge Hardened Repository server has become unreliable. Rebooting the server usually fix..."
-    },
-    {
-      "title": "Veeam Backup &amp; Replication • Re: Feature Request: Select Components to Install/Upgrade",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568055#p568055",
-      "date": "2026-04-19T09:14:07Z",
-      "source": "Veeam Forums",
-      "category": "community",
-      "severity": "",
-      "description": "+1 I also agree with the request to add component selection during installation; it's absolutely necessary for both security and software optimization. It's a request that would go a long way with a little effort. It's not that every component sho..."
     },
     {
       "title": "Veeam Agent for Windows Free - PC turned off when backing up, now wont generate a VSS snapshot.",
