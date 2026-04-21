@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-21T03:19:28Z",
+  "lastUpdated": "2026-04-21T07:26:06Z",
   "items": [
     {
-      "title": "Veeam Backup &amp; Replication • Feature Request: Direct Download for Threat Hunter Signatures",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568186#p568186",
-      "date": "2026-04-21T00:37:32Z",
+      "title": "Veeam Backup &amp; Replication • Re: One-server-only System &amp; configuration backup copies",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568207#p568207",
+      "date": "2026-04-21T07:21:20Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "1. Background To get new signatures for Threat Hunter, the Veeam server needs to connect to the internet. But most of our customers, like government offices, have servers that must stay completely offline for security required from the government...."
+      "description": "Hi Poweruser, I’m still having trouble understanding how the other topic relates to your comment, which is why I split your posts into a new topic. We don’t want to derail the original discussion with unrelated feedback. The other topic was about ..."
     },
     {
       "title": "Veeam Named Alliance Partner of the Year at 4th Annual Scale Computing Platform//2026™ Summit Awards",
