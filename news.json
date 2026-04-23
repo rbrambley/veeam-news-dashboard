@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-23T19:00:04Z",
+  "lastUpdated": "2026-04-23T19:19:24Z",
   "items": [
+    {
+      "title": "Merge Backup Enterprise Manager with existing backup server",
+      "link": "https://www.reddit.com/r/Veeam/comments/1sts1ei/merge_backup_enterprise_manager_with_existing/",
+      "date": "2026-04-23T19:00:25Z",
+      "source": "Reddit r/Veeam",
+      "category": "community",
+      "severity": "",
+      "description": "Our company once had multiple sites so we located Backup Enterprise Manager at a cloud host so each site would have direct access in case of connection issues between sites. We have since sold those locations and migrating away from the cloud. Are..."
+    },
     {
       "title": "Proxmox VE • Re: Feature request: Restore in PVE, show the %% progress",
       "link": "https://forums.veeam.com/viewtopic.php?p=568405#p568405",
@@ -191,15 +200,6 @@
       "description": "I have been having the Snapshot Overflow issue for quite some time now. I am doing a backup of my entire server to my home NAS over a VPN tunnel. Backup log I have tried modifying the veeam.ini with quite a lot of problem solutions that others pos..."
     },
     {
-      "title": "How to Configure File Version Protection",
-      "link": "https://www.veeam.com/kb4816",
-      "date": "2026-04-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "This article discussed a new setting in Veeam Data Cloud for Microsoft 365 created to mitigate Microsoft 365 throttling risks, reduce backup processing time, and minimize storage consumption."
-    },
-    {
       "title": "Release Information for Veeam Backup for Microsoft 365 8.4",
       "link": "https://www.veeam.com/kb4843",
       "date": "2026-04-16T00:00:00Z",
@@ -207,6 +207,15 @@
       "category": "release",
       "severity": "",
       "description": "Release Information for Veeam Backup for Microsoft 365 8.4"
+    },
+    {
+      "title": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches",
+      "link": "https://www.veeam.com/kb4697",
+      "date": "2026-04-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches"
     },
     {
       "title": "Build Numbers and Versions of Veeam Backup for Microsoft 365",
@@ -227,13 +236,13 @@
       "description": "Build Numbers and Versions of Veeam Backup for Salesforce"
     },
     {
-      "title": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches",
-      "link": "https://www.veeam.com/kb4697",
+      "title": "How to Configure File Version Protection",
+      "link": "https://www.veeam.com/kb4816",
       "date": "2026-04-16T00:00:00Z",
       "source": "Veeam KB",
-      "category": "release",
+      "category": "kb",
       "severity": "",
-      "description": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches"
+      "description": "This article discussed a new setting in Veeam Data Cloud for Microsoft 365 created to mitigate Microsoft 365 throttling risks, reduce backup processing time, and minimize storage consumption."
     },
     {
       "title": "Nothing is listed under virtual labs, try to connect get a message lab already exists.",
@@ -317,15 +326,6 @@
       "description": "Welcome back to our Command the Expand series! In this second installment, we’ll explore how Veeam Data Cloud unlocks new cross-sell opportunities to drive customer value and accelerate partner growth. To learn more about Command the Expand, what ..."
     },
     {
-      "title": "Veeam B&R version 12 EOL upcoming and how to keep it running",
-      "link": "https://www.reddit.com/r/Veeam/comments/1skcgxh/veeam_br_version_12_eol_upcoming_and_how_to_keep/",
-      "date": "2026-04-13T14:28:15Z",
-      "source": "Reddit r/Veeam",
-      "category": "community",
-      "severity": "",
-      "description": "So with Veeam B&R 12 End of Support and Security Fix in February of 2027 (less than a year away) link I'm curious if anyone knows about how to keep the older version 12 running, does Veeam let me buy a license but not support? There is no way we t..."
-    },
-    {
       "title": "How to Deploy Veeam Backup for Salesforce External Client App",
       "link": "https://www.veeam.com/kb4827",
       "date": "2026-04-13T00:00:00Z",
@@ -335,15 +335,6 @@
       "description": "This article documents how to create an External Client App (ECA) in Salesforce to integrate with Veeam Backup for Salesforce via Salesforce API. An ECA with proper permissions is required for Veeam Backup for Salesforce to integrate with Salesfor..."
     },
     {
-      "title": "Release History for Veeam Service Provider Console 9",
-      "link": "https://www.veeam.com/kb4788",
-      "date": "2026-04-09T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "This article provides release history, build information, resolved issues, and update instructions for Veeam Service Provider Console version 9."
-    },
-    {
       "title": "Build Numbers and Versions of Veeam Service Provider Console",
       "link": "https://www.veeam.com/kb4464",
       "date": "2026-04-09T00:00:00Z",
@@ -351,6 +342,15 @@
       "category": "release",
       "severity": "",
       "description": "Build Numbers and Versions of Veeam Service Provider Console"
+    },
+    {
+      "title": "Release History for Veeam Service Provider Console 9",
+      "link": "https://www.veeam.com/kb4788",
+      "date": "2026-04-09T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "This article provides release history, build information, resolved issues, and update instructions for Veeam Service Provider Console version 9."
     },
     {
       "title": "Introducing Command the Expand: Fueling your Business Growth in 2026",
@@ -414,15 +414,6 @@
       "category": "news",
       "severity": "",
       "description": "Veeam has launched the Veeam Intelligence MCP Server, designed to bring backup, recovery, malware, and compliance information into broader enterprise IT operations. The server is built to give teams a single conversational interface for day-to-day..."
-    },
-    {
-      "title": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI - Intelligent CIO",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNOTRfREtfRWU2Sl9xNE5kWm8yZm1QQkhBZVZzb0NSeURKa0JZWVpsWUJERDBKMlVseXFlZFRLZzNtTzBXazJMcFBqemNFbm5tTjRxZXBxU1BkbUYybjhxSWxheWdGNDNzdmZzc3dRMVR3WlNHRXp4VHlxRjVvZkV0bmVDR2FXUEJmNFJRYURqVWVyazR0YktaOWF1UlR2c0ZUR28zYkpzdk43YXZzZFcxaTNfeTBhQTdBeU52eWFudmVYQUR4TFczX3JhRC1IRnpOb2UxZEhFZ0N0SjU0T1NrYVRDWFc3MzNf?oc=5",
-      "date": "2026-03-31T11:04:51Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "World Backup Day puts spotlight on data resilience as Veeam research reveals crisis of trust in data and AI Intelligent CIO"
     },
     {
       "title": "Potential Issue With Backing up Sharepoint, Onedrive, Teams Files, and List Attachments",
@@ -641,13 +632,31 @@
       "description": "Veeam officially launches its HPE Morpheus VM Essentials support Techzine Global"
     },
     {
-      "title": "Veeam releases Agent Commander to combat agentic AI risk - TechTarget",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMmRzTGN3N3Iya21XTVR3bXVIRENNOXZubkNjWXBhTlYxcXNpTW9TVm5scHNHWGJiYnlnenNMbF9TemxVLWlUd2ozLXROLTk0M3Jxb1FSb2wxRG1ZNXlOX19idEdHa2xaWWNJOUxJby1oYl9Cb2xvb2hSQ1B4Rlp2SU5yU2t2QjVrWWRxMUdzQ0ZyNV9fZFljWkNScEUzbk0xOTdxQnFTTFBFRHlMbEo5NS1yUUtQZw?oc=5",
-      "date": "2026-02-24T08:00:00Z",
+      "title": "AI-Assisted Attack Compromises 600 Fortinet FortiGate Firewalls Worldwide in Five-Week Campaign - Rescana",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVlJfMDdTWWZTT2tFSlkwRjAwMFZXMFBKaXRzSUZWYnZRMVhKXzlhUGpZa2V3Slc4WFRTQXA5dHNnS2lJNFgxTjd6TkxfZDB5MnluWDViMjZfeGVoQTM1SjdvcnRocmVWdG16SjNRNEYzay10U0ZKbjRROWxrMVJneG1OMXU5X0xKa210RTd3bS1MVUVWX1l4czB6bGlLTTRxTDRsYnhWMDRLOHpmS25Bc2tDQWFXbzR1V2VFMnJ6Ri0ydw?oc=5",
+      "date": "2026-02-22T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam releases Agent Commander to combat agentic AI risk TechTarget"
+      "description": "AI-Assisted Attack Compromises 600 Fortinet FortiGate Firewalls Worldwide in Five-Week Campaign Rescana"
+    },
+    {
+      "title": "Object First triples growth on ransomware-proof backups - IT Brief UK",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOc1MzTFlNd3RPc3U0WGZ3QjNKMlNieGwyVU9hMlpWa1BySXZ1LUdmaFFreVEwYnFxRk0xR3ZMWktKWEFKallUZTFlYWNFYkpYd0ljWEo2YXd6V0hsbEpwX0c4bjR5X1BJQTRZeEp6SnFmUy1sT2lTay1PNUFqRnJ0MFA3ZjA5ZzZMdjZn?oc=5",
+      "date": "2026-02-11T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Object First triples growth on ransomware-proof backups IT Brief UK"
+    },
+    {
+      "title": "Industry Exchange Cyber 2026: Veeam’s Mark Bentkower on why cyber resilience demands much more than response automation - Federal News Network",
+      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPT1ZvTlJ2SjVQWjZ4Q1BhYVRCWFVVcXNwRjNmbms2MGs0cnZJNGtkdXFzeWMwTm9BYzRpTkNadXE1TU5yeUxfVWlMdEFNWF9OMXdXUHVpZDlsWFBvR05aOGd0OUpNLURlenZHMUNRcGJpWHhMdnpPWkZrSHFSbjZFM0ZlSElTRjNJYzRrWF9LZWtHMl9lamdYNEEzSHE0c1lRNHFWYzJWVzk0ajhZYlBKS203dVZiVElibXBRTW4zV21NdlJMNGItc0steVJ5VlU3Z0lFRGdGREYteEFYbUV6QzlfZXktNWFtUWpwYmdldjdmQ0h6T3VnTXVmYnlkNUJx?oc=5",
+      "date": "2026-02-09T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Industry Exchange Cyber 2026: Veeam’s Mark Bentkower on why cyber resilience demands much more than response automation Federal News Network"
     },
     {
       "title": "The best backup software of 2026: Expert tested and reviewed - ZDNET",
