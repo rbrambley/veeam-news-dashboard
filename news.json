@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-24T07:52:44Z",
+  "lastUpdated": "2026-04-24T08:12:10Z",
   "items": [
     {
-      "title": "Microsoft Azure • Re: Tag missing from the list",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568418#p568418",
-      "date": "2026-04-24T07:47:08Z",
+      "title": "PowerShell • Re: [How To] Supported Method for Session Reporting on all Job Types (including Proxmox, Nutanix, etc)",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568420#p568420",
+      "date": "2026-04-24T07:57:49Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hi Andre, That is correct - it is by design. If you want something specific, maybe you can create tags like \"backup-XXX\" as a suggestion but you are free to come up with any solution. Statistics: Posted by nielsengelen — Apr 24, 2026 7:47 am"
+      "description": "Ah, I have not had enough coffee and my thoughts got crossed =,= You're correct, I'll delete my post since it's non-sense. Currently we don't have a way to get it faster, but the purpose of this exercise was to have a fully supported method for re..."
     },
     {
       "title": "Windows standalone agent keeping backups for much longer than specified retention period",
@@ -362,13 +362,13 @@
       "description": "If I told you that your existing customer base could ignite your growth for the year, would you believe me? Veeam is seeing success and results, such as increased ARR and higher retention. And the best part? Organizations remain resilient against ..."
     },
     {
-      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSnR3Nk9BUXc5dnJBaEwxTGxDY3pkV1BFZmQ2TFFaVC1lZGdSYXhIRFdldFk2dzZ3U1NHeWZXTlZVbW50UWRSY0ZuYVVpTld0VWhhQzl1YldqMHZKODk5bDRBRFJLdjlseHRrbWNYMldaOU1NRzd1Q1RobWNCd1BaTzB1VVJVWkdpWXo1bzU5cFphRENZdVVKeDh1bWhBcHZnN1Bub0p3?oc=5",
+      "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Business Wire",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWFhTYm04MzZBQm56dDdldWxTaUc3cHZPd1JISUlEN0pDaUV3WHptNjAweU9OLWk1MHBBY0VqemtISzdhWE1ycXFOWFJzY0o0akVzV0R0MHFndmwzc2NEZW5vR0NtVC1tcVk4N3c3S0pwZ2tJLVMzSFlpOEVnOEhrWXZaQWVzTEo0Z1gxUEFMRWFsSUg5MFVJcmg0elZMM3cwMVlSTHhQeExGNWltSTNTUHlCbzdiX1I4a2RqNlJ6bEgxNVIxVERJelRrMk84NGExWjI3YWhHWUlEd0pxdXpTMktzU0UzX2dCdnRxY0lUaXUzWEpQaUE?oc=5",
       "date": "2026-04-01T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms Yahoo Finance"
+      "description": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms Business Wire"
     },
     {
       "title": "Release Information for Fsas ETERNUS Plug-In for Veeam Backup & Replication",
