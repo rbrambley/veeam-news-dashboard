@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-24T13:08:36Z",
+  "lastUpdated": "2026-04-24T13:48:07Z",
   "items": [
     {
-      "title": "Veeam Backup for Microsoft 365 • Re: M365 Mailbox Backup increase since friday / latest August MS Patch installation",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568443#p568443",
-      "date": "2026-04-24T12:39:56Z",
+      "title": "Veeam Backup &amp; Replication • Bug / unexpected behaviour report on vsa v13",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568449#p568449",
+      "date": "2026-04-24T13:45:43Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Another year, same problem... Why does this keep happening, and why can't Veeam account for this well known issue? 2026 case: Case #08072337 2025 case: Case #07673159 2024 case: Case #07175422 Just like all other cases, the only \"resolution\" is ha..."
+      "description": "HI all, scenario: VBE13 Linux appliance build 13.0.1.2067 I am adding a linux VM to have a mini repo for configuration backups. No need of vPower NFS. I have only one windows machine managed by this VBR server, out of date/not working for some rea..."
     },
     {
       "title": "Windows standalone agent keeping backups for much longer than specified retention period",
