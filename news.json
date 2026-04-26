@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-26T07:20:44Z",
+  "lastUpdated": "2026-04-26T07:46:40Z",
   "items": [
     {
-      "title": "Veeam Agent for Microsoft Windows • Re: Veeam service do not start after Windows 11 update",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568468#p568468",
-      "date": "2026-04-26T07:11:14Z",
+      "title": "Veeam Agent for Microsoft Windows • Re: Case #05535134 | Starting Veeam service and/or tray application removes cryptographic keys (removes cookies in chrom",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568469#p568469",
+      "date": "2026-04-26T07:21:10Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "I uninstalled both of these: KB5082417 and KB5083769 and blocked Windows updates for 5 weeks. So we have some time again. Statistics: Posted by maffe — Apr 26, 2026 7:11 am"
+      "description": "I've been experiencing a recurring issue with Veeam Agent for Windows (free edition) that I've seen across multiple versions, from v6 all the way up to v13. *The issue: Whenever I make a configuration change in Veeam Agent (any change — schedule, ..."
     },
     {
       "title": "Is Ubuntu Server 26.04 LTS compatible with Veeam Agent for Linux?",
@@ -281,15 +281,6 @@
       "description": "I have been having the Snapshot Overflow issue for quite some time now. I am doing a backup of my entire server to my home NAS over a VPN tunnel. Backup log I have tried modifying the veeam.ini with quite a lot of problem solutions that others pos..."
     },
     {
-      "title": "Release Information for Veeam Backup for Microsoft 365 8.4",
-      "link": "https://www.veeam.com/kb4843",
-      "date": "2026-04-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "Release Information for Veeam Backup for Microsoft 365 8.4"
-    },
-    {
       "title": "Build Numbers and Versions of Veeam Backup for Microsoft 365",
       "link": "https://www.veeam.com/kb4106",
       "date": "2026-04-16T00:00:00Z",
@@ -326,6 +317,15 @@
       "description": "This article discussed a new setting in Veeam Data Cloud for Microsoft 365 created to mitigate Microsoft 365 throttling risks, reduce backup processing time, and minimize storage consumption."
     },
     {
+      "title": "Release Information for Veeam Backup for Microsoft 365 8.4",
+      "link": "https://www.veeam.com/kb4843",
+      "date": "2026-04-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Release Information for Veeam Backup for Microsoft 365 8.4"
+    },
+    {
       "title": "Data Trust and Resilience Report 2026",
       "link": "https://www.veeam.com/blog/data-trust-resilience-report.html",
       "date": "2026-04-14T15:25:13Z",
@@ -360,15 +360,6 @@
       "category": "kb",
       "severity": "",
       "description": "This article provides release history, build information, resolved issues, and update instructions for Veeam Service Provider Console version 9."
-    },
-    {
-      "title": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 - Business Wire",
-      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNYWU0d2lpMVJXTDFNR25HNURBSnA5dnRaM1Yxbk0ybWtXNlI1QW5UN01aLU1ldko0eWlCbGk1SS1RNWJ1YUd6dFhJNXVRMC15ZmNNczZxOHRLdEdINHIzUWFibjdSQm50T1FBVlhIWTZJdE5POVBUaGdTakNRR0pQMkxIejhKS1Z6cjREcENGWkx3R20zSXRBaWV2QlVjaFctSEVDclRRTi1VNUtzXzVyeEphSG50VXM0NWNyeHFUeTdsc200UHdEa1prQmpNdkc4aGVRcVVXMnc5TWx5NUphVjF6M1BUbDI2dGxMXzlRTjFTOVJkV2wzMnZ1OUhfaGtRVno1TmpJdWlFdzJPLUI3WHVGek5HX3JpOXdMZ2xxUkZkOW1z?oc=5",
-      "date": "2026-04-02T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 Business Wire"
     },
     {
       "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Yahoo Finance",
@@ -569,13 +560,13 @@
       "description": "Veeam Patches Critical Vulnerabilities in Backup & Replication Techzine Global"
     },
     {
-      "title": "Veeam says security flaws may be exposing backup servers to attacks - Yahoo Tech",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOay00akwwaDV4T1JERWZzNmlNQ2NXU2hlV0YzNlV3dEkzTU5KaVp4QnI0N0toY0FSU2tQanV4TUFxbEpnMVh2UnU4SE1QTmh6UXQ4WlRjaUdKbHF1eTVRcUNnVUxVZWExdHJ4NzRaQmU1dDIwVEtCMXVpb0wtQS1aLWtR?oc=5",
+      "title": "Veeam says critical security flaws may be exposing backup servers to RCE attacks - TechRadar",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcndheHc3QVJla3RaWmNPSlBodExad1lMNzhFbzhjdTMzUDYzckgyNXh1MUpUZ1RBSFJ5aGdyMU5qd3NKalJfUTJ2QWJiNnBoT3k1SUd4THhvY0phanNsX0l2blNNTjhPUjd3d3U1MTVGWGRaY2k2bWhya0VvOWtWczJRMTFUMm1hZnRPUGpfazZTWTQ0N3NyT1d5cnY2TC01ZGc2RHNvREJ2eWhjcU5PZnBPUi16OFZVNXRz?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
+      "description": "Veeam says critical security flaws may be exposing backup servers to RCE attacks TechRadar"
     },
     {
       "title": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! - Centre for Cybersecurity Belgium",
@@ -596,13 +587,13 @@
       "description": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication csoonline.com"
     },
     {
-      "title": "Veeam says critical security flaws may be exposing backup servers to RCE attacks - TechRadar",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcndheHc3QVJla3RaWmNPSlBodExad1lMNzhFbzhjdTMzUDYzckgyNXh1MUpUZ1RBSFJ5aGdyMU5qd3NKalJfUTJ2QWJiNnBoT3k1SUd4THhvY0phanNsX0l2blNNTjhPUjd3d3U1MTVGWGRaY2k2bWhya0VvOWtWczJRMTFUMm1hZnRPUGpfazZTWTQ0N3NyT1d5cnY2TC01ZGc2RHNvREJ2eWhjcU5PZnBPUi16OFZVNXRz?oc=5",
+      "title": "Veeam says security flaws may be exposing backup servers to attacks - Yahoo Tech",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOay00akwwaDV4T1JERWZzNmlNQ2NXU2hlV0YzNlV3dEkzTU5KaVp4QnI0N0toY0FSU2tQanV4TUFxbEpnMVh2UnU4SE1QTmh6UXQ4WlRjaUdKbHF1eTVRcUNnVUxVZWExdHJ4NzRaQmU1dDIwVEtCMXVpb0wtQS1aLWtR?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam says critical security flaws may be exposing backup servers to RCE attacks TechRadar"
+      "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
     },
     {
       "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks - BleepingComputer",
