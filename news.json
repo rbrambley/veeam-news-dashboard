@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-27T13:25:32Z",
+  "lastUpdated": "2026-04-27T14:06:22Z",
   "items": [
     {
-      "title": "Veeam Backup for Microsoft 365 • Re: Error Backing up SharePoint for unlicensed Users (archived users): 403 (forbidden)",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568523#p568523",
-      "date": "2026-04-27T13:13:39Z",
+      "title": "Veeam Backup &amp; Replication • Re: V13 - Unable to Login to console - Unable to perform OAuth authorization: interaction_required",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568527#p568527",
+      "date": "2026-04-27T13:49:42Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "same problem here. Tenant Location is Switzerland Case #08073632 Statistics: Posted by quebez — Apr 27, 2026 1:13 pm"
+      "description": "Did the same. Removed all components, rebooted, deleted leftover Veeam programfiles and programdata folders. Reinstalled from VeeamBackup&ReplicationConsole_13.0.1.180.exe, then connected to Veeam VSA and let the update go. Some componentes were u..."
     },
     {
       "title": "Failed to invoke func [HvPrepareSnapshot]",
