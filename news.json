@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-28T13:50:07Z",
+  "lastUpdated": "2026-04-28T14:24:35Z",
   "items": [
     {
-      "title": "Veeam Backup &amp; Replication • Re: Guest processing with changing passwords",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568619#p568619",
-      "date": "2026-04-28T13:40:46Z",
+      "title": "Veeam Agent for Microsoft Windows • Re: Bare metal restore",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568623#p568623",
+      "date": "2026-04-28T14:04:33Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "@Mildur, Running v12. In order to use gMSA, my VBR needs to be a member of the same domain as the server, right? I'm actually a cloud provider so my VBR can't even see the customer's domain, much less communicate with it, so that's out. The docume..."
+      "description": "Thanks! Statistics: Posted by perjonsson1960 — Apr 28, 2026 2:04 pm"
     },
     {
       "title": "SOBR only writing to one drive",
