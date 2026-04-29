@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-29T08:06:12Z",
+  "lastUpdated": "2026-04-29T08:25:51Z",
   "items": [
     {
-      "title": "Veeam Backup &amp; Replication • Re: Deployment kit on several computers",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568655#p568655",
-      "date": "2026-04-29T07:23:09Z",
+      "title": "Microsoft Hyper-V • Re: Trying to do a database restore from MSSQL hosted in Hyper-V",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568658#p568658",
+      "date": "2026-04-29T08:12:12Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hello Matteu, You're right you only need one deployment kit as it is related to the whole vbr. Just be aware of default validity period of 720 hours, it can be extended when generating the deployment kit using RestAPI or Powershell. Statistics: Po..."
+      "description": "Hi roundrobin, Sounds like a technical issue, so please open a Support Case for this, as looks like a technical issue and will require an investigation of the debug logs as noted when creating a topic. Please note the name of the server you tried ..."
     },
     {
       "title": "2012 windows server - VMware to Hyper-V using Veeam Instant recovery",
