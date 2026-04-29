@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-29T02:24:55Z",
+  "lastUpdated": "2026-04-29T03:37:38Z",
   "items": [
+    {
+      "title": "2012 windows server - VMware to Hyper-V using Veeam Instant recovery",
+      "link": "https://www.reddit.com/r/Veeam/comments/1symit6/2012_windows_server_vmware_to_hyperv_using_veeam/",
+      "date": "2026-04-29T02:58:01Z",
+      "source": "Reddit r/Veeam",
+      "category": "community",
+      "severity": "",
+      "description": "submitted by /u/Illustrious_Camp_363 [link] [comments]"
+    },
     {
       "title": "Applications • 12.3.2.4465 RMAN Plugin allocate Channel Failed",
       "link": "https://forums.veeam.com/viewtopic.php?p=568643#p568643",
@@ -270,15 +279,6 @@
       "category": "community",
       "severity": "",
       "description": "Hello Everyone, I hope you're all doing well. I need your advice. I have Veeam B&R v12, and I recently set up SureBackup Jobs for my VM image backups, utilizing both YARA Scan and Malware Detection. My mount server for these SureBackup jobs is the..."
-    },
-    {
-      "title": "Question about immutable backup",
-      "link": "https://www.reddit.com/r/Veeam/comments/1srq77v/question_about_immutable_backup/",
-      "date": "2026-04-21T15:00:28Z",
-      "source": "Reddit r/Veeam",
-      "category": "community",
-      "severity": "",
-      "description": "Our company has one file/erp server. We are looking to use immutable backups for this server. My question is which version of veeam do I need to install on the file/erp server that will allow me to setup immutable backups? Right now we have veeam ..."
     },
     {
       "title": "Veeam Windows Hardening Scripts v1.3 - Integrating Security & Compliance Analyzer",
