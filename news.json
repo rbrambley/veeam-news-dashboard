@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-04-29T13:30:14Z",
+  "lastUpdated": "2026-04-29T14:10:44Z",
   "items": [
     {
-      "title": "Veeam Backup for Microsoft 365 • Re: Error Backing up SharePoint for unlicensed Users (archived users): 403 (forbidden)",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568689#p568689",
-      "date": "2026-04-29T13:29:39Z",
+      "title": "Veeam Agent for Microsoft Windows • Re: Eject removable storage once backup is completed. Doesn't work.",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568692#p568692",
+      "date": "2026-04-29T14:09:52Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hi, We are experiencing the same issue across multiple tenants. I also agree with the others: before stating that these can be skipped from processing, we need a better understanding of the root cause. Thank you. Statistics: Posted by andre.simard..."
+      "description": "Case #08062948. Case was closed with no solution. Statistics: Posted by cag — Apr 29, 2026 2:09 pm"
     },
     {
       "title": "Question about community edition",
