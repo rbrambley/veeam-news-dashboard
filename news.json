@@ -1,14 +1,23 @@
 {
-  "lastUpdated": "2026-04-29T08:25:51Z",
+  "lastUpdated": "2026-04-29T13:30:14Z",
   "items": [
     {
-      "title": "Microsoft Hyper-V • Re: Trying to do a database restore from MSSQL hosted in Hyper-V",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568658#p568658",
-      "date": "2026-04-29T08:12:12Z",
+      "title": "Veeam Backup for Microsoft 365 • Re: Error Backing up SharePoint for unlicensed Users (archived users): 403 (forbidden)",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568689#p568689",
+      "date": "2026-04-29T13:29:39Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hi roundrobin, Sounds like a technical issue, so please open a Support Case for this, as looks like a technical issue and will require an investigation of the debug logs as noted when creating a topic. Please note the name of the server you tried ..."
+      "description": "Hi, We are experiencing the same issue across multiple tenants. I also agree with the others: before stating that these can be skipped from processing, we need a better understanding of the root cause. Thank you. Statistics: Posted by andre.simard..."
+    },
+    {
+      "title": "Question about community edition",
+      "link": "https://www.reddit.com/r/Veeam/comments/1sywoa1/question_about_community_edition/",
+      "date": "2026-04-29T11:58:30Z",
+      "source": "Reddit r/Veeam",
+      "category": "community",
+      "severity": "",
+      "description": "Hello, My question is we currently deploy multiple systems but each are self maintained and local to themselves. So one server has 5 vms on it. That is it but we copy that same setup to numerous locations (they don’t talk to each other or anything..."
     },
     {
       "title": "2012 windows server - VMware to Hyper-V using Veeam Instant recovery",
@@ -272,15 +281,6 @@
       "description": "Now that the VMCE 12 exam has expired, is there an update on when the VMCE 13 exam comes out? submitted by /u/NifflerMelons [link] [comments]"
     },
     {
-      "title": "Veeam B&R v12: YARA/Malware Detection not working for Linux VMs in SureBackup",
-      "link": "https://www.reddit.com/r/Veeam/comments/1ss0o75/veeam_br_v12_yaramalware_detection_not_working/",
-      "date": "2026-04-21T21:01:26Z",
-      "source": "Reddit r/Veeam",
-      "category": "community",
-      "severity": "",
-      "description": "Hello Everyone, I hope you're all doing well. I need your advice. I have Veeam B&R v12, and I recently set up SureBackup Jobs for my VM image backups, utilizing both YARA Scan and Malware Detection. My mount server for these SureBackup jobs is the..."
-    },
-    {
       "title": "Veeam Windows Hardening Scripts v1.3 - Integrating Security & Compliance Analyzer",
       "link": "https://www.reddit.com/r/Veeam/comments/1srmnv6/veeam_windows_hardening_scripts_v13_integrating/",
       "date": "2026-04-21T12:48:02Z",
@@ -288,24 +288,6 @@
       "category": "community",
       "severity": "",
       "description": "Preface: After some time, I finally managed to continue working on the hardening script and integrate a number of new ideas. This time my approach was slightly different. Besides improving and restructuring the coding style to make the script easi..."
-    },
-    {
-      "title": "Release Information for Veeam Backup for Microsoft 365 8.4",
-      "link": "https://www.veeam.com/kb4843",
-      "date": "2026-04-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "Release Information for Veeam Backup for Microsoft 365 8.4"
-    },
-    {
-      "title": "How to Configure File Version Protection",
-      "link": "https://www.veeam.com/kb4816",
-      "date": "2026-04-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "This article discussed a new setting in Veeam Data Cloud for Microsoft 365 created to mitigate Microsoft 365 throttling risks, reduce backup processing time, and minimize storage consumption."
     },
     {
       "title": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches",
@@ -335,6 +317,24 @@
       "description": "This KB article lists all versions of Veeam Backup for Microsoft 365 and their respective build numbers."
     },
     {
+      "title": "Release Information for Veeam Backup for Microsoft 365 8.4",
+      "link": "https://www.veeam.com/kb4843",
+      "date": "2026-04-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Release Information for Veeam Backup for Microsoft 365 8.4"
+    },
+    {
+      "title": "How to Configure File Version Protection",
+      "link": "https://www.veeam.com/kb4816",
+      "date": "2026-04-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "This article discussed a new setting in Veeam Data Cloud for Microsoft 365 created to mitigate Microsoft 365 throttling risks, reduce backup processing time, and minimize storage consumption."
+    },
+    {
       "title": "How to Deploy Veeam Backup for Salesforce External Client App",
       "link": "https://www.veeam.com/kb4827",
       "date": "2026-04-13T00:00:00Z",
@@ -362,13 +362,13 @@
       "description": "Build Numbers and Versions of Veeam Service Provider Console"
     },
     {
-      "title": "Veeam recognized as a 2026 Gartner Peer Insights Customers’ Choice for backup and data protection platforms - ZAWYA",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQR0l1Vk84QVRzWWtMTjJpVFRlb0xFczlKZElPVHlxSnVqWDVjWWw4azluSDB4eVFzYllIeFhuU2U1S2RfV1RLdVdCQTVIcVIxVXVBakhRQVFTWHgzdkE2dmhHWTlmZnNUZ3F4ZGYxNTgzbG1pU2RVZndVUDNWVVVBVzJyN3lXMXNMOGJ5VnNRU01SVlhpakwyalowSUJVNko2V2cyUnhGRnZ3a2Q2dUFmaVBraEtNanlvZW9CM1YxS1pZYmJEV1dyTGcwZnY3UXUwUVVRRlRUUkVwckdVMl9LT2x1cC1tdkdqTmp5TzZDMi1sX0lkZ0tNeWw0blZnQQ?oc=5",
+      "title": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 - Business Wire",
+      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNYWU0d2lpMVJXTDFNR25HNURBSnA5dnRaM1Yxbk0ybWtXNlI1QW5UN01aLU1ldko0eWlCbGk1SS1RNWJ1YUd6dFhJNXVRMC15ZmNNczZxOHRLdEdINHIzUWFibjdSQm50T1FBVlhIWTZJdE5POVBUaGdTakNRR0pQMkxIejhKS1Z6cjREcENGWkx3R20zSXRBaWV2QlVjaFctSEVDclRRTi1VNUtzXzVyeEphSG50VXM0NWNyeHFUeTdsc200UHdEa1prQmpNdkc4aGVRcVVXMnc5TWx5NUphVjF6M1BUbDI2dGxMXzlRTjFTOVJkV2wzMnZ1OUhfaGtRVno1TmpJdWlFdzJPLUI3WHVGek5HX3JpOXdMZ2xxUkZkOW1z?oc=5",
       "date": "2026-04-02T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam recognized as a 2026 Gartner Peer Insights Customers’ Choice for backup and data protection platforms ZAWYA"
+      "description": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 Business Wire"
     },
     {
       "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Yahoo Finance",
@@ -389,15 +389,6 @@
       "description": "This article documents how to configure the /etc/krb5.conf file on the Veeam Software Appliance (VSA) to enable Kerberos authentication when managing a Microsoft Hyper-V cluster whose nodes belong to a different Active Directory domain than the ba..."
     },
     {
-      "title": "The HTTP request was forbidden with client authentication scheme",
-      "link": "https://www.veeam.com/kb4796",
-      "date": "2026-04-01T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "Veeam Support Knowledge Base answer to: The HTTP request was forbidden with client authentication scheme"
-    },
-    {
       "title": "Release Information for Fsas ETERNUS Plug-In for Veeam Backup & Replication",
       "link": "https://www.veeam.com/kb4043",
       "date": "2026-04-01T00:00:00Z",
@@ -407,6 +398,15 @@
       "description": "Release Information for Fsas ETERNUS Plug-In for Veeam Backup & Replication"
     },
     {
+      "title": "The HTTP request was forbidden with client authentication scheme",
+      "link": "https://www.veeam.com/kb4796",
+      "date": "2026-04-01T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "Veeam Support Knowledge Base answer to: The HTTP request was forbidden with client authentication scheme"
+    },
+    {
       "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence - StorageReview.com",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaTBuanNKR3czZG4yUUpQbF9yQjFFeWxKdFlhM21OWkNZVGZUVkhkQWZkMFNtRmZwdFBtdVIyekQ2WEM2cWxuRXdUNWhmR0NKYURrZHRoSnNRSDJNSFdzbG1WTUJDSDZXa0l3TllrUGlLR29jdE91Tk95UVFBVVgwQzUxVEtGODhtSVBhcWQySFFmSkpZZUptSThzVUg4NnZCUE5UVjNmcHFaOHNDLWfSAbMBQVVfeXFMUDFnY1k4STdvUXlUMDFsWmplRmp2MEY0UDJDb1liNkVEZlZOZGd2ek94QXE1dmJQcGZKUEVidVVibm9HU2VtM282UlZZTWVMTk90R0ZTRTMxaEMyRGliRm95RHNlSGl3U0oyb0dMSUxMUllveW9Yczl4dm95Q0stb0RwQlRwUWlSRkpoME95ZkhTejRQeGVSd2c2WDhZbU5XYW1YTWozVUxzUUYxVFAyVE5ZQmM?oc=5",
       "date": "2026-03-31T17:06:13Z",
@@ -414,6 +414,15 @@
       "category": "news",
       "severity": "",
       "description": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence StorageReview.com"
+    },
+    {
+      "title": "Guest processing fails for Nutanix AHV, Proxmox VE, Scale Computing HyperCore",
+      "link": "https://www.veeam.com/kb4842",
+      "date": "2026-03-31T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "When running backup or replication jobs for Windows virtual machines hosted on Nutanix AHV, Proxmox VE, or Scale Computing HyperCore with Veeam Backup & Replication 13.0.1 Patch 2, guest processing fails due to an in-guest processing component tha..."
     },
     {
       "title": "Malware and Ransomware Detection in M365",
@@ -432,15 +441,6 @@
       "category": "kb",
       "severity": "",
       "description": "Backup of SharePoint, OneDrive, and Teams data completes successfully, and subsequent restores of this protected data are successful. However, when opening some of the restored files or list attachments, users may find that these items do not open..."
-    },
-    {
-      "title": "Guest processing fails for Nutanix AHV, Proxmox VE, Scale Computing HyperCore",
-      "link": "https://www.veeam.com/kb4842",
-      "date": "2026-03-31T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "When running backup or replication jobs for Windows virtual machines hosted on Nutanix AHV, Proxmox VE, or Scale Computing HyperCore with Veeam Backup & Replication 13.0.1 Patch 2, guest processing fails due to an in-guest processing component tha..."
     },
     {
       "title": "External Client App (ECA) for Veeam Data Cloud — Adapting to New Salesforce Security Requirements",
@@ -488,6 +488,15 @@
       "description": "We are excited to announce the initial rollout of our new search feature, designed to significantly improve the speed and efficiency of your search experience. Below are the details and important limitations to be aware of during this phased rollout."
     },
     {
+      "title": "Veeam's Securiti play could push it past Cohesity - Blocks & Files",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcmNKRGttdUlwcW40T0dFUUFjd2V0Wmx2Q0V3SVIyOTI5OVBQNzdVM3hOU2xCXzZJamxMVDVzLW9sMHlIUGtNODFGNTFfVUMwZzlyQnRFcjVUWWg2RU9GRjhfa3ZlQy1vaDgxZG5YSnZVWEkwYzRZVkJOdkJzNlVvdGtEMzVuME5NZmsyM1dDNy1jSC03XzRCTzdpVkpzZFNHT2lWT0M4TUJCQjQ?oc=5",
+      "date": "2026-03-20T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam's Securiti play could push it past Cohesity Blocks & Files"
+    },
+    {
       "title": "Object First to Showcase Absolutely Immutable Backup Storage at RSAC Conference 2026 - Business Wire",
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPR29qR2ZFMlRlNDNOYVhnWVFxSXNBX1NkdkpyekVhZkhaSUU5VTV2ZGJ1VnJBV1N0ZjdZSTZkaDhOSDhNVjVIdVA4TEl5T09Nd3lqc0xOTW82ZWZFaFBpNjZSemY5VWU2UFRKcFItdVF6bkhRZnozX0ZBUVAtTjcydTNTd3pCelVwTGlPWHFRdXJJc0E3OF9OU0JYb0hNeDlBWU5HY0RFMzJVUDdZeUVwY3hTNEhwaXROdTlrMXBoTjZhX3hKRUQxOWYyeW1NdjdkM1VJUVZJVDg?oc=5",
       "date": "2026-03-18T07:00:00Z",
@@ -515,15 +524,6 @@
       "description": "Multiple Authenticated High and Critical Vulnerabilities in Veeam Backup & Replication Arctic Wolf"
     },
     {
-      "title": "Veeam says critical security flaws may be exposing backup servers to RCE attacks - TechRadar",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcndheHc3QVJla3RaWmNPSlBodExad1lMNzhFbzhjdTMzUDYzckgyNXh1MUpUZ1RBSFJ5aGdyMU5qd3NKalJfUTJ2QWJiNnBoT3k1SUd4THhvY0phanNsX0l2blNNTjhPUjd3d3U1MTVGWGRaY2k2bWhya0VvOWtWczJRMTFUMm1hZnRPUGpfazZTWTQ0N3NyT1d5cnY2TC01ZGc2RHNvREJ2eWhjcU5PZnBPUi16OFZVNXRz?oc=5",
-      "date": "2026-03-13T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam says critical security flaws may be exposing backup servers to RCE attacks TechRadar"
-    },
-    {
       "title": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! - Centre for Cybersecurity Belgium",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPR2JmQVI4QnJFVmMyU1QwdU5mX1EzN2dLNmpwWnF4NXY5YjFYelJzMF9TRlB0dlVnajVKLWpDVWxQdThkaE13NUxfNi1zaTJsSmxOVXpsSWFOUWV5SkJHeDJ5M1djcm9haUpMZmlZUUdhMzNPVHJKT1laSHB2NHRUTUdKbGUtbXFRaXpkaElkVEZMWThQLWtLVm1sbWFJcmF4QWRzRjJfR2lKSXZHN0JwT2NneHcxdnNidnc?oc=5",
       "date": "2026-03-13T07:00:00Z",
@@ -531,60 +531,6 @@
       "category": "news",
       "severity": "",
       "description": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! Centre for Cybersecurity Belgium"
-    },
-    {
-      "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnYVB1YUZtSEo3YTZxdXFwSnRYRkxpbEhEbXNOLU9OWHVLWnRjUkYxUXZaYkZFa0N3bXVObl9GRENtZVJURWtYX3E4NmkyUGZHb21oc3NiV2ltNkpsUDhlazFNdWxvSlJxcGFSWUxDX01LT1E?oc=5",
-      "date": "2026-03-13T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
-    },
-    {
-      "title": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server - CyberSecurityNews",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zdjVZbTI4ck5EUUN6N1pFRVIzSkZ2dk5WZ1l0OHZMM0czSGl0djktcXNoYUoyN29ZZlNnaW01WV9ybEhRNHQ2MWpKOTgyTi0xZ3ItbVJFM0t5U2gwdzhhNjFsWDhBY3cxR1FlTENOaHhQMEM2?oc=5",
-      "date": "2026-03-13T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server CyberSecurityNews"
-    },
-    {
-      "title": "Veeam says security flaws may be exposing backup servers to attacks - Yahoo Tech",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOay00akwwaDV4T1JERWZzNmlNQ2NXU2hlV0YzNlV3dEkzTU5KaVp4QnI0N0toY0FSU2tQanV4TUFxbEpnMVh2UnU4SE1QTmh6UXQ4WlRjaUdKbHF1eTVRcUNnVUxVZWExdHJ4NzRaQmU1dDIwVEtCMXVpb0wtQS1aLWtR?oc=5",
-      "date": "2026-03-13T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
-    },
-    {
-      "title": "Veeam patches critical RCE vulnerabilities in backup software - SC Media",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaTN4cDk3cU9hZm1sYndfbUlxVmFxbDc1MmppZl9ETURES2tXczJxREdJQTNlTWNkYmZYNEVvV3d2bUV0MXQ0MzVXZ2dLZ1ZTWGVlSGVkSWVNU2FpeWxFS241cXA4MHR1SHRVR01Tam5RczdkeDlJcXBGYUU2S1dPZXpDNTI2UDByU1c3dDZERnVqZ0hNTFE?oc=5",
-      "date": "2026-03-13T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam patches critical RCE vulnerabilities in backup software SC Media"
-    },
-    {
-      "title": "Veeam Patches Critical Vulnerabilities in Backup & Replication - Techzine Global",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeHhXRHdyYVF2ME1pWE13SDM2MV9sdk05ZWFfZEZmXzFJdVdtSDJ3VGJ4ajNQd0doY2xMQW9UWFhFdDVKX3FxMWtjNkhSUVhKczVONDFTcTB5UGNMR1RDMEtYNVZPcDA1TW5fNEJEekxBVTZPSWtrdnU2NGV5OTlaZUZSd0VyUTZOODdhZ1ZHVnV1dXdvVy1nQkJueXZZOTRWMmQ2Y1ZNM3c4QQ?oc=5",
-      "date": "2026-03-13T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam Patches Critical Vulnerabilities in Backup & Replication Techzine Global"
-    },
-    {
-      "title": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication - csoonline.com",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMTduZnpaRE9QSW52RDFHdEwyRnJnZFlQOHA2cmI0M3VNOEFiYUZXX3BSN2dMbW40TTdmaTJRTEFwWk5Gb1ZfR0JmSk1GdXdVMkh5bFo3V0pKWHAyOHQ4X181bEk1UWsybHJNWHNxLVBKUlVucmhUdWlaeU1lZFg0bGE3YVgzR1NDNFBzZGtRYUdMY2pjSXg0U1ZMcEstZHRwNG5uUk9LbV9hVmhIbEZIVy1ubjBDLWgzaUg0ZVlfcTA?oc=5",
-      "date": "2026-03-13T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication csoonline.com"
     },
     {
       "title": "Veeam Patches 7 Critical Backup & Replication Flaws Allowing Remote Code Execution - The Hacker News",
@@ -596,13 +542,67 @@
       "description": "Veeam Patches 7 Critical Backup & Replication Flaws Allowing Remote Code Execution The Hacker News"
     },
     {
-      "title": "Veeam Security Patch Fixes Critical RCE in Backup Platform - The Cyber Express",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8xenZUVWZXbk82bVdlNFJvOFoxRWtyT1lOOHV0UERYVnBUZlQ4U2M0LWJmZGc1ZFdaajh5RzAtMFcxSHJxRFoyb3ctM3JPUGhJNmxJbVh5Y0VfX2Vod3l6bWpIWnJUX05lYzd6dlZPckd1bnprSlBnQTk5OTHSAYIBQVVfeXFMTWVhOGdLMUtka0VQUGF0eHJ2dFMyeEo2eG1vQTNFSFpkMmFkN0ZvdzRKc2tiTFNkUHNoTmZ5TW92ZV9zZThTSHBTMjBwdERrZV9iem5UWTJYRV9abTNQbWxqVHRJaE1hdk5tQzVka0NuNHpieDlZaThNZUxNVUJtdEVLUQ?oc=5",
-      "date": "2026-03-12T07:00:00Z",
+      "title": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication - csoonline.com",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMTduZnpaRE9QSW52RDFHdEwyRnJnZFlQOHA2cmI0M3VNOEFiYUZXX3BSN2dMbW40TTdmaTJRTEFwWk5Gb1ZfR0JmSk1GdXdVMkh5bFo3V0pKWHAyOHQ4X181bEk1UWsybHJNWHNxLVBKUlVucmhUdWlaeU1lZFg0bGE3YVgzR1NDNFBzZGtRYUdMY2pjSXg0U1ZMcEstZHRwNG5uUk9LbV9hVmhIbEZIVy1ubjBDLWgzaUg0ZVlfcTA?oc=5",
+      "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Security Patch Fixes Critical RCE in Backup Platform The Cyber Express"
+      "description": "Veeam warns admins to patch now as critical RCE flaws hit Backup & Replication csoonline.com"
+    },
+    {
+      "title": "Veeam Patches Critical Vulnerabilities in Backup & Replication - Techzine Global",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeHhXRHdyYVF2ME1pWE13SDM2MV9sdk05ZWFfZEZmXzFJdVdtSDJ3VGJ4ajNQd0doY2xMQW9UWFhFdDVKX3FxMWtjNkhSUVhKczVONDFTcTB5UGNMR1RDMEtYNVZPcDA1TW5fNEJEekxBVTZPSWtrdnU2NGV5OTlaZUZSd0VyUTZOODdhZ1ZHVnV1dXdvVy1nQkJueXZZOTRWMmQ2Y1ZNM3c4QQ?oc=5",
+      "date": "2026-03-13T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Patches Critical Vulnerabilities in Backup & Replication Techzine Global"
+    },
+    {
+      "title": "Veeam says critical security flaws may be exposing backup servers to RCE attacks - TechRadar",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcndheHc3QVJla3RaWmNPSlBodExad1lMNzhFbzhjdTMzUDYzckgyNXh1MUpUZ1RBSFJ5aGdyMU5qd3NKalJfUTJ2QWJiNnBoT3k1SUd4THhvY0phanNsX0l2blNNTjhPUjd3d3U1MTVGWGRaY2k2bWhya0VvOWtWczJRMTFUMm1hZnRPUGpfazZTWTQ0N3NyT1d5cnY2TC01ZGc2RHNvREJ2eWhjcU5PZnBPUi16OFZVNXRz?oc=5",
+      "date": "2026-03-13T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam says critical security flaws may be exposing backup servers to RCE attacks TechRadar"
+    },
+    {
+      "title": "Veeam says security flaws may be exposing backup servers to attacks - Yahoo Tech",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOay00akwwaDV4T1JERWZzNmlNQ2NXU2hlV0YzNlV3dEkzTU5KaVp4QnI0N0toY0FSU2tQanV4TUFxbEpnMVh2UnU4SE1QTmh6UXQ4WlRjaUdKbHF1eTVRcUNnVUxVZWExdHJ4NzRaQmU1dDIwVEtCMXVpb0wtQS1aLWtR?oc=5",
+      "date": "2026-03-13T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam says security flaws may be exposing backup servers to attacks Yahoo Tech"
+    },
+    {
+      "title": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server - CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zdjVZbTI4ck5EUUN6N1pFRVIzSkZ2dk5WZ1l0OHZMM0czSGl0djktcXNoYUoyN29ZZlNnaW01WV9ybEhRNHQ2MWpKOTgyTi0xZ3ItbVJFM0t5U2gwdzhhNjFsWDhBY3cxR1FlTENOaHhQMEM2?oc=5",
+      "date": "2026-03-13T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server CyberSecurityNews"
+    },
+    {
+      "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnYVB1YUZtSEo3YTZxdXFwSnRYRkxpbEhEbXNOLU9OWHVLWnRjUkYxUXZaYkZFa0N3bXVObl9GRENtZVJURWtYX3E4NmkyUGZHb21oc3NiV2ltNkpsUDhlazFNdWxvSlJxcGFSWUxDX01LT1E?oc=5",
+      "date": "2026-03-13T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
+    },
+    {
+      "title": "Veeam patches critical RCE vulnerabilities in backup software - SC Media",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaTN4cDk3cU9hZm1sYndfbUlxVmFxbDc1MmppZl9ETURES2tXczJxREdJQTNlTWNkYmZYNEVvV3d2bUV0MXQ0MzVXZ2dLZ1ZTWGVlSGVkSWVNU2FpeWxFS241cXA4MHR1SHRVR01Tam5RczdkeDlJcXBGYUU2S1dPZXpDNTI2UDByU1c3dDZERnVqZ0hNTFE?oc=5",
+      "date": "2026-03-13T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam patches critical RCE vulnerabilities in backup software SC Media"
     },
     {
       "title": "Veeam warns of critical flaws exposing backup servers to RCE attacks - BleepingComputer",
@@ -612,6 +612,15 @@
       "category": "news",
       "severity": "",
       "description": "Veeam warns of critical flaws exposing backup servers to RCE attacks BleepingComputer"
+    },
+    {
+      "title": "Veeam Security Patch Fixes Critical RCE in Backup Platform - The Cyber Express",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8xenZUVWZXbk82bVdlNFJvOFoxRWtyT1lOOHV0UERYVnBUZlQ4U2M0LWJmZGc1ZFdaajh5RzAtMFcxSHJxRFoyb3ctM3JPUGhJNmxJbVh5Y0VfX2Vod3l6bWpIWnJUX05lYzd6dlZPckd1bnprSlBnQTk5OTHSAYIBQVVfeXFMTWVhOGdLMUtka0VQUGF0eHJ2dFMyeEo2eG1vQTNFSFpkMmFkN0ZvdzRKc2tiTFNkUHNoTmZ5TW92ZV9zZThTSHBTMjBwdERrZV9iem5UWTJYRV9abTNQbWxqVHRJaE1hdk5tQzVka0NuNHpieDlZaThNZUxNVUJtdEVLUQ?oc=5",
+      "date": "2026-03-12T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Security Patch Fixes Critical RCE in Backup Platform The Cyber Express"
     },
     {
       "title": "Veeam Announces General Availability of Agentless Backup for HPE Morpheus VM Essentials - StorageReview.com",
@@ -630,24 +639,6 @@
       "category": "news",
       "severity": "",
       "description": "Veeam officially launches its HPE Morpheus VM Essentials support Techzine Global"
-    },
-    {
-      "title": "Veeam releases Agent Commander to combat agentic AI risk - TechTarget",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMmRzTGN3N3Iya21XTVR3bXVIRENNOXZubkNjWXBhTlYxcXNpTW9TVm5scHNHWGJiYnlnenNMbF9TemxVLWlUd2ozLXROLTk0M3Jxb1FSb2wxRG1ZNXlOX19idEdHa2xaWWNJOUxJby1oYl9Cb2xvb2hSQ1B4Rlp2SU5yU2t2QjVrWWRxMUdzQ0ZyNV9fZFljWkNScEUzbk0xOTdxQnFTTFBFRHlMbEo5NS1yUUtQZw?oc=5",
-      "date": "2026-02-24T08:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam releases Agent Commander to combat agentic AI risk TechTarget"
-    },
-    {
-      "title": "Object First triples growth on ransomware-proof backups - IT Brief UK",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOc1MzTFlNd3RPc3U0WGZ3QjNKMlNieGwyVU9hMlpWa1BySXZ1LUdmaFFreVEwYnFxRk0xR3ZMWktKWEFKallUZTFlYWNFYkpYd0ljWEo2YXd6V0hsbEpwX0c4bjR5X1BJQTRZeEp6SnFmUy1sT2lTay1PNUFqRnJ0MFA3ZjA5ZzZMdjZn?oc=5",
-      "date": "2026-02-11T08:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Object First triples growth on ransomware-proof backups IT Brief UK"
     },
     {
       "title": "Veeam Data Platform Reviews & Ratings 2026 - Gartner",
