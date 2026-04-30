@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-04-30T08:28:29Z",
+  "lastUpdated": "2026-04-30T13:27:45Z",
   "items": [
+    {
+      "title": "Veeam Backup &amp; Replication • Re: Feature Request: Native “Cyber Vault” Capability in Veeam (Air-Gapped, Invisible Backup Copy)",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568742#p568742",
+      "date": "2026-04-30T12:57:01Z",
+      "source": "Veeam Forums",
+      "category": "community",
+      "severity": "",
+      "description": "Hi guys, Since this topic got no answers from other customers, let me share my personal opinion. In high-security environments, existing hardened repositories and object storage immutability are valuable but still part of the same administrative d..."
+    },
+    {
+      "title": "Veeam Agent: AgentManagerService: Failed to start agent",
+      "link": "https://www.reddit.com/r/Veeam/comments/1szr2jp/veeam_agent_agentmanagerservice_failed_to_start/",
+      "date": "2026-04-30T09:25:46Z",
+      "source": "Reddit r/Veeam",
+      "category": "community",
+      "severity": "",
+      "description": "I have issues with Veeam Agent for Windows since few days. After 5 minutes backup fails at initializing no matter what: 30.04.2026 11:15:44 :: Error: AgentManagerService: Failed to start agent, Host 'redacted'. Timed out requesting agent port for ..."
+    },
     {
       "title": "Scality launches Veeam backup appliance for mid-size firms - SecurityBrief UK",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVkI0LWlvQlhaOUtBYk16bkxucW1GdU41WnJpZ0lPbnM2aUlRSUJvSXBYVTVnWjRVTktTdEpUTGZITWRuU1J1cjdrUkpxYVQ5X21BZnBYT0ZoR0o4djA5dERYaWdJS3RKQ2h3aWZseXRYaXFzOWd6WGFuSUo3SkE5NS1VNm5IQWhEbVBoWGt2cFBpOWVqNHhv?oc=5",
@@ -9,15 +27,6 @@
       "category": "news",
       "severity": "",
       "description": "Scality launches Veeam backup appliance for mid-size firms SecurityBrief UK"
-    },
-    {
-      "title": "Veeam Backup &amp; Replication • Re: Replication issue -- possible V13 changes to or issues with calculating digests?",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568720#p568720",
-      "date": "2026-04-30T08:05:51Z",
-      "source": "Veeam Forums",
-      "category": "community",
-      "severity": "",
-      "description": "Hello Ted, Off the top of my head, there was no change that would lead to a full replication of the entire disk after disk expansion. I also haven’t heard about this from other customers yet. I ran a short test in my lab for both scenarios, replic..."
     },
     {
       "title": "Service Accounts for VEEAM Backup 13....",
@@ -281,15 +290,6 @@
       "description": "Hello, ran into what looks like a Veeam bug yesterday, just want to know if anyone else has also experienced similar or this is something very specific to our environment. It's a fresh greenfield Hyper-V Failover Cluster infra, and Veeam is runnin..."
     },
     {
-      "title": "Would someone be willing to help me test a Veeam backup target solution I'm building?",
-      "link": "https://www.reddit.com/r/Veeam/comments/1sswvmm/would_someone_be_willing_to_help_me_test_a_veeam/",
-      "date": "2026-04-22T20:13:56Z",
-      "source": "Reddit r/Veeam",
-      "category": "community",
-      "severity": "",
-      "description": "I'm not trying to sell anything right now. Long story short, I'm building a Veeam backup target solution that is hopefully super simple and secure. But I don't have any workloads to test it. Would anyone be willing to spend a few minutes with me t..."
-    },
-    {
       "title": "Veeam NAS feature",
       "link": "https://www.reddit.com/r/Veeam/comments/1ssry12/veeam_nas_feature/",
       "date": "2026-04-22T17:18:58Z",
@@ -344,15 +344,6 @@
       "description": "Build Numbers and Versions of Veeam Backup for Salesforce"
     },
     {
-      "title": "Build Numbers and Versions of Veeam Backup for Microsoft 365",
-      "link": "https://www.veeam.com/kb4106",
-      "date": "2026-04-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "This KB article lists all versions of Veeam Backup for Microsoft 365 and their respective build numbers."
-    },
-    {
       "title": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches",
       "link": "https://www.veeam.com/kb4697",
       "date": "2026-04-16T00:00:00Z",
@@ -360,6 +351,15 @@
       "category": "release",
       "severity": "",
       "description": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches"
+    },
+    {
+      "title": "Build Numbers and Versions of Veeam Backup for Microsoft 365",
+      "link": "https://www.veeam.com/kb4106",
+      "date": "2026-04-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "This KB article lists all versions of Veeam Backup for Microsoft 365 and their respective build numbers."
     },
     {
       "title": "How to Deploy Veeam Backup for Salesforce External Client App",
@@ -479,13 +479,13 @@
       "description": "Salesforce has mandated a transition from legacy Connected Apps to External Client Apps (ECAs) for third-party integrations, prompting Veeam Data Cloud to release a managed package that creates an ECA to enable secure backups of Salesforce organiz..."
     },
     {
-      "title": "Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce",
-      "link": "https://www.veeam.com/kb4810",
+      "title": "Search Best Practices in Veeam Data Cloud for Microsoft 365",
+      "link": "https://www.veeam.com/kb4730",
       "date": "2026-03-25T00:00:00Z",
       "source": "Veeam KB",
       "category": "kb",
       "severity": "",
-      "description": "Veeam Support Knowledge Base answer to: Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce"
+      "description": "Veeam Support Knowledge Base answer to: Veeam Data Cloud for Microsoft 365 Search Performance Consideration and Limitations"
     },
     {
       "title": "Support Statement — Exchange Web Services (EWS) Deprecation",
@@ -497,13 +497,13 @@
       "description": "All product features that currently utilize EWS will be transitioned to Microsoft Graph API, ensuring continued functionality."
     },
     {
-      "title": "Search Best Practices in Veeam Data Cloud for Microsoft 365",
-      "link": "https://www.veeam.com/kb4730",
+      "title": "Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce",
+      "link": "https://www.veeam.com/kb4810",
       "date": "2026-03-25T00:00:00Z",
       "source": "Veeam KB",
       "category": "kb",
       "severity": "",
-      "description": "Veeam Support Knowledge Base answer to: Veeam Data Cloud for Microsoft 365 Search Performance Consideration and Limitations"
+      "description": "Veeam Support Knowledge Base answer to: Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce"
     },
     {
       "title": "Veeam's Securiti play could push it past Cohesity - Blocks & Files",
