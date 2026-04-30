@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-30T08:10:29Z",
+  "lastUpdated": "2026-04-30T08:28:29Z",
   "items": [
+    {
+      "title": "Scality launches Veeam backup appliance for mid-size firms - SecurityBrief UK",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVkI0LWlvQlhaOUtBYk16bkxucW1GdU41WnJpZ0lPbnM2aUlRSUJvSXBYVTVnWjRVTktTdEpUTGZITWRuU1J1cjdrUkpxYVQ5X21BZnBYT0ZoR0o4djA5dERYaWdJS3RKQ2h3aWZseXRYaXFzOWd6WGFuSUo3SkE5NS1VNm5IQWhEbVBoWGt2cFBpOWVqNHhv?oc=5",
+      "date": "2026-04-30T08:16:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Scality launches Veeam backup appliance for mid-size firms SecurityBrief UK"
+    },
     {
       "title": "Veeam Backup &amp; Replication • Re: Replication issue -- possible V13 changes to or issues with calculating digests?",
       "link": "https://forums.veeam.com/viewtopic.php?p=568720#p568720",
@@ -308,15 +317,6 @@
       "description": "Hi, We are a small company and planning to use Veeam Data Cloud for our M365 backup. The solution seams perfect for our use, but I am worried about not having a monthly or yearly full backup outside Veeam, in one of our file server systems, but fr..."
     },
     {
-      "title": "Build Numbers and Versions of Veeam Backup for Microsoft 365",
-      "link": "https://www.veeam.com/kb4106",
-      "date": "2026-04-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "This KB article lists all versions of Veeam Backup for Microsoft 365 and their respective build numbers."
-    },
-    {
       "title": "Release Information for Veeam Backup for Microsoft 365 8.4",
       "link": "https://www.veeam.com/kb4843",
       "date": "2026-04-16T00:00:00Z",
@@ -335,15 +335,6 @@
       "description": "This article discussed a new setting in Veeam Data Cloud for Microsoft 365 created to mitigate Microsoft 365 throttling risks, reduce backup processing time, and minimize storage consumption."
     },
     {
-      "title": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches",
-      "link": "https://www.veeam.com/kb4697",
-      "date": "2026-04-16T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches"
-    },
-    {
       "title": "Build Numbers and Versions of Veeam Backup for Salesforce",
       "link": "https://www.veeam.com/kb4372",
       "date": "2026-04-16T00:00:00Z",
@@ -351,6 +342,24 @@
       "category": "release",
       "severity": "",
       "description": "Build Numbers and Versions of Veeam Backup for Salesforce"
+    },
+    {
+      "title": "Build Numbers and Versions of Veeam Backup for Microsoft 365",
+      "link": "https://www.veeam.com/kb4106",
+      "date": "2026-04-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "This KB article lists all versions of Veeam Backup for Microsoft 365 and their respective build numbers."
+    },
+    {
+      "title": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches",
+      "link": "https://www.veeam.com/kb4697",
+      "date": "2026-04-16T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Release Information for Veeam Backup for Salesforce 3 Cumulative Patches"
     },
     {
       "title": "How to Deploy Veeam Backup for Salesforce External Client App",
@@ -380,6 +389,15 @@
       "description": "Build Numbers and Versions of Veeam Service Provider Console"
     },
     {
+      "title": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 - Business Wire",
+      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNYWU0d2lpMVJXTDFNR25HNURBSnA5dnRaM1Yxbk0ybWtXNlI1QW5UN01aLU1ldko0eWlCbGk1SS1RNWJ1YUd6dFhJNXVRMC15ZmNNczZxOHRLdEdINHIzUWFibjdSQm50T1FBVlhIWTZJdE5POVBUaGdTakNRR0pQMkxIejhKS1Z6cjREcENGWkx3R20zSXRBaWV2QlVjaFctSEVDclRRTi1VNUtzXzVyeEphSG50VXM0NWNyeHFUeTdsc200UHdEa1prQmpNdkc4aGVRcVVXMnc5TWx5NUphVjF6M1BUbDI2dGxMXzlRTjFTOVJkV2wzMnZ1OUhfaGtRVno1TmpJdWlFdzJPLUI3WHVGek5HX3JpOXdMZ2xxUkZkOW1z?oc=5",
+      "date": "2026-04-02T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Data Platform Named the Winner of the 2026 SC Award for Best Business Continuity, Disaster and Ransomware Recovery Solution at RSAC 2026 Business Wire"
+    },
+    {
       "title": "Veeam Recognized as a 2026 Gartner® Peer Insights™ Customers’ Choice for Backup and Data Protection Platforms - Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSnR3Nk9BUXc5dnJBaEwxTGxDY3pkV1BFZmQ2TFFaVC1lZGdSYXhIRFdldFk2dzZ3U1NHeWZXTlZVbW50UWRSY0ZuYVVpTld0VWhhQzl1YldqMHZKODk5bDRBRFJLdjlseHRrbWNYMldaOU1NRzd1Q1RobWNCd1BaTzB1VVJVWkdpWXo1bzU5cFphRENZdVVKeDh1bWhBcHZnN1Bub0p3?oc=5",
       "date": "2026-04-01T07:00:00Z",
@@ -398,15 +416,6 @@
       "description": "This article documents how to configure the /etc/krb5.conf file on the Veeam Software Appliance (VSA) to enable Kerberos authentication when managing a Microsoft Hyper-V cluster whose nodes belong to a different Active Directory domain than the ba..."
     },
     {
-      "title": "Release Information for Fsas ETERNUS Plug-In for Veeam Backup & Replication",
-      "link": "https://www.veeam.com/kb4043",
-      "date": "2026-04-01T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "release",
-      "severity": "",
-      "description": "Release Information for Fsas ETERNUS Plug-In for Veeam Backup & Replication"
-    },
-    {
       "title": "The HTTP request was forbidden with client authentication scheme",
       "link": "https://www.veeam.com/kb4796",
       "date": "2026-04-01T00:00:00Z",
@@ -416,6 +425,15 @@
       "description": "Veeam Support Knowledge Base answer to: The HTTP request was forbidden with client authentication scheme"
     },
     {
+      "title": "Release Information for Fsas ETERNUS Plug-In for Veeam Backup & Replication",
+      "link": "https://www.veeam.com/kb4043",
+      "date": "2026-04-01T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "release",
+      "severity": "",
+      "description": "Release Information for Fsas ETERNUS Plug-In for Veeam Backup & Replication"
+    },
+    {
       "title": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence - StorageReview.com",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaTBuanNKR3czZG4yUUpQbF9yQjFFeWxKdFlhM21OWkNZVGZUVkhkQWZkMFNtRmZwdFBtdVIyekQ2WEM2cWxuRXdUNWhmR0NKYURrZHRoSnNRSDJNSFdzbG1WTUJDSDZXa0l3TllrUGlLR29jdE91Tk95UVFBVVgwQzUxVEtGODhtSVBhcWQySFFmSkpZZUptSThzVUg4NnZCUE5UVjNmcHFaOHNDLWfSAbMBQVVfeXFMUDFnY1k4STdvUXlUMDFsWmplRmp2MEY0UDJDb1liNkVEZlZOZGd2ek94QXE1dmJQcGZKUEVidVVibm9HU2VtM282UlZZTWVMTk90R0ZTRTMxaEMyRGliRm95RHNlSGl3U0oyb0dMSUxMUllveW9Yczl4dm95Q0stb0RwQlRwUWlSRkpoME95ZkhTejRQeGVSd2c2WDhZbU5XYW1YTWozVUxzUUYxVFAyVE5ZQmM?oc=5",
       "date": "2026-03-31T17:06:13Z",
@@ -423,15 +441,6 @@
       "category": "news",
       "severity": "",
       "description": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence StorageReview.com"
-    },
-    {
-      "title": "Potential Issue With Backing up Sharepoint, Onedrive, Teams Files, and List Attachments",
-      "link": "https://www.veeam.com/kb4835",
-      "date": "2026-03-31T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "Backup of SharePoint, OneDrive, and Teams data completes successfully, and subsequent restores of this protected data are successful. However, when opening some of the restored files or list attachments, users may find that these items do not open..."
     },
     {
       "title": "Malware and Ransomware Detection in M365",
@@ -452,6 +461,15 @@
       "description": "When running backup or replication jobs for Windows virtual machines hosted on Nutanix AHV, Proxmox VE, or Scale Computing HyperCore with Veeam Backup & Replication 13.0.1 Patch 2, guest processing fails due to an in-guest processing component tha..."
     },
     {
+      "title": "Potential Issue With Backing up Sharepoint, Onedrive, Teams Files, and List Attachments",
+      "link": "https://www.veeam.com/kb4835",
+      "date": "2026-03-31T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "Backup of SharePoint, OneDrive, and Teams data completes successfully, and subsequent restores of this protected data are successful. However, when opening some of the restored files or list attachments, users may find that these items do not open..."
+    },
+    {
       "title": "External Client App (ECA) for Veeam Data Cloud — Adapting to New Salesforce Security Requirements",
       "link": "https://www.veeam.com/kb4812",
       "date": "2026-03-30T00:00:00Z",
@@ -459,6 +477,15 @@
       "category": "kb",
       "severity": "",
       "description": "Salesforce has mandated a transition from legacy Connected Apps to External Client Apps (ECAs) for third-party integrations, prompting Veeam Data Cloud to release a managed package that creates an ECA to enable secure backups of Salesforce organiz..."
+    },
+    {
+      "title": "Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce",
+      "link": "https://www.veeam.com/kb4810",
+      "date": "2026-03-25T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "Veeam Support Knowledge Base answer to: Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce"
     },
     {
       "title": "Support Statement — Exchange Web Services (EWS) Deprecation",
@@ -477,15 +504,6 @@
       "category": "kb",
       "severity": "",
       "description": "Veeam Support Knowledge Base answer to: Veeam Data Cloud for Microsoft 365 Search Performance Consideration and Limitations"
-    },
-    {
-      "title": "Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce",
-      "link": "https://www.veeam.com/kb4810",
-      "date": "2026-03-25T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "Veeam Support Knowledge Base answer to: Most Common Issues with Salesforce Connected App in Veeam Data Cloud for Salesforce"
     },
     {
       "title": "Veeam's Securiti play could push it past Cohesity - Blocks & Files",
@@ -524,13 +542,13 @@
       "description": "Multiple Authenticated High and Critical Vulnerabilities in Veeam Backup & Replication Arctic Wolf"
     },
     {
-      "title": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server - CyberSecurityNews",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zdjVZbTI4ck5EUUN6N1pFRVIzSkZ2dk5WZ1l0OHZMM0czSGl0djktcXNoYUoyN29ZZlNnaW01WV9ybEhRNHQ2MWpKOTgyTi0xZ3ItbVJFM0t5U2gwdzhhNjFsWDhBY3cxR1FlTENOaHhQMEM2?oc=5",
+      "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnYVB1YUZtSEo3YTZxdXFwSnRYRkxpbEhEbXNOLU9OWHVLWnRjUkYxUXZaYkZFa0N3bXVObl9GRENtZVJURWtYX3E4NmkyUGZHb21oc3NiV2ltNkpsUDhlazFNdWxvSlJxcGFSWUxDX01LT1E?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server CyberSecurityNews"
+      "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
     },
     {
       "title": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! - Centre for Cybersecurity Belgium",
@@ -542,13 +560,13 @@
       "description": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! Centre for Cybersecurity Belgium"
     },
     {
-      "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnYVB1YUZtSEo3YTZxdXFwSnRYRkxpbEhEbXNOLU9OWHVLWnRjUkYxUXZaYkZFa0N3bXVObl9GRENtZVJURWtYX3E4NmkyUGZHb21oc3NiV2ltNkpsUDhlazFNdWxvSlJxcGFSWUxDX01LT1E?oc=5",
+      "title": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server - CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zdjVZbTI4ck5EUUN6N1pFRVIzSkZ2dk5WZ1l0OHZMM0czSGl0djktcXNoYUoyN29ZZlNnaW01WV9ybEhRNHQ2MWpKOTgyTi0xZ3ItbVJFM0t5U2gwdzhhNjFsWDhBY3cxR1FlTENOaHhQMEM2?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
+      "description": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server CyberSecurityNews"
     },
     {
       "title": "Veeam says critical security flaws may be exposing backup servers to RCE attacks - TechRadar",
