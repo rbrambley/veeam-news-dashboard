@@ -1,14 +1,23 @@
 {
-  "lastUpdated": "2026-04-30T19:40:35Z",
+  "lastUpdated": "2026-05-01T02:30:23Z",
   "items": [
     {
-      "title": "Veeam ONE • Re: HTTPS with VeeamOne Webclient",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568758#p568758",
-      "date": "2026-04-30T19:09:20Z",
+      "title": "Microsoft 365 • Re: API Access",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568767#p568767",
+      "date": "2026-05-01T02:13:27Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "I should say I have not modified those, I have verified those and yes, they are HTTPS. But when I browse, it tells me it's not secure. Statistics: Posted by rlspeeks — Apr 30, 2026 7:09 pm"
+      "description": "Hi, The API topic is one that we've discussed above, we recognise the importance and will be communicating our updates on this in the short-term. There are reports to list the accounts consuming licenses within VDC, these can be run on a per tenan..."
+    },
+    {
+      "title": "Best practices for backup repository locations",
+      "link": "https://www.reddit.com/r/Veeam/comments/1t0a6ut/best_practices_for_backup_repository_locations/",
+      "date": "2026-04-30T21:51:14Z",
+      "source": "Reddit r/Veeam",
+      "category": "community",
+      "severity": "",
+      "description": "I think my current backup strategy is a good one, but I have read that it may not be the best approach if the primary repository is corrupted in some way. Would it be better to create a separate backup for each repository, and not do a backup copy..."
     },
     {
       "title": "The Asymmetry of Speed: Patch Management in the Age of Mythos",
@@ -45,6 +54,15 @@
       "category": "news",
       "severity": "",
       "description": "Scality launches Veeam backup appliance for mid-size firms SecurityBrief UK"
+    },
+    {
+      "title": "Scality Adds Automated Failover for Veeam to Improve Cyber Resiliency - Redmondmag.com",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMHNaRU5tU0NhUHp3MmJ3NVJaMDB1dEZ6djVvelBQSHg2Vi0ydUY2aHZVUjR1RjZkUkV2QWVXem5oaXRLUTNjZ0ZEMEJLaklGbndzazVNTC1CSElvd2dxM0tpSVdsVndNUGE4NjJCWVhXNW80TklOcWVHckg1YWJhZzVMNjd2ODIyczNtZXVmWjBGZWZKMUJPVlV4YVE2UmFQV1E?oc=5",
+      "date": "2026-04-30T00:06:39Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Scality Adds Automated Failover for Veeam to Improve Cyber Resiliency Redmondmag.com"
     },
     {
       "title": "Service Accounts for VEEAM Backup 13....",
@@ -290,15 +308,6 @@
       "description": "Hello, ran into what looks like a Veeam bug yesterday, just want to know if anyone else has also experienced similar or this is something very specific to our environment. It's a fresh greenfield Hyper-V Failover Cluster infra, and Veeam is runnin..."
     },
     {
-      "title": "Veeam NAS feature",
-      "link": "https://www.reddit.com/r/Veeam/comments/1ssry12/veeam_nas_feature/",
-      "date": "2026-04-22T17:18:58Z",
-      "source": "Reddit r/Veeam",
-      "category": "community",
-      "severity": "",
-      "description": "How does the Veeam NAS feature work? Does it cover system and applications or just share folders? How will the license work? Let's say 1 server with 10 TB of share data. Does it count as 1 license instance or 1 + 20 license instances (10000 / 500)..."
-    },
-    {
       "title": "Windows Update W11 Vs Veeam free agent for Windows",
       "link": "https://www.reddit.com/r/Veeam/comments/1ssogvr/windows_update_w11_vs_veeam_free_agent_for_windows/",
       "date": "2026-04-22T15:15:57Z",
@@ -425,6 +434,15 @@
       "description": "Veeam Releases Open-Source MCP Server for Backup and Recovery Intelligence StorageReview.com"
     },
     {
+      "title": "Guest processing fails for Nutanix AHV, Proxmox VE, Scale Computing HyperCore",
+      "link": "https://www.veeam.com/kb4842",
+      "date": "2026-03-31T00:00:00Z",
+      "source": "Veeam KB",
+      "category": "kb",
+      "severity": "",
+      "description": "When running backup or replication jobs for Windows virtual machines hosted on Nutanix AHV, Proxmox VE, or Scale Computing HyperCore with Veeam Backup & Replication 13.0.1 Patch 2, guest processing fails due to an in-guest processing component tha..."
+    },
+    {
       "title": "Potential Issue With Backing up Sharepoint, Onedrive, Teams Files, and List Attachments",
       "link": "https://www.veeam.com/kb4835",
       "date": "2026-03-31T00:00:00Z",
@@ -441,15 +459,6 @@
       "category": "kb",
       "severity": "",
       "description": "This article describes how to locate, review, and interpret Malware and Ransomware threat detections surfaced by Veeam Data Cloud (VDC) Advanced Threat Detection for Microsoft 365 workloads."
-    },
-    {
-      "title": "Guest processing fails for Nutanix AHV, Proxmox VE, Scale Computing HyperCore",
-      "link": "https://www.veeam.com/kb4842",
-      "date": "2026-03-31T00:00:00Z",
-      "source": "Veeam KB",
-      "category": "kb",
-      "severity": "",
-      "description": "When running backup or replication jobs for Windows virtual machines hosted on Nutanix AHV, Proxmox VE, or Scale Computing HyperCore with Veeam Backup & Replication 13.0.1 Patch 2, guest processing fails due to an in-guest processing component tha..."
     },
     {
       "title": "External Client App (ECA) for Veeam Data Cloud — Adapting to New Salesforce Security Requirements",
@@ -623,13 +632,40 @@
       "description": "Veeam officially launches its HPE Morpheus VM Essentials support Techzine Global"
     },
     {
-      "title": "Veeam releases Agent Commander to combat agentic AI risk - TechTarget",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMmRzTGN3N3Iya21XTVR3bXVIRENNOXZubkNjWXBhTlYxcXNpTW9TVm5scHNHWGJiYnlnenNMbF9TemxVLWlUd2ozLXROLTk0M3Jxb1FSb2wxRG1ZNXlOX19idEdHa2xaWWNJOUxJby1oYl9Cb2xvb2hSQ1B4Rlp2SU5yU2t2QjVrWWRxMUdzQ0ZyNV9fZFljWkNScEUzbk0xOTdxQnFTTFBFRHlMbEo5NS1yUUtQZw?oc=5",
-      "date": "2026-02-24T08:00:00Z",
+      "title": "MSSPs Gain Tighter Control of Clean Recovery with Arms Cyber-Veeam Integration - MSSP Alert",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT0pZdEJnSjdxd3FJX3FGSkpjc1BILUZqdzJQWXpvSEFRQjRNcTJ4T2NpSGZrX09YdlBWU2F2Y3prRXFaNFctajE2a1RJR3RvQ1phTVFqNHlwMXEyNl84LWJWQkRZc3p5cG95cEVseFIycFNvR3hSYTZSRG9waDVMWC1PXzM4cUU1VkxTY2diNkZZN2JTaWZzVG5PTS1saHZiaVNxa19mUTRRUDFRMHc?oc=5",
+      "date": "2026-02-26T08:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam releases Agent Commander to combat agentic AI risk TechTarget"
+      "description": "MSSPs Gain Tighter Control of Clean Recovery with Arms Cyber-Veeam Integration MSSP Alert"
+    },
+    {
+      "title": "Veeam launches Agent Commander for AI risk management - Techzine Global",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWXNsdGJEMmtlSFdnNFc3YnBHN01MU0lFZFc0UzBjT01FU2gwVEZ4LUVPTzdDZ1g5cmxQUU4zNmdYYjdLWUQxMWR0NEZiNEhvb2Q4LXRMcUFnN1J2bVA1a1ZLTmpyM05nRmJGMWIxNkNqUHlZbzJadFNZVkwtUl9WakdVUDlYSHJsbEtudXdhVFBlZzdZM1psWXVPa1FRRS1E?oc=5",
+      "date": "2026-02-25T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam launches Agent Commander for AI risk management Techzine Global"
+    },
+    {
+      "title": "Object First triples growth on ransomware-proof backups - IT Brief UK",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOc1MzTFlNd3RPc3U0WGZ3QjNKMlNieGwyVU9hMlpWa1BySXZ1LUdmaFFreVEwYnFxRk0xR3ZMWktKWEFKallUZTFlYWNFYkpYd0ljWEo2YXd6V0hsbEpwX0c4bjR5X1BJQTRZeEp6SnFmUy1sT2lTay1PNUFqRnJ0MFA3ZjA5ZzZMdjZn?oc=5",
+      "date": "2026-02-11T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Object First triples growth on ransomware-proof backups IT Brief UK"
+    },
+    {
+      "title": "Industry Exchange Cyber 2026: Veeam’s Mark Bentkower on why cyber resilience demands much more than response automation - Federal News Network",
+      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPT1ZvTlJ2SjVQWjZ4Q1BhYVRCWFVVcXNwRjNmbms2MGs0cnZJNGtkdXFzeWMwTm9BYzRpTkNadXE1TU5yeUxfVWlMdEFNWF9OMXdXUHVpZDlsWFBvR05aOGd0OUpNLURlenZHMUNRcGJpWHhMdnpPWkZrSHFSbjZFM0ZlSElTRjNJYzRrWF9LZWtHMl9lamdYNEEzSHE0c1lRNHFWYzJWVzk0ajhZYlBKS203dVZiVElibXBRTW4zV21NdlJMNGItc0steVJ5VlU3Z0lFRGdGREYteEFYbUV6QzlfZXktNWFtUWpwYmdldjdmQ0h6T3VnTXVmYnlkNUJx?oc=5",
+      "date": "2026-02-09T08:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Industry Exchange Cyber 2026: Veeam’s Mark Bentkower on why cyber resilience demands much more than response automation Federal News Network"
     },
     {
       "title": "The best backup software of 2026: Expert tested and reviewed - ZDNET",
