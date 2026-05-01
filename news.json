@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-05-01T13:05:41Z",
+  "lastUpdated": "2026-05-01T13:38:18Z",
   "items": [
     {
-      "title": "Applications • Backing up MS Access Database",
-      "link": "https://forums.veeam.com/viewtopic.php?p=568780#p568780",
-      "date": "2026-05-01T13:00:58Z",
+      "title": "Veeam Backup for Microsoft 365 • s3 storage POC - unrecognized guid format",
+      "link": "https://forums.veeam.com/viewtopic.php?p=568782#p568782",
+      "date": "2026-05-01T13:30:14Z",
       "source": "Veeam Forums",
       "category": "community",
       "severity": "",
-      "description": "Hello, I am using Veeam to backup a MS Access database app on a Hyperv computer. Should I be using application-aware backup for this? Thanks in advance MJF Statistics: Posted by maface99 — May 01, 2026 1:00 pm"
+      "description": "We are testing out Veeam 365 with S3 compatible storage and had a repo go out of sync. We ran through the synchronization successfully, however when jobs run against it now, numerous objects report Unrecognized GUID Format and fail - despite runni..."
     },
     {
       "title": "Best practices for backup repository locations",
@@ -551,15 +551,6 @@
       "description": "Warning: Multiple Critical Vulnerabilities in Veeam Backup & Replication, Patch Immediately! Centre for Cybersecurity Belgium"
     },
     {
-      "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnYVB1YUZtSEo3YTZxdXFwSnRYRkxpbEhEbXNOLU9OWHVLWnRjUkYxUXZaYkZFa0N3bXVObl9GRENtZVJURWtYX3E4NmkyUGZHb21oc3NiV2ltNkpsUDhlazFNdWxvSlJxcGFSWUxDX01LT1E?oc=5",
-      "date": "2026-03-13T07:00:00Z",
-      "source": "Google News",
-      "category": "news",
-      "severity": "",
-      "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
-    },
-    {
       "title": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server - CyberSecurityNews",
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zdjVZbTI4ck5EUUN6N1pFRVIzSkZ2dk5WZ1l0OHZMM0czSGl0djktcXNoYUoyN29ZZlNnaW01WV9ybEhRNHQ2MWpKOTgyTi0xZ3ItbVJFM0t5U2gwdzhhNjFsWDhBY3cxR1FlTENOaHhQMEM2?oc=5",
       "date": "2026-03-13T07:00:00Z",
@@ -569,13 +560,22 @@
       "description": "Veeam Patches Multiple Critical RCE Vulnerabilities on Backup Server CyberSecurityNews"
     },
     {
-      "title": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media - SC Media",
+      "title": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes - SOCRadar® Cyber Intelligence Inc.",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnYVB1YUZtSEo3YTZxdXFwSnRYRkxpbEhEbXNOLU9OWHVLWnRjUkYxUXZaYkZFa0N3bXVObl9GRENtZVJURWtYX3E4NmkyUGZHb21oc3NiV2ltNkpsUDhlazFNdWxvSlJxcGFSWUxDX01LT1E?oc=5",
+      "date": "2026-03-13T07:00:00Z",
+      "source": "Google News",
+      "category": "news",
+      "severity": "",
+      "description": "Veeam Backup & Replication: CVE-2026-21666 and Related RCE Fixes SOCRadar® Cyber Intelligence Inc."
+    },
+    {
+      "title": "Veeam patches critical RCE vulnerabilities in backup software - SC Media",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaTN4cDk3cU9hZm1sYndfbUlxVmFxbDc1MmppZl9ETURES2tXczJxREdJQTNlTWNkYmZYNEVvV3d2bUV0MXQ0MzVXZ2dLZ1ZTWGVlSGVkSWVNU2FpeWxFS241cXA4MHR1SHRVR01Tam5RczdkeDlJcXBGYUU2S1dPZXpDNTI2UDByU1c3dDZERnVqZ0hNTFE?oc=5",
       "date": "2026-03-13T07:00:00Z",
       "source": "Google News",
       "category": "news",
       "severity": "",
-      "description": "Veeam patches critical RCE vulnerabilities in backup software | brief | SC Media SC Media"
+      "description": "Veeam patches critical RCE vulnerabilities in backup software SC Media"
     },
     {
       "title": "Veeam Patches Critical Vulnerabilities in Backup & Replication - Techzine Global",
